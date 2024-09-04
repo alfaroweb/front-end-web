@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import WhiteTopWaves from '/public/home/waves/white-top-waves.png'
 import WhiteBottomWaves from '/public/home/waves/white-bottom-waves-2.png'
-import TestimonialCard from '../../../components/TestimonialCard'
-import DotsBg from '@/components/DotsBg'
+import TestimonialCard from '../../components/TestimonialCard'
+import DotsBg from '@/app/components/DotsBg'
 
 function Testimonials() {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import { getStrapiMedia } from '../app/utils/api-helpers'
-import { formatDate } from '../app/utils/api-helpers'
+import { getStrapiMedia } from '../utils/api-helpers'
+import { formatDate } from '../utils/api-helpers'
 import ChevronRight from '/public/home/chevron-right-circle.svg'
 import Link from 'next/link'
 

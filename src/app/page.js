@@ -14,7 +14,6 @@ export default function Home() {
       <Specialties />
       <Doctor />
       <Testimonials />
-      <LastPosts />
     </main>
   )
 }

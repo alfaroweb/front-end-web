@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { specialities } from '../data/data'
 import WavesTop from '/public/home/waves/white-top-waves.png'
 import WavesBottom from '/public/home/waves/white-bottom-waves.png'
-import SpecialitiesCard from '../../../components/SpecialitiesCard'
+import SpecialitiesCard from '../../components/SpecialitiesCard'
 import SpecialitiesImg from '/public/home/specialities.jpg'
 
 function Specialties() {

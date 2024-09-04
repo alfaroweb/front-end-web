@@ -1,4 +1,4 @@
-import PostCards from '../../../components/PostCards'
+import PostCards from '../../components/PostCards'
 
 async function LastPosts() {
   const { data } = await getData()

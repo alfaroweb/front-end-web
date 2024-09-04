@@ -10,8 +10,8 @@ import {
   faHospital,
   faNotesMedical
 } from '@fortawesome/free-solid-svg-icons'
-import { ContactForm } from '@/components/ContactForm'
-import DotsBg from '@/components/DotsBg'
+import { ContactForm } from '@/app/components/ContactForm'
+import DotsBg from '@/app/components/DotsBg'
 
 function page() {
   return (

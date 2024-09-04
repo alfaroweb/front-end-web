@@ -1,4 +1,4 @@
-import SpecialtiesPagesCategories from '@/components/SpecialtiesPagesCategories'
+import SpecialtiesPagesCategories from '@/app/components/SpecialtiesPagesCategories'
 
 function layout({ children }) {
   return (

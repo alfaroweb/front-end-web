@@ -3,7 +3,7 @@ import About from './sections/02_About'
 import Education from './sections/03_Education'
 import Specialities from './sections/04_Specialities'
 import PhilosophyAndAffiliations from './sections/05_PhilosophyAndAffiliations'
-import { ContactForm } from '@/components/ContactForm'
+import { ContactForm } from '@/app/components/ContactForm'
 
 function page() {
   return (

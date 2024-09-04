@@ -1,5 +1,5 @@
 import { specialities } from '../home/data/data'
-import SpecialitiesCard from '../../components/SpecialitiesCard'
+import SpecialitiesCard from '../components/SpecialitiesCard'
 
 function Especialidades({ children }) {
   return (

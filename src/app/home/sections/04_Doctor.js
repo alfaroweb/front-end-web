@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Shape from '/public/doctor-shape.png'
-import DotsBg from '@/components/DotsBg'
+import DotsBg from '@/app/components/DotsBg'
 
 function Doctor() {
   return (
