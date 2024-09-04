@@ -25,10 +25,10 @@ const TestimonialCard = () => {
   }
 
   return (
-    <div className='w-[90%] max-w-md py-4 bg-white rounded-lg shadow-md mx-auto  max-h-max relative overflow-hidden p-4 '>
+    <div className='w-full max-w-md py-4  bg-white rounded-lg shadow-md overflow-hidden max-h-max relative '>
       {/* Testimonios */}
       <div
-        className='flex transition-transform duration-500 ease-in-out overflow-hidden'
+        className='flex transition-transform duration-500 ease-in-out'
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {testimonials.map((testimonial, index) => (
@@ -41,10 +41,10 @@ const TestimonialCard = () => {
               alt=''
               className='w-20 h-20 rounded-full bg-gray-500'
             />
-            <blockquote className='text-lg italic font-medium text-center'>
+            <blockquote className='max-w-lg text-lg italic font-medium text-center w-[90%]'>
               {testimonial.text}
             </blockquote>
-            <div className='text-center text-gray-600'>
+            <div className='text-center text-gray-600 w-[90%] mx-auto'>
               <p>{testimonial.author}</p>
               <p>CEO of Company Co.</p>
             </div>
@@ -58,7 +58,7 @@ const TestimonialCard = () => {
           <button
             key={index}
             onClick={() => handleTestimonialChange(index)}
-            className={`h-3 w-3 rounded-full mx-2 focus:outline-none ${
+            className={`h-3 w-3 rounded-full mx-2 focus:outline-none z-10 ${
               currentIndex === index ? 'bg-custom-green-light' : 'bg-gray-300'
             }`}
           ></button>

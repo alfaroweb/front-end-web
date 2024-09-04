@@ -29,7 +29,7 @@ function Testimonials() {
           excelencia.
         </p>
       </div>
-      <div className='w-[90%] mx-auto overflow-hidden'>
+      <div className='w-[90%] mx-auto flex justify-center '>
         <TestimonialCard />
       </div>
       <Image

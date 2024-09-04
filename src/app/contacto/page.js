@@ -202,7 +202,7 @@ function page() {
           </div>
         </div>
       </div>
-      <div className='min-h-[700px] bg-white'>
+      {/* <div className='min-h-[700px] bg-white'>
         <div className='grid grid-cols-2 w-[90%] mx-auto gap-8 -translate-y-[30px]'>
           <div className='bg-[rgb(231,232,233)] h-max border-black rounded-md shadow-gray-400 shadow-sm relative'>
             <ContactForm />
@@ -212,7 +212,7 @@ function page() {
             hola
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   )
 }
