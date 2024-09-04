@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import HeroPortrait from '/public/home/hero-bg-2.png'
-import Waves from '/public/home/svg.png'
+
 import Link from 'next/link'
 
 function Hero() {
@@ -31,12 +31,6 @@ function Hero() {
           />
         </div>
       </div>
-
-      <Image
-        src={Waves}
-        className='absolute bottom-0 w-full h-[150px]'
-        alt=''
-      />
     </section>
   )
 }

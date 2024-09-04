@@ -10,7 +10,7 @@ function Specialties() {
     <section className='mx-auto relative bg-specialities-bg bg-cover min-h-max'>
       <Image
         src={WavesTop}
-        className='h-[150px] w-full absolute top-0  drop-shadow-[0_3px_3px_rgba(255,255,255,0.7)]'
+        className='h-[150px] w-full absolute top-0  drop-shadow-[0_3px_3px_rgba(255,255,255,0.7)] block'
         alt=''
       />
       <div className='flex min-h-max pt-[150px] pb-[75px] flex-col-reverse lg:flex-row mx-auto w-[90%] max-w-screen-xl gap-8'>

@@ -6,7 +6,7 @@ import DotsBg from '@/app/components/DotsBg'
 
 function Testimonials() {
   return (
-    <section className='text-gray-800 w-full relative  h-max py-[100px] overflow-hidden'>
+    <section className='text-gray-800 w-full relative h-max py-[100px] overflow-hidden'>
       <DotsBg />
       <Image
         src={WhiteTopWaves}
@@ -29,12 +29,12 @@ function Testimonials() {
           excelencia.
         </p>
       </div>
-      <div className='flex justify-center'>
+      <div className='w-[90%] mx-auto overflow-hidden'>
         <TestimonialCard />
       </div>
       <Image
         src={WhiteBottomWaves}
-        className='h-[200px] w-full absolute bottom-0 block  drop-shadow-[0_-10px_4px_rgba(133,134,134,0.1)]'
+        className='h-[200px] w-full absolute bottom-0 block drop-shadow-[0_-10px_4px_rgba(133,134,134,0.1)]'
         alt=''
       />
     </section>

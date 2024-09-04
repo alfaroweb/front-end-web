@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Hero from './home/sections/01_Hero'
 import Specialties from './home/sections/03_Specialties'
 import LastPosts from './home/sections/06_LastPosts'

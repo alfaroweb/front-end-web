@@ -25,23 +25,23 @@ const TestimonialCard = () => {
   }
 
   return (
-    <div className='w-full max-w-md py-4  bg-white rounded-lg shadow-md overflow-hidden max-h-max relative '>
+    <div className='w-[90%] max-w-md py-4 bg-white rounded-lg shadow-md mx-auto  max-h-max relative overflow-hidden p-4 '>
       {/* Testimonios */}
       <div
-        className='flex transition-transform duration-500 ease-in-out'
+        className='flex transition-transform duration-500 ease-in-out overflow-hidden'
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className='min-w-full text-center p-4 flex flex-col justify-between items-center space-y-2'
+            className='min-w-full text-center flex flex-col justify-between items-center space-y-2'
           >
             <img
               src='https://source.unsplash.com/random/100x100?4'
               alt=''
               className='w-20 h-20 rounded-full bg-gray-500'
             />
-            <blockquote className='max-w-lg text-lg italic font-medium text-center'>
+            <blockquote className='text-lg italic font-medium text-center'>
               {testimonial.text}
             </blockquote>
             <div className='text-center text-gray-600'>

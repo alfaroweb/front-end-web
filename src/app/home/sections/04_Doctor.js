@@ -20,7 +20,7 @@ function Doctor() {
         </p>
       </div>
 
-      <div className='w-[450px] flex flex-col items-center justify-center overflow-hidden relative mx-auto min-h-[500px] '>
+      <div className='w-[90%] flex flex-col items-center justify-center overflow-hidden relative mx-auto min-h-[500px] '>
         <Image
           src={Shape}
           className='drop-shadow-[0_10px_10px_rgba(29,54,61,1)]'

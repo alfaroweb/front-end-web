@@ -1,10 +1,15 @@
 import Image from 'next/image'
 import DoctorsGift from '/public/specialities/doctors.png'
+import Waves from '/public/home/svg.png'
 
 function OurTeam() {
   return (
-    <section className='bg-white'>
-      {' '}
+    <section className='bg-white relative'>
+      <Image
+        src={Waves}
+        className='absolute -top-[150px] w-full h-[150px]'
+        alt=''
+      />{' '}
       <div className='max-w-screen-lg mx-auto lg:flex w-[90%]'>
         <div className='lg:w-1/2'>
           <Image
