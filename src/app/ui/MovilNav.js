@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { specialities } from '../home/data/data'
 import Image from 'next/image'
 import Link from 'next/link'
+import Bandage from '/public/icons/bandage.svg'
 
 function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
   useEffect(() => {
@@ -31,9 +32,9 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
     <div
       className={`${
         showMovilMenu ? 'translate-x-0' : '-translate-x-[100%]'
-      }  fixed left-0 top-0 h-screen w-full overflow-y-auto  bg-gradient-to-b from-custom-green-light to-custom-green-dark transition-transform duration-300 ease-in-out md:hidden`}
+      }  fixed left-0 top-0 h-screen w-full overflow-y-auto  bg-gradient-to-b from-custom-green-light to-custom-green-dark transition-transform duration-300 ease-in-out lg:hidden`}
     >
-      <nav className='relative mx-auto grid min-h-screen w-full grid-rows-[70px,1fr] '>
+      <nav className='relative mx-auto grid min-h-screen w-full grid-rows-[80px,1fr] '>
         <div className='mx-auto flex w-[90%] items-center justify-between'>
           <Link href='/'>
             {/* <Image
@@ -45,8 +46,15 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
             /> */}
             ICONO
           </Link>
+          <Image
+            src={Bandage}
+            width={50}
+            height={50}
+            className='icon line-color cursor-pointer'
+            onClick={handleShowMenu}
+          />
 
-          <svg
+          {/* <svg
             fill='#000000'
             width='30px'
             height='30px'
@@ -93,7 +101,7 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
                 }}
               />
             </g>
-          </svg>
+          </svg> */}
         </div>
 
         <ul className='mx-auto flex h-full w-[80%] flex-col items-start ml-[15%] justify-center gap-20 py-16 text-xl font-bold text-white'>
@@ -114,8 +122,11 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
           <div className='h-[28px] overflow-hidden hover:h-[284px] transition-[height] duration-300 ease-in'>
             Especialidades
             <ul className='mt-2 space-y-2 ml-2'>
-              {specialities.map((specialitie) => (
-                <li className='text-base'>
+              {specialities.map((specialitie, index) => (
+                <li
+                  className='text-base'
+                  key={index}
+                >
                   <Link
                     href={specialitie.url}
                     onClick={() => setShowMovilMenu(false)}

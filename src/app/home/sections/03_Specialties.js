@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import { specialities } from '../data/data'
-import WavesTop from '/public/home/waves/white-top-waves.png'
+
 import WavesBottom from '/public/home/waves/white-bottom-waves.png'
 import SpecialitiesCard from '../../components/SpecialitiesCard'
+import WavesTop from '/public/home/waves/white-top-waves.png'
 import SpecialitiesImg from '/public/home/specialities.jpg'
 
 function Specialties() {
@@ -10,10 +11,10 @@ function Specialties() {
     <section className='mx-auto relative bg-specialities-bg bg-cover min-h-max'>
       <Image
         src={WavesTop}
-        className='h-[150px] w-full absolute top-0  drop-shadow-[0_3px_3px_rgba(255,255,255,0.7)] block'
+        className='h-[150px] w-full absolute top-0 drop-shadow-[0_10px_7px_rgba(1,1,1,0.3)] block'
         alt=''
       />
-      <div className='flex min-h-max pt-[150px] pb-[75px] flex-col-reverse lg:flex-row mx-auto w-[90%] max-w-screen-xl gap-8'>
+      <div className='flex min-h-max py-[175px] flex-col-reverse lg:flex-row mx-auto w-[90%] max-w-screen-xl gap-8'>
         <div className='lg:w-1/2'>
           <div className='grid md:grid-cols-2 gap-2'>
             {specialities.map((specialitie, index) => (
@@ -43,7 +44,7 @@ function Specialties() {
 
       <Image
         src={WavesBottom}
-        className='h-[75px] w-full absolute bottom-0 block  drop-shadow-[0_-2px_3px_rgba(255,255,255,0.7)]'
+        className='h-[150px] w-full absolute bottom-0 block  drop-shadow-[0_-10px_7px_rgba(1,1,1,0.3)]'
         alt=''
       />
     </section>

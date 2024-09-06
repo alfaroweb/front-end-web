@@ -20,7 +20,9 @@ module.exports = {
           "linear-gradient( rgba(53,159,211, 0.8), rgba(53,159,211, 0.7)), url('/specialities/enfermedades-degenerativas.jpg')",
         'lesiones-deportivas':
           "linear-gradient( rgba(53,159,211, 0.8), rgba(53,159,211, 0.7)), url('/specialities/lesiones-deportivas.png')",
-        shape: "url('/shape.svg')"
+        shape: "url('/shape.svg')",
+        philosophy:
+          "linear-gradient( rgba(52,53,54, 0.9), rgba(52,53,54, 0.8)), url('/home/aboutme/patient.jpg')"
       },
       colors: {
         'custom-blue': {

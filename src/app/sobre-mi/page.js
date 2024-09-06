@@ -4,6 +4,7 @@ import Education from './sections/03_Education'
 import Specialities from './sections/04_Specialities'
 import PhilosophyAndAffiliations from './sections/05_PhilosophyAndAffiliations'
 import { ContactForm } from '@/app/components/ContactForm'
+import Affiliations from './sections/Affiliations'
 
 function page() {
   return (
@@ -11,9 +12,12 @@ function page() {
       <Hero />
       <About />
       <Education />
+      <Affiliations />
       <Specialities />
       <PhilosophyAndAffiliations />
-      <ContactForm />
+      <section className='bg-white'>
+        <ContactForm />
+      </section>
     </main>
   )
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '/public/logo-mico.png'
+import MedicineFile from '/public/icons/medicine-file.svg'
 
 function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
   return (
@@ -17,7 +18,7 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
         <p className='text-white font-black'>Cirujía de la mano</p>
       </Link>
 
-      <div className='hidden h-full gap-8 font-bold md:flex md:items-center text-white'>
+      <div className='hidden h-full gap-8 font-bold lg:flex lg:items-center text-white'>
         <Link
           href='/'
           className='link-desktopNav-borders rounded-lg h-full flex items-center'
@@ -112,7 +113,15 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
           Contacto
         </Link>
       </div>
-      <svg
+      <Image
+        src={MedicineFile}
+        width={50}
+        height={50}
+        className='icon line-color cursor-pointer lg:hidden'
+        onClick={handleShowMenu}
+      />
+
+      {/* <svg
         fill='#000000'
         width='40px'
         height='40px'
@@ -120,7 +129,7 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
         id='menu-alt-2'
         data-name='Line Color'
         xmlns='http://www.w3.org/2000/svg'
-        className='icon line-color cursor-pointer transition-transform duration-0 hover:rotate-90 md:hidden'
+        className='icon line-color cursor-pointer transition-transform duration-0 hover:rotate-90 lg:hidden'
         onClick={handleShowMenu}
       >
         <g
@@ -159,7 +168,7 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
             }}
           />
         </g>
-      </svg>
+      </svg> */}
     </nav>
   )
 }

@@ -189,16 +189,25 @@ function page() {
           </ul>
         </div>
       </div>
-      <div className='w-full bg-gradient-to-r from-custom-green-light to-custom-green-dark py-[50px]'>
-        <div className='flex w-[90%] mx-auto'>
-          <div className='w-1/2 pl-[200px] flex items-center flex-col justify-center'>
-            <h1 className='text-white text-4xl font-bold'>Ponte en contacto</h1>
+      <div className='w-full py-[50px] bg-white'>
+        <div className='flex w-[90%] mx-auto flex-col lg:flex-row'>
+          <div className='lg:w-1/2 flex items-center flex-col justify-center'>
+            <ContactForm />
           </div>
-          <div className='overflow-hidden w-1/2'>
-            <Image
+          <div className='overflow-hidden lg:w-1/2'>
+            <iframe
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.313895971811!2d-1.8467027234232294!3d38.985331841509904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418887d157e51d%3A0x273c92fc1723327c!2sHospital%20Quir%C3%B3nsalud%20Albacete!5e0!3m2!1ses!2ses!4v1725537167056!5m2!1ses!2ses'
+              width='100%'
+              height='100%'
+              style={{ border: 0, minHeight: '600px' }}
+              allowfullscreen=''
+              loading='lazy'
+              referrerpolicy='no-referrer-when-downgrade'
+            ></iframe>
+            {/* <Image
               src={BottomContactImage}
               className=' object-cover'
-            />
+            /> */}
           </div>
         </div>
       </div>

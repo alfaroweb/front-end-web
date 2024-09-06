@@ -4,7 +4,7 @@ import Waves from '/public/home/svg.png'
 
 function OurTeam() {
   return (
-    <section className='bg-white relative'>
+    <section className='bg-white relative z-10'>
       <Image
         src={Waves}
         className='absolute -top-[150px] w-full h-[150px]'

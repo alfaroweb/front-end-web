@@ -23,10 +23,10 @@ function Hero() {
           </Link>
         </div>
 
-        <div className='place-content-end mt-8 lg:mt-0 relative'>
+        <div className='place-content-end  mt-8 lg:mt-0 relative'>
           <Image
             src={HeroPortrait}
-            className='object-cover lg:w-[1000px]'
+            className='object-cover max-w-[750px] w-full'
             alt=''
           />
         </div>
