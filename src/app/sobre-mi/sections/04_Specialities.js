@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import GrayTopWaves from '/public/home/waves/white-top-waves.png'
+import GrayTopWaves from '/public/home/waves/white-top-waves.avif'
 
 function Specialities() {
   return (

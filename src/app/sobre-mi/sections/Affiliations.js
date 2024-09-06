@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Scmcot from '/public/affiliations/scmcot.png'
 import Secma from '/public/affiliations/secma.png'
 import Secot from '/public/affiliations/secot.png'
-import WhiteBottomWaves from '/public/home/waves/white-bottom-waves-2.png'
 
 function Affiliations() {
   return (

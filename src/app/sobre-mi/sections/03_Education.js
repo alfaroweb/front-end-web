@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import WhiteTopWaves from '/public/home/waves/white-top-waves.png'
-import GrayBottomWaves from '/public/home/waves/white-bottom-waves.png'
+import WhiteTopWaves from '/public/home/waves/white-top-waves.avif'
+import GrayBottomWaves from '/public/home/waves/white-bottom-waves.avif'
 
 function Education() {
   return (

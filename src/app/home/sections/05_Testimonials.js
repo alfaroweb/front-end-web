@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import WhiteTopWaves from '/public/home/waves/white-top-waves.png'
-import WhiteBottomWaves from '/public/home/waves/white-bottom-waves-2.png'
+import WhiteTopWaves from '/public/home/waves/white-top-waves.avif'
+import WhiteBottomWaves from '/public/home/waves/white-bottom-waves-2.avif'
 import TestimonialCard from '../../components/TestimonialCard'
 import DotsBg from '@/app/components/DotsBg'
 

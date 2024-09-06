@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import AfiliationPortrait from '/public/home/aboutme/afiliation.jpg'
-import GrayTopWaves from '/public/home/waves/gray-top-waves.png'
-import WhiteBottomWaves from '/public/home/waves/white-bottom-waves.png'
+import GrayTopWaves from '/public/home/waves/gray-top-waves.avif'
+import WhiteBottomWaves from '/public/home/waves/white-bottom-waves.avif'
 
 function PhilosophyAndAffiliations() {
   return (

@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import ContactImage from '/public/contacto.jpg'
-import BenefitsImage from '/public/medic-benefits.jpg'
-import BottomContactImage from '/public/contact-blow.png'
+import ContactImage from '/public/contacto.avif'
+import BenefitsImage from '/public/medic-benefits.avif'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUserDoctor,
@@ -17,11 +16,11 @@ function page() {
   return (
     <main className='w-full'>
       <div className='w-full bg-white'>
-        <div className='w-[90%] mx-auto max-w-screen-xl flex py-[100px] flex-col gap-8 lg:flex-row'>
+        <div className='w-[90%] mx-auto max-w-screen-xl flex py-[100px] flex-col gap-16 lg:gap-8 lg:flex-row'>
           <div className='lg:w-2/3 w-full grid place-content-evenly'>
             <h1 className='text-3xl font-bold text-gray-700'>
-              ¡Agenda tu Cita en Albacete! - Atención Médica Personalizada para
-              Ti
+              ¡Agenda tu Cita en Albacete! <br /> Atención Médica Personalizada
+              para Ti
             </h1>
             <p className='text-base/relaxed mx-auto text-gray-600 mt-2'>
               ¿Buscas un servicio médico de confianza en Albacete? Estamos aquí
@@ -84,7 +83,7 @@ function page() {
           </div>
         </div>
       </div>
-      <div className='w-[90%] mx-auto max-w-screen-xl flex py-[100px] flex-col-reverse gap-8 lg:flex-row'>
+      <div className='w-[90%] mx-auto max-w-screen-xl flex py-[100px] flex-col-reverse  gap-16 lg:gap-8 lg:flex-row'>
         <div className='lg:w-1/3 flex lg:justify-start justify-center'>
           <div className='w-[350px] h-[350px] overflow-hidden relative'>
             <div className='h-28 w-28 text-[rgba(53,159,211,0.3)] absolute z-0 left-1 top-1'>
@@ -131,7 +130,7 @@ function page() {
             />
           </div>
         </div>
-        <div className='lg:w-2/3 space-y-4'>
+        <div className='lg:w-2/3 space-y-8'>
           <h2 className='text-3xl font-bold  text-gray-700'>
             Descubre los Beneficios de Elegir a los Cirujanos Más Expertos en
             Albacete: <br />
@@ -204,24 +203,9 @@ function page() {
               loading='lazy'
               referrerpolicy='no-referrer-when-downgrade'
             ></iframe>
-            {/* <Image
-              src={BottomContactImage}
-              className=' object-cover'
-            /> */}
           </div>
         </div>
       </div>
-      {/* <div className='min-h-[700px] bg-white'>
-        <div className='grid grid-cols-2 w-[90%] mx-auto gap-8 -translate-y-[30px]'>
-          <div className='bg-[rgb(231,232,233)] h-max border-black rounded-md shadow-gray-400 shadow-sm relative'>
-            <ContactForm />
-          </div>
-          <div className='bg-[rgb(231,232,233)] h-[600px] border-black rounded-md shadow-gray-400 shadow-sm'>
-            {' '}
-            hola
-          </div>
-        </div>
-      </div> */}
     </main>
   )
 }
