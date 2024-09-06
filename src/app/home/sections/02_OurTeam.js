@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import DoctorsGift from '/public/specialities/Doctors-bro.png'
+import DoctorsGift from '/public/specialities/Doctors-bro.avif'
 import Waves from '/public/home/svg.avif'
 
 function OurTeam() {

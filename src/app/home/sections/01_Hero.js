@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import HeroPortrait from '/public/home/hero-bg-2.png'
+import HeroPortrait from '/public/home/hero-bg-2.avif'
 
 import Link from 'next/link'
 
