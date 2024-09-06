@@ -1,10 +1,15 @@
 import Image from 'next/image'
 import AfiliationPortrait from '/public/home/aboutme/afiliation.jpg'
-import PatientPortrait from '/public/home/aboutme/patient.jpg'
+import GrayTopWaves from '/public/home/waves/gray-top-waves.png'
+import WhiteBottomWaves from '/public/home/waves/white-bottom-waves.png'
 
 function PhilosophyAndAffiliations() {
   return (
-    <section className='bg-philosophy bg-cover min-h-[500px] flex items-center justify-center w-full'>
+    <section className='bg-philosophy bg-cover min-h-[600px] w-full relative flex flex-col justify-between'>
+      <Image
+        src={GrayTopWaves}
+        className='h-[100px] w-full block'
+      />
       <div className='w-[90%] mx-auto max-w-screen-lg text-center text-white'>
         {' '}
         <h2 className='text-3xl font-bold tracking-tighter md:text-4xl/tight [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)]'>
@@ -22,6 +27,10 @@ function PhilosophyAndAffiliations() {
           personalizados que aborden sus necesidades y preferencias únicas.{' '}
         </p>
       </div>
+      <Image
+        src={WhiteBottomWaves}
+        className='h-[100px] w-full block'
+      />
     </section>
     // <section className='bg-white grid lg:grid-cols-2 grid-rows-[auto,400px,auto,400px] lg:grid-rows-[600px,650px] xl:grid-rows-[500px,500px] w-[90%] md:max-w-screen-md lg:max-w-screen-xl mx-auto rounded-lg overflow-hidden shadow-md shadow-gray-600'>
     //   <div className='bg-gradient-to-r from-custom-green-light to-custom-green-dark text-white p-8 lg:row-end-2 h-auto'>

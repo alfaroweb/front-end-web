@@ -1,12 +1,19 @@
+import Image from 'next/image'
+import GrayTopWaves from '/public/home/waves/white-top-waves.png'
+
 function Specialities() {
   return (
-    <section className=' py-[50px] '>
-      <div className='w-[90%] mx-auto max-w-screen-xl'>
+    <section className=''>
+      <Image
+        src={GrayTopWaves}
+        className='h-[100px] w-full'
+      />
+      <div className='w-[90%] mx-auto max-w-screen-xl py-[50px]'>
         <h2 className='text-3xl font-bold tracking-tighter md:text-4xl/tight'>
           Áreas de especialización
         </h2>
         <div className='mt-4 grid gap-6 md:grid-cols-2'>
-          <div className='rounded-lg border p-6 border-custom-green-light border-opacity-25'>
+          <div className='rounded-lg border p-6 border-black hover:scale-[1.03] hover:border-black transition-all duration-300 border-opacity-25 bg-gradient-to-tl from-custom-green-light to-custom-green-dark text-white'>
             <h3 className='text-xl font-semibold'>Fracturas</h3>
             <p className='mt-2 text-muted-foreground'>
               Las fracturas en la mano y muñeca pueden ser complejas y requieren
@@ -19,7 +26,7 @@ function Specialities() {
               seguridad y confianza.
             </p>
           </div>
-          <div className='rounded-lg border p-6 border-custom-green-light border-opacity-25'>
+          <div className='rounded-lg border p-6 border-opacity-25 bg-gradient-to-tr from-custom-green-light to-custom-green-dark text-white border-black hover:scale-[1.03] hover:border-black transition-all duration-300'>
             <h3 className='text-xl font-semibold'>Artrosis</h3>
             <p className='mt-2 text-muted-foreground'>
               La artrosis que afecta las articulaciones de la mano y muñeca
@@ -32,7 +39,7 @@ function Specialities() {
               diarias.
             </p>
           </div>
-          <div className='rounded-lg border p-6 border-custom-green-light border-opacity-25'>
+          <div className='rounded-lg border p-6 border-opacity-25 bg-gradient-to-bl from-custom-green-light to-custom-green-dark text-white border-black hover:scale-[1.03] hover:border-black transition-all duration-300'>
             <h3 className='text-xl font-semibold'>Compresiones Nerviosas</h3>
             <p className='mt-2 text-muted-foreground'>
               Las compresiones nerviosas, como el síndrome del túnel carpiano,
@@ -44,7 +51,7 @@ function Specialities() {
               enfrentan este tipo de afecciones.
             </p>
           </div>
-          <div className='rounded-lg border p-6 border-custom-green-light border-opacity-25'>
+          <div className='rounded-lg border p-6 border-opacity-25 bg-gradient-to-br from-custom-green-light to-custom-green-dark text-white border-black hover:scale-[1.03] hover:border-black transition-all duration-300'>
             <h3 className='text-xl font-semibold'>Artroscopia de muñeca</h3>
             <p className='mt-2 text-muted-foreground'>
               La artroscopia de muñeca es una técnica mínimamente invasiva que

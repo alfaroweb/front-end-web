@@ -9,20 +9,22 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-bg':
-          "linear-gradient( rgba(52,53,54,  0.8) , rgba(29, 54, 61, 1)), url('/home/hero-bg.webp')",
+          "linear-gradient( rgba(52,53,54,0.8),rgba(29,54,61,1)), url('/home/hero-bg.avif')",
         'specialities-bg':
-          "linear-gradient( rgba(52,53,54,  0.8) , rgba(29, 54, 61, 0.7)), url('/home/specialities.jpg')",
+          "linear-gradient( rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/home/specialities.avif')",
         'doctor-bg':
-          "linear-gradient( rgba(52,53,54, 0.9), rgba(52,53,54, 0.8)), url('/home/doctor-bg.png')",
+          "linear-gradient( rgba(52,53,54, 0.9), rgba(52,53,54,0.8)), url('/home/doctor-bg.png')",
         'lesiones-traumaticas':
-          "linear-gradient( rgba(53,159,211, 0.9), rgba(53,159,211, 0.8)), url('/specialities/fracturas.jpg')",
+          "linear-gradient( rgba(53,159,211,0.9), rgba(53,159,211,0.8)), url('/specialities/fracturas.jpg')",
         'enfermedades-degenerativas':
-          "linear-gradient( rgba(53,159,211, 0.8), rgba(53,159,211, 0.7)), url('/specialities/enfermedades-degenerativas.jpg')",
+          "linear-gradient( rgba(53,159,211,0.8), rgba(53,159,211,0.7)), url('/specialities/enfermedades-degenerativas.jpg')",
         'lesiones-deportivas':
-          "linear-gradient( rgba(53,159,211, 0.8), rgba(53,159,211, 0.7)), url('/specialities/lesiones-deportivas.png')",
+          "linear-gradient( rgba(53,159,211, 0.8), rgba(53,159,211,0.7)), url('/specialities/lesiones-deportivas.png')",
         shape: "url('/shape.svg')",
         philosophy:
-          "linear-gradient( rgba(52,53,54, 0.9), rgba(52,53,54, 0.8)), url('/home/aboutme/patient.jpg')"
+          "linear-gradient(rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/home/aboutme/patient.avif')",
+        academic:
+          "linear-gradient(rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/home/aboutme/academic.avif')"
       },
       colors: {
         'custom-blue': {

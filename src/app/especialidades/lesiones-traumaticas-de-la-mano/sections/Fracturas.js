@@ -14,97 +14,195 @@ function Fracturas() {
           adecuadamente para evitar complicaciones.
         </p>
 
-        <h3 className='text-xl font-semibold mb-2'>
-          Tipos de Fracturas Comunes en la Mano
-        </h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Fractura del Hueso Escafoides:</strong> Común en la muñeca,
-            especialmente tras una caída sobre la mano extendida. En Albacete,
-            nuestro equipo puede evaluar y tratar esta fractura para prevenir
-            complicaciones a largo plazo.
-          </li>
-          <li>
-            <strong>Fractura de Metacarpo:</strong> Incluye fracturas del quinto
-            metacarpo, como la fractura de boxeador, que ocurre por golpes
-            directos. Ofrecemos tratamientos especializados en Albacete para
-            restaurar la funcionalidad de la mano.
-          </li>
-          <li>
-            <strong>Fractura de Falange:</strong> Afecta los huesos de los dedos
-            y puede ser causada por golpes o accidentes. En nuestra clínica en
-            Albacete, contamos con expertos en la reparación de fracturas de
-            falange.
-          </li>
-        </ul>
+        <div className='mb-6'>
+          <h3 className='text-2xl font-semibold mb-2 text-custom-green-light'>
+            Fracturas de Falanges (Dedos de la mano)
+          </h3>
+          <p className='text-gray-700 mb-2'>
+            Las fracturas de falanges, aunque comunes, requieren atención
+            cuidadosa para evitar complicaciones a largo plazo. Si no se tratan
+            adecuadamente, estas fracturas pueden causar rigideces y limitar el
+            movimiento de los dedos.
+          </p>
 
-        <h3 className='text-xl font-semibold mb-2'>Síntomas</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>Dolor intenso en la zona afectada.</li>
-          <li>Hinchazón y moretones alrededor de la fractura.</li>
-          <li>Deformidad visible en el hueso.</li>
-          <li>Incapacidad para mover el dedo o la mano normalmente.</li>
-          <li>Sensación de entumecimiento o debilidad en la mano.</li>
-        </ul>
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Cómo saber si me he roto una falange?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            El diagnóstico se realiza mediante examen físico y radiografías, que
+            permiten identificar el tipo y la ubicación de la fractura,
+            mostrando especial interés si afecta a la articulación.
+          </p>
 
-        <h3 className='text-xl font-semibold mb-2'>Diagnóstico</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Examen Clínico:</strong> Evaluación de la movilidad, dolor y
-            hinchazón en nuestra clínica de Albacete.
-          </li>
-          <li>
-            <strong>Radiografías:</strong> Para visualizar la fractura y
-            determinar su gravedad.
-          </li>
-          <li>
-            <strong>Tomografía Computarizada (TC):</strong> Para una imagen más
-            detallada de la fractura.
-          </li>
-          <li>
-            <strong>Resonancia Magnética (RM):</strong> Para evaluar daños en
-            tejidos blandos circundantes.
-          </li>
-        </ul>
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Tengo que operarme de una fractura de falange?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Se recomienda cirugía cuando la fractura es inestable, irreductible
+            o articular, y cuando no se puede lograr una reducción anatómica
+            adecuada con tratamiento conservador. Las fracturas desplazadas o
+            con alto riesgo de rigidez también suelen necesitar intervención
+            quirúrgica.
+          </p>
 
-        <h3 className='text-xl font-semibold mb-2'>Tratamiento</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Reposo e Inmovilización:</strong> Usar férula o yeso para
-            inmovilizar la mano y permitir la curación en nuestra clínica de
-            Albacete.
-          </li>
-          <li>
-            <strong>Medicamentos para el Dolor:</strong> Analgésicos y
-            antiinflamatorios para controlar el dolor y la inflamación.
-          </li>
-          <li>
-            <strong>Rehabilitación:</strong> Terapia física para restaurar la
-            movilidad y la fuerza de la mano. Ofrecemos programas de
-            rehabilitación personalizados en Albacete.
-          </li>
-          <li>
-            <strong>Tratamiento Quirúrgico:</strong> En casos graves, cirugía
-            para realinear los huesos y fijar los fragmentos con placas y
-            tornillos.
-          </li>
-        </ul>
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Qué cirugía es la adecuada para una fractura de falange?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Es esencial abordar cada fractura con precisión para asegurar una
+            recuperación óptima. Las fracturas menos graves se tratan con
+            inmovilización, a menudo utilizando una férula o sindactilia,
+            mientras que las más complejas pueden necesitar cirugía para alinear
+            correctamente los fragmentos óseos.
+          </p>
 
-        <h3 className='text-xl font-semibold mb-2'>Prevención</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            Utiliza equipo de protección adecuado durante actividades de alto
-            riesgo.
-          </li>
-          <li>
-            Realiza ejercicios de fortalecimiento y estiramiento para mantener
-            la salud ósea y articular.
-          </li>
-          <li>
-            Practica técnicas deportivas correctas para reducir el riesgo de
-            caídas y golpes.
-          </li>
-        </ul>
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Qué pronóstico y resultados esperamos en una fractura de falange?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Con una intervención adecuada, logramos restaurar la anatomía del
+            dedo, asegurar la estabilidad de la fractura y permitir una
+            movilización precoz. Esto ayuda a minimizar la rigidez y a mejorar
+            la función de la mano en el menor tiempo posible.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Cómo es la recuperación tras una fractura de falange?
+          </h4>
+          <p className='text-gray-700'>
+            Dependiendo de la técnica utilizada, la fisioterapia es clave para
+            recuperar la movilidad y funcionalidad del dedo afectado. La
+            recuperación variará en función del tipo de fractura, la
+            rehabilitación realizada y la actitud del paciente.
+          </p>
+        </div>
+
+        <section className='mb-8'>
+          <h3 className='text-2xl font-semibold mb-2 text-custom-green-light'>
+            Fracturas de Radio Distal (Muñeca)
+          </h3>
+          <p className='text-gray-700 mb-2'>
+            Las fracturas de radio distal son las más frecuentes en el miembro
+            superior. Pueden ser muy incapacitantes, especialmente si no se
+            tratan correctamente, ya que pueden limitar el movimiento y causar
+            dolor a largo plazo debido a consolidaciones en mala posición.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Cómo saber si me he roto la muñeca?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Tras una caída apoyando la mano, el paciente tendrá dolor importante
+            en la muñeca con una deformidad evidente. El diagnóstico se completa
+            principalmente con radiografías y, en casos complejos, se pueden
+            utilizar TAC para obtener una imagen más detallada.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Tengo que operarme de una fractura de muñeca?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Aunque en muchos casos no es necesario operar, la cirugía está
+            indicada cuando la fractura está desplazada o es inestable, o si no
+            se logra una adecuada reducción con métodos no quirúrgicos.
+            Pacientes jóvenes y activos suelen beneficiarse de la cirugía para
+            evitar deformidades que afecten la funcionalidad a largo plazo.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Qué cirugía es la adecuada para una fractura de radio distal?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Normalmente empleamos placas de fijación interna. Las placas volares
+            son el estándar para ofrecer una buena estabilidad, facilitando una
+            recuperación más rápida. En casos complejos con afectación
+            articular, asociamos la artroscopia de muñeca para reducir los
+            fragmentos que afectan a la articulación.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Qué pronóstico y resultados esperamos en una fractura de muñeca?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Con la cirugía logramos restaurar la alineación y la función de la
+            muñeca. Esto permitirá mover de forma precoz para evitar
+            complicaciones derivadas de la inmovilización, como rigidez, dolor y
+            distrofia.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Cómo es la recuperación tras una fractura de muñeca?
+          </h4>
+          <p className='text-gray-700'>
+            Si no es necesaria la cirugía, se realizará reducción de la
+            fractura, colocación de un yeso y controles radiográficos
+            periódicos. Si el tratamiento es la cirugía, se comenzará con
+            movilización precoz y rehabilitación para ganar funcionalidad y
+            fuerza.
+          </p>
+        </section>
+
+        <section>
+          <h3 className='text-2xl font-semibold mb-2 text-custom-green-light'>
+            Fracturas de Escafoides
+          </h3>
+          <p className='text-gray-700 mb-2'>
+            Las fracturas del escafoides afectan uno de los huesos del carpo en
+            la muñeca. Son la segunda fractura más frecuente del miembro
+            superior, y si no se tratan adecuadamente, pueden llevar a
+            complicaciones como pseudoartrosis y necrosis.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Cómo saber si me he roto el escafoides?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            El diagnóstico se realiza mediante la exploración física,
+            especialmente con dolor en la tabaquera anatómica. Las radiografías
+            en múltiples proyecciones confirman el diagnóstico. En ocasiones, se
+            utilizan resonancia magnética o TAC para detectar fracturas ocultas.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Tengo que operarme de una fractura de escafoides?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            La cirugía está indicada cuando la fractura presenta criterios de
+            inestabilidad o está desplazada. También se recomienda en fracturas
+            que no consoliden adecuadamente con tratamiento conservador.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Qué cirugía es la adecuada para una fractura de escafoides?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Utilizamos principalmente la fijación interna con tornillos para
+            garantizar la estabilidad y facilitar la consolidación del hueso.
+            Las técnicas mínimamente invasivas, como la percutánea, son comunes,
+            y en fracturas desplazadas, la artroscopia de muñeca puede ser
+            utilizada.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Qué pronóstico y resultados esperamos en una fractura de
+            escafoides?
+          </h4>
+          <p className='text-gray-700 mb-4'>
+            Los resultados suelen ser favorables, con una alta tasa de
+            consolidación y una pronta recuperación funcional. La inmovilización
+            posterior es corta, permitiendo al paciente volver a sus actividades
+            en un tiempo razonable.
+          </p>
+
+          <h4 className='text-lg font-semibold  mb-2'>
+            ¿Cómo es la recuperación tras una fractura de escafoides?
+          </h4>
+          <p className='text-gray-700'>
+            La recuperación es casi inmediata, permitiendo la movilización desde
+            el primer día y el regreso a las actividades cotidianas en un tiempo
+            razonable.
+          </p>
+        </section>
       </div>
     </section>
   )

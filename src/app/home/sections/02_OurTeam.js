@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import DoctorsGift from '/public/specialities/doctors.png'
+import DoctorsGift from '/public/specialities/doctors-bro.png'
 import Waves from '/public/home/svg.png'
 
 function OurTeam() {
@@ -10,7 +10,7 @@ function OurTeam() {
         className='absolute -top-[150px] w-full h-[150px]'
         alt=''
       />{' '}
-      <div className='max-w-screen-lg mx-auto lg:flex w-[90%]'>
+      <div className='max-w-screen-lg mx-auto lg:flex w-[90%] lg:items-center lg:gap-8'>
         <div className='lg:w-1/2'>
           <Image
             src={DoctorsGift}

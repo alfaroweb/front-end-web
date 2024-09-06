@@ -6,7 +6,7 @@ import WhiteBottomWaves from '/public/home/waves/white-bottom-waves-2.png'
 
 function Affiliations() {
   return (
-    <section className='bg-white'>
+    <section className='bg-white pb-[50px]'>
       <div className='w-[90%] mx-auto max-w-screen-lg '>
         <h2 className='text-3xl font-bold tracking-tighter md:text-4xl/tight text-center text-gray-800 '>
           Afiliaciones profesionales
@@ -87,10 +87,6 @@ function Affiliations() {
           </div>
         </div>
       </div>
-      <Image
-        src={WhiteBottomWaves}
-        className='h-[75px] w-full'
-      />
 
       {/* <div className='flex flex-col items-center md:flex-row md:justify-between mt-16'>
           <div className='max-w-[200px] h-[400px] flex flex-col items-center bg-white p-4'>

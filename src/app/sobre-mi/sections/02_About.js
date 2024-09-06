@@ -1,7 +1,7 @@
 function About() {
   return (
     <section className='w-full bg-white'>
-      <div className='grid gap-2 py-16 max-w-screen-lg mx-auto w-[90%]'>
+      <div className='grid gap-2 pt-16 pb-[34px] max-w-screen-lg mx-auto w-[90%]'>
         <h2 className='text-3xl font-bold tracking-tighter md:text-4xl/tight'>
           Acerca del Dr. Alfaro
         </h2>

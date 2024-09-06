@@ -11,7 +11,7 @@ function Hero() {
             Dr. Joaquín Alfaro
           </h2>
           <p className='text-white mb-4'>Traumatólogo</p>
-          <p className='md:text-xl/relaxed lg:text-base/relaxed  text-slate-300 mb-8 w-[90%]'>
+          <p className='md:text-xl/relaxed lg:text-base/relaxed text-slate-300 mb-4 w-[90%]'>
             Con una trayectoria sólida y un enfoque especializado, ofrecemos
             soluciones seguras y precisas para restaurar la funcionalidad y
             aliviar el dolor de tus manos. La experiencia y dedicación en cada

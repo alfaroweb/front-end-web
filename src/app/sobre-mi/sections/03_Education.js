@@ -4,14 +4,14 @@ import GrayBottomWaves from '/public/home/waves/white-bottom-waves.png'
 
 function Education() {
   return (
-    <section className='w-full'>
+    <section className='w-full bg-academic bg-cover'>
       <div className='relative'>
         <Image
           src={WhiteTopWaves}
           className='absolute h-[100px] w-full top-0  drop-shadow-[0_10px_4px_rgba(133,134,134,0.1)]'
           alt=''
         ></Image>
-        <div className='w-[90%] mx-auto max-w-screen-lg py-[150px] text-gray-800 space-y-4'>
+        <div className='w-[90%] mx-auto max-w-screen-lg py-[150px] text-white space-y-4'>
           <h2 className='text-3xl font-bold tracking-tighter md:text-4xl/tight text-center mb-8'>
             Formación Académica y Experiencia Profesional
           </h2>
