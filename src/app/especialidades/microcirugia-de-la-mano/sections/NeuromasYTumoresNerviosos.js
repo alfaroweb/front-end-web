@@ -1,74 +1,114 @@
-function NeuromasYTumoresNerviosos() {
+import Image from 'next/image'
+
+function NeuromasYTumoresNerviosos({ Book }) {
   return (
-    <section className='py-[50px]'>
-      <div className='w-[90%] mx-auto max-w-screen-lg'>
-        <h2 className='text-3xl tracking-wide text-center font-bold mb-4'>
+    <section
+      className='mx-auto mb-16 w-[90%] max-w-screen-lg'
+      aria-labelledby='neuromas-tumores'
+    >
+      <div className='mb-4 flex items-center gap-2'>
+        {' '}
+        <Image src={Book} height={24} />
+        <h2
+          id='neuromas-tumores'
+          className='text-2xl font-bold uppercase tracking-wide'
+        >
           Neuromas y Tumores Nerviosos
         </h2>
-        <p className='mb-4'>
-          Los neuromas son crecimientos benignos que se desarrollan en los
-          nervios, a menudo como resultado de lesiones o cirugías previas. Los
-          tumores nerviosos pueden ser benignos o malignos y requieren una
-          evaluación y tratamiento precisos para evitar complicaciones y
-          preservar la función nerviosa.
-        </p>
-
-        <h3 className='text-xl font-semibold mb-2'>
-          Tipos Comunes de Neuromas y Tumores Nerviosos
-        </h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Neuromas:</strong> Crecimientos en el nervio que pueden
-            causar dolor, sensibilidad excesiva y disfunción.
-          </li>
-          <li>
-            <strong>Neurofibromas:</strong> Tumores benignos formados por
-            células nerviosas y de soporte que pueden afectar el tejido
-            circundante.
-          </li>
-          <li>
-            <strong>Schwannomas:</strong> Tumores benignos que afectan las
-            células que recubren los nervios, comúnmente en el nervio radial.
-          </li>
-          <li>
-            <strong>Neuroblastomas:</strong> Tumores malignos raros que pueden
-            formarse en los nervios periféricos, generalmente en niños.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Diagnóstico</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Examen Físico:</strong> Evaluación de síntomas como dolor,
-            sensibilidad y debilidad.
-          </li>
-          <li>
-            <strong>Imágenes Diagnósticas:</strong> Resonancia Magnética (RM) o
-            Tomografía Computarizada (TC) para visualizar la extensión del
-            tumor.
-          </li>
-          <li>
-            <strong>Biopsia:</strong> Extracción de una muestra de tejido para
-            análisis histológico y determinar la naturaleza del tumor.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Tratamiento</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Cirugía:</strong> Extirpación del neuroma o tumor para
-            aliviar el dolor y restaurar la función nerviosa.
-          </li>
-          <li>
-            <strong>Radioterapia:</strong> Para tumores malignos o no resecables
-            para controlar el crecimiento.
-          </li>
-          <li>
-            <strong>Rehabilitación:</strong> Terapia física para recuperar la
-            fuerza y la funcionalidad después de la cirugía.
-          </li>
-        </ul>
       </div>
+
+      <p className='mb-4 text-base'>
+        Los <strong className='text-custom-green-light'>neuromas</strong> son
+        crecimientos anormales que suelen desarrollarse tras una{' '}
+        <strong className='text-custom-green-light'>lesión nerviosa</strong>,
+        mientras que los{' '}
+        <strong className='text-custom-green-light'>tumores nerviosos</strong>{' '}
+        pueden ser benignos (como los <em>schwannomas</em>) o, en raras
+        ocasiones, malignos.
+      </p>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Cómo saber si tengo un neuroma o un tumor nervioso?
+        </summary>
+        <p className='text-base'>
+          Si hemos tenido una{' '}
+          <strong className='text-custom-green-light'>
+            lesión nerviosa previa
+          </strong>{' '}
+          y comenzamos con dolor en la herida y calambres asociados, es posible
+          que se haya generado un
+          <strong className='text-custom-green-light'> neuroma</strong>. El
+          diagnóstico se realiza mediante examen físico y pruebas de imagen,
+          como ecografía o <em>resonancia magnética</em>, para evaluar el
+          tamaño, ubicación y características del neuroma. Las mismas pruebas se
+          realizarán para objetivar si puede existir un{' '}
+          <strong className='text-custom-green-light'>tumor nervioso</strong> en
+          pacientes sin una lesión nerviosa previa.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Tengo que operarme de un neuroma o tumor nervioso?
+        </summary>
+        <p className='text-base'>
+          La <strong className='text-custom-green-light'>cirugía</strong> es
+          necesaria si el{' '}
+          <strong className='text-custom-green-light'>neuroma</strong> causa
+          dolor, entumecimiento o pérdida de función en la mano. Igualmente,
+          para un{' '}
+          <strong className='text-custom-green-light'>tumor nervioso</strong>.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Qué técnica quirúrgica empleamos para solucionarlo?
+        </summary>
+        <p className='text-base'>
+          Es imprescindible realizar esta cirugía con microscopio y un control
+          <em> neurofisiológico</em> realizado por un especialista
+          neurofisiológico que nos ayudará a determinar la conducción del
+          nervio. La{' '}
+          <strong className='text-custom-green-light'>cirugía</strong> consiste
+          en la{' '}
+          <strong className='text-custom-green-light'>
+            resección del neuroma
+          </strong>{' '}
+          o <strong className='text-custom-green-light'>tumor nervioso</strong>,
+          intentando preservar siempre la mayor cantidad posible de{' '}
+          <strong className='text-custom-green-light'>función nerviosa</strong>.
+          En algunos casos donde el nervio no tiene continuidad, es necesario
+          realizar
+          <strong className='text-custom-green-light'>
+            {' '}
+            injertos nerviosos
+          </strong>
+          .
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Cómo es la recuperación de esta cirugía?
+        </summary>
+        <p className='text-base'>
+          La recuperación varía según el tipo de{' '}
+          <strong className='text-custom-green-light'>tumor</strong>, pero
+          generalmente se necesita tiempo para recuperar la{' '}
+          <strong className='text-custom-green-light'>función</strong>. En
+          cirugías de{' '}
+          <strong className='text-custom-green-light'>
+            resección de tumor
+          </strong>
+          , la recuperación será rápida; en cambio, en procesos de{' '}
+          <strong className='text-custom-green-light'>neuromas </strong>
+          que requieran{' '}
+          <strong className='text-custom-green-light'>injerto</strong>, los
+          tiempos pueden alargarse meses.
+        </p>
+      </details>
     </section>
   )
 }

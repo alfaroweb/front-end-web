@@ -4,19 +4,14 @@ async function LastPosts() {
   const { data } = await getData()
 
   return (
-    <section className='w-full mx-auto bg-white py-[50px]'>
-      <div className='w-[90%] mx-auto max-w-screen-xl'>
-        <h2 className='text-center text-3xl font-black mb-[50px]'>
+    <section className='mx-auto w-full bg-white py-[50px]'>
+      <div className='mx-auto w-[90%] max-w-screen-xl'>
+        <h2 className='mb-[50px] text-center text-3xl font-black'>
           Últimas noticias
         </h2>
-        <div className='grid grid-cols-[repeat(auto-fill,minmax(275px,1fr))] gap-8 place-content-center w-full'>
+        <div className='grid w-full grid-cols-[repeat(auto-fill,minmax(275px,1fr))] place-content-center gap-8'>
           {data
-            .map((article) => (
-              <PostCards
-                key={article.id}
-                article={article}
-              />
-            ))
+            .map((article) => <PostCards key={article.id} article={article} />)
             .slice(0, 4)}
         </div>
       </div>

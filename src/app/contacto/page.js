@@ -16,28 +16,31 @@ function page() {
   return (
     <main className='w-full'>
       <div className='w-full bg-white'>
-        <div className='w-[90%] mx-auto max-w-screen-xl flex py-[100px] flex-col gap-16 lg:gap-8 lg:flex-row'>
-          <div className='lg:w-2/3 w-full grid place-content-evenly'>
-            <h1 className='text-3xl font-bold text-gray-700'>
+        <div className='mx-auto flex w-[90%] max-w-screen-xl flex-col gap-16 py-[100px] lg:flex-row lg:gap-8'>
+          <div className='grid w-full place-content-evenly lg:w-2/3'>
+            <h1 className='text-3xl font-bold text-gray-800'>
               ¡Agenda tu Cita en Albacete! <br /> Atención Médica Personalizada
               para Ti
             </h1>
-            <p className='text-base/relaxed mx-auto text-gray-600 mt-2'>
+
+            <p className='mx-auto mt-2 text-base/relaxed text-gray-600'>
               ¿Buscas un servicio médico de confianza en Albacete? Estamos aquí
               para ayudarte. Nuestro equipo de profesionales altamente
               calificados se dedica a brindar atención médica de calidad,
               adaptada a tus necesidades. No esperes más para cuidar de tu
               salud.
             </p>
-            <p className='text-base/relaxed mx-auto text-gray-600 mt-2'>
+
+            <p className='mx-auto mt-2 text-center text-lg/relaxed text-gray-600'>
               <strong>Solicita tu cita hoy mismo</strong> y disfruta de una
-              atención rápida y eficiente. Nuestro consultorio en Albacete está
-              listo para recibirte con un trato cercano y profesional.
+              atención rápida y eficiente. <br />
+              <strong>Nuestro consultorio en Albacete</strong> está listo para
+              recibirte con un trato cercano y profesional.
             </p>
           </div>
-          <div className='lg:w-1/3 flex lg:justify-end w-full justify-center'>
-            <div className='w-[350px] h-[350px]  overflow-hidden relative'>
-              <div className='h-28 w-28 text-[rgba(53,159,211,0.3)] absolute z-0 left-1 top-1'>
+          <div className='flex w-full justify-center lg:w-1/3 lg:justify-end'>
+            <div className='relative h-[350px] w-[350px] overflow-hidden'>
+              <div className='absolute left-1 top-1 z-0 h-28 w-28 text-[rgba(53,159,211,0.3)]'>
                 <svg
                   id='patternId'
                   width='100%'
@@ -75,18 +78,19 @@ function page() {
                   />
                 </svg>
               </div>
+
               <Image
                 src={ContactImage}
-                className='w-full h-full object-cover rounded-tl-[40%] rounded-bl-[40%] rounded-br-[40%] relative'
+                className='relative h-full w-full rounded-bl-[40%] rounded-br-[40%] rounded-tl-[40%] object-cover'
               />
             </div>
           </div>
         </div>
       </div>
-      <div className='w-[90%] mx-auto max-w-screen-xl flex py-[100px] flex-col-reverse  gap-16 lg:gap-8 lg:flex-row'>
-        <div className='lg:w-1/3 flex lg:justify-start justify-center'>
-          <div className='w-[350px] h-[350px] overflow-hidden relative'>
-            <div className='h-28 w-28 text-[rgba(53,159,211,0.3)] absolute z-0 left-1 top-1'>
+      <div className='mx-auto flex w-[90%] max-w-screen-xl flex-col-reverse gap-16 py-[100px] lg:flex-row lg:gap-8'>
+        <div className='flex justify-center lg:w-1/3 lg:justify-start'>
+          <div className='relative h-[350px] w-[350px] overflow-hidden'>
+            <div className='absolute left-1 top-1 z-0 h-28 w-28 text-[rgba(53,159,211,0.3)]'>
               <svg
                 id='patternId'
                 width='100%'
@@ -101,13 +105,7 @@ function page() {
                     height='40'
                     patternTransform='scale(0.5) rotate(0)'
                   >
-                    <rect
-                      x='0'
-                      y='0'
-                      width='100%'
-                      height='100%'
-                      fill='none'
-                    />
+                    <rect x='0' y='0' width='100%' height='100%' fill='none' />
                     <path
                       d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'
                       strokeWidth='1'
@@ -124,21 +122,22 @@ function page() {
                 />
               </svg>
             </div>
+
             <Image
               src={BenefitsImage}
-              className='w-full h-full object-cover rounded-tl-[40%] rounded-bl-[40%] rounded-br-[40%] relative'
+              className='relative h-full w-full rounded-bl-[40%] rounded-br-[40%] rounded-tl-[40%] object-cover'
             />
           </div>
         </div>
-        <div className='lg:w-2/3 space-y-8'>
-          <h2 className='text-3xl font-bold  text-gray-700'>
+        <div className='space-y-8 lg:w-2/3'>
+          <h2 className='text-3xl font-bold text-gray-700'>
             Descubre los Beneficios de Elegir a los Cirujanos Más Expertos en
             Albacete: <br />
             ¡Tu Salud en las Mejores Manos!
           </h2>
 
-          <ul className='list-disc list-inside space-y-4 text-gray-800'>
-            <li className='font-semibold flex items-baseline gap-4'>
+          <ul className='list-inside list-disc space-y-4 text-gray-800'>
+            <li className='flex items-baseline gap-4 font-semibold'>
               {' '}
               <FontAwesomeIcon
                 icon={faUserDoctor}
@@ -148,7 +147,7 @@ function page() {
               />
               Cirujanos Expertos y Confiables
             </li>
-            <li className='font-semibold flex items-baseline gap-4'>
+            <li className='flex items-baseline gap-4 font-semibold'>
               <FontAwesomeIcon
                 icon={faMicroscope}
                 width={20}
@@ -157,7 +156,7 @@ function page() {
               />{' '}
               Tecnología Avanzada para Mayor Seguridad
             </li>
-            <li className='font-semibold flex items-baseline gap-4'>
+            <li className='flex items-baseline gap-4 font-semibold'>
               <FontAwesomeIcon
                 icon={faHandHoldingHand}
                 width={20}
@@ -167,7 +166,7 @@ function page() {
               Atención Personalizada y Cercana
             </li>
             {/* <li className='font-semibold'>Recuperación Rápida y Cómoda</li> */}
-            <li className='font-semibold flex items-baseline gap-4'>
+            <li className='flex items-baseline gap-4 font-semibold'>
               <FontAwesomeIcon
                 icon={faHospital}
                 width={20}
@@ -176,7 +175,7 @@ function page() {
               />{' '}
               Instalaciones Modernas y Accesibles
             </li>
-            <li className='font-semibold flex items-baseline gap-4'>
+            <li className='flex items-baseline gap-4 font-semibold'>
               <FontAwesomeIcon
                 icon={faNotesMedical}
                 width={20}
@@ -188,9 +187,9 @@ function page() {
           </ul>
         </div>
       </div>
-      <div className='w-full py-[50px] bg-white'>
-        <div className='flex w-[90%] mx-auto flex-col lg:flex-row'>
-          <div className='lg:w-1/2 flex items-center flex-col justify-center'>
+      <div className='w-full bg-white py-[50px]'>
+        <div className='mx-auto flex w-[90%] flex-col lg:flex-row'>
+          <div className='flex flex-col items-center justify-center lg:w-1/2'>
             <ContactForm />
           </div>
           <div className='overflow-hidden lg:w-1/2'>

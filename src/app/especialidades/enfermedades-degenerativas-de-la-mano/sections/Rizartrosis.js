@@ -1,89 +1,93 @@
-function Rizartrosis() {
+import Image from 'next/image'
+
+function Rizartrosis({ Book }) {
   return (
-    <section className='py-[50px]'>
-      <div className='w-[90%] mx-auto max-w-screen-lg'>
+    <section
+      className='mx-auto mb-16 w-[90%] max-w-screen-lg'
+      aria-labelledby='rizartrosis'
+    >
+      <div className='mb-4 flex items-center gap-2'>
+        {' '}
+        <Image src={Book} height={24} />
         <h2
-          id='rizartrosis-albacete'
-          className='text-2xl font-semibold mb-4'
+          id='rizartrosis'
+          className='text-2xl font-bold uppercase tracking-wide'
         >
-          Rizartrosis: Alivia el dolor en la base del pulgar
+          Rizartrosis
         </h2>
-        <p className='mb-4'>
-          La rizartrosis es un tipo de artrosis que afecta la base del pulgar.
-          Es común en personas mayores y puede causar dolor significativo y
-          dificultad para realizar tareas cotidianas. Nuestros especialistas en
-          traumatología de la mano en Albacete te ofrecen soluciones efectivas
-          para aliviar el dolor y recuperar la movilidad.
-        </p>
-
-        <h3 className='text-xl font-semibold mb-2'>
-          Síntomas de la Rizartrosis
-        </h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            Dolor intenso en la base del pulgar, especialmente al agarrar
-            objetos.
-          </li>
-          <li>
-            Hinchazón y rigidez en la articulación carpometacarpiana (CMC).
-          </li>
-          <li>
-            Debilidad en el pulgar, dificultando tareas diarias como abrir
-            puertas o escribir.
-          </li>
-          <li>
-            Deformidad progresiva del pulgar, afectando la apariencia de la
-            mano.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>
-          Diagnóstico de la Rizartrosis en Albacete
-        </h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Examen físico completo: </strong> Nuestros traumatólogos en
-            Albacete evaluarán el dolor, movilidad y fuerza de tu pulgar.
-          </li>
-          <li>
-            <strong>Radiografías: </strong> Para confirmar el desgaste del
-            cartílago y la formación de espolones óseos.
-          </li>
-          <li>
-            <strong>Resonancia magnética (RM): </strong> Para obtener imágenes
-            más detalladas de la articulación y los tejidos blandos.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>
-          Tratamiento de la Rizartrosis en Albacete
-        </h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Férulas personalizadas: </strong> Diseñadas por nuestros
-            terapeutas en Albacete para inmovilizar el pulgar y reducir el
-            dolor.
-          </li>
-          <li>
-            <strong>Terapia física: </strong> Ejercicios específicos para
-            fortalecer los músculos de la mano y mejorar la movilidad.
-          </li>
-          <li>
-            <strong>Infiltraciones: </strong> Aplicación de corticosteroides o
-            ácido hialurónico para aliviar la inflamación y el dolor.
-          </li>
-          <li>
-            <strong>Cirugía: </strong> En casos avanzados, nuestros cirujanos de
-            mano en Albacete pueden recomendar una intervención quirúrgica.
-          </li>
-        </ul>
-
-        <p>
-          En Albacete, te ofrecemos un tratamiento integral y personalizado para
-          la rizartrosis. ¡Contáctanos para agendar una consulta y recuperar la
-          funcionalidad de tu pulgar!
-        </p>
       </div>
+
+      <p className='mb-4'>
+        La rizartrosis es una artrosis que afecta la articulación
+        trapeciometacarpiana en la base del pulgar. Se manifiesta principalmente
+        con dolor, pérdida de fuerza de pinza y limitaciones en actividades
+        diarias, debido al desgaste del cartílago articular. Es una de las
+        artrosis más frecuentes del cuerpo humano, predominantemente en mujeres.
+      </p>
+
+      {/* Detalles colapsables para preguntas frecuentes */}
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Cómo saber si tengo rizartrosis?
+        </summary>
+        <p className=''>
+          El diagnóstico se basa en la evaluación clínica del dolor y la
+          funcionalidad del pulgar, junto con radiografías que muestran el grado
+          de desgaste articular. En casos avanzados, se observa deformidad de la
+          articulación.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Tengo que operarme de rizartrosis?
+        </summary>
+        <p className=''>
+          La cirugía se recomienda cuando el tratamiento conservador (ortesis,
+          ejercicios específicos, fisioterapia…) no alivia el dolor ni mejora la
+          funcionalidad. En casos de afectación severa o persistente, la
+          intervención quirúrgica es necesaria.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Qué cirugía es la adecuada para la rizartrosis?
+        </summary>
+        <p className=''>
+          Depende principalmente de la gravedad de cada caso. En pacientes con
+          rizartrosis leves, se realiza artroscopia. En pacientes con artrosis
+          más avanzadas, las prótesis trapeciometacarpianas han demostrado ser
+          una solución ideal, restaurando la movilidad del pulgar y recuperando
+          la fuerza de pinza del mismo, eliminando por supuesto el dolor.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Qué pronóstico y resultados esperamos tras una cirugía de
+          rizartrosis?
+        </summary>
+        <p className=''>
+          La cirugía reduce significativamente el dolor y mejora la
+          funcionalidad del pulgar. La mayoría de los pacientes intervenidos
+          quedan libres de dolor y pueden volver a sus actividades diarias
+          recuperando la fuerza y movilidad.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Cómo es la recuperación tras la cirugía de rizartrosis?
+        </summary>
+        <p className=''>
+          Tras la implantación de una prótesis, el paciente llevará un vendaje
+          durante 2 semanas, para posteriormente comenzar la rehabilitación,
+          centrada en ganar movilidad del pulgar y fuerza. En caso de
+          artroscopia o artroplastia con injerto tendinoso, la recuperación
+          incluye inmovilización durante dos semanas, seguida de rehabilitación.
+        </p>
+      </details>
     </section>
   )
 }

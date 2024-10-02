@@ -4,15 +4,24 @@ import LastPosts from './home/sections/06_LastPosts'
 import Doctor from './home/sections/04_Doctor'
 import OurTeam from './home/sections/02_OurTeam'
 import Testimonials from './home/sections/05_Testimonials'
+import WhiteTopWaves from '/public/home/waves/white-top-waves.webp'
+import WhiteBottomWaves from '/public/home/waves/white-bottom-waves.webp'
+import WhiteBottomWaves2 from '/public/home/waves/white-bottom-waves-2.webp'
 
 export default function Home() {
   return (
     <main className='w-full'>
       <Hero />
       <OurTeam />
-      <Specialties />
+      <Specialties
+        WhiteTopWaves={WhiteTopWaves}
+        WhiteBottomWaves={WhiteBottomWaves}
+      />
       <Doctor />
-      <Testimonials />
+      <Testimonials
+        WhiteTopWaves={WhiteTopWaves}
+        WhiteBottomWaves2={WhiteBottomWaves2}
+      />
     </main>
   )
 }

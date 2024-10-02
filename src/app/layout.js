@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${montserrat.className} grid grid-rows-[80px,1fr,auto] min-h-screen bg-[#e7e8e9] text-gray-800 relative`}
+        className={`${montserrat.className} relative grid min-h-screen grid-rows-[80px,1fr,auto] bg-[#e7e8e9] text-custom-black-light`}
       >
         <Header />
         {children}

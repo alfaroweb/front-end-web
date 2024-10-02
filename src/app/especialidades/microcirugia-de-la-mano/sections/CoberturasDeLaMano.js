@@ -1,67 +1,140 @@
-function CoberturasDeLaMano() {
+import Image from 'next/image'
+
+function CoberturasDeLaMano({ Book }) {
   return (
-    <section className='bg-white py-[50px]'>
-      <div className='w-[90%] mx-auto max-w-screen-lg'>
-        <h2 className='text-3xl tracking-wide text-center font-bold mb-4'>
+    <section
+      className='mx-auto mb-16 w-[90%] max-w-screen-lg'
+      aria-labelledby='coberturas-mano'
+    >
+      <div className='mb-4 flex items-center gap-2'>
+        {' '}
+        <Image src={Book} height={24} />
+        <h2
+          id='coberturas-mano'
+          className='text-2xl font-bold uppercase tracking-wide'
+        >
           Coberturas de la Mano
         </h2>
-        <p className='mb-4'>
-          Las coberturas de la mano son procedimientos quirúrgicos que se
-          realizan para cubrir áreas de pérdida de piel, tejido o músculo. Estas
-          coberturas pueden ser necesarias debido a lesiones traumáticas,
-          quemaduras o infecciones que han causado la pérdida de tejido.
-        </p>
-
-        <h3 className='text-xl font-semibold mb-2'>Tipos de Coberturas</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Injertos de Piel:</strong> Trasplante de piel de otra parte
-            del cuerpo del paciente para cubrir áreas dañadas.
-          </li>
-          <li>
-            <strong>Colgajos Cutáneos:</strong> Movilización de una sección de
-            piel y tejido subyacente para cubrir áreas de pérdida de tejido.
-          </li>
-          <li>
-            <strong>Reconstrucción Muscular:</strong> Uso de tejidos de otras
-            partes del cuerpo para reparar áreas que han perdido músculo o
-            funcionalidad.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Procedimiento</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Evaluación Inicial:</strong> Determinación del tipo de
-            cobertura necesario según el tamaño y la ubicación de la pérdida de
-            tejido.
-          </li>
-          <li>
-            <strong>Preparación del Área:</strong> Limpieza y preparación del
-            área receptora para la colocación del injerto o colgajo.
-          </li>
-          <li>
-            <strong>Transplante:</strong> Colocación del injerto de piel o
-            colgajo en el área afectada con técnicas de sutura precisas.
-          </li>
-          <li>
-            <strong>Cuidados Postoperatorios:</strong> Manejo del área cubierta
-            para asegurar la correcta integración y cicatrización del tejido.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Beneficios</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>Restauración de la apariencia y funcionalidad de la mano.</li>
-          <li>
-            Mejora de la calidad de vida al permitir la recuperación de
-            actividades diarias.
-          </li>
-          <li>
-            Reducción del riesgo de infecciones y complicaciones adicionales.
-          </li>
-        </ul>
       </div>
+
+      <p className='mb-4 text-base'>
+        La{' '}
+        <strong className='text-custom-green-light'>
+          cobertura de partes blandas
+        </strong>{' '}
+        en la mano, ya sea por un{' '}
+        <strong className='text-custom-green-light'>traumatismo</strong>,
+        <strong className='text-custom-green-light'> quemadura</strong> o{' '}
+        <strong className='text-custom-green-light'>tumor</strong>, implica la
+        reparación de tejidos dañados, utilizando
+        <strong className='text-custom-green-light'> injertos</strong> o{' '}
+        <strong className='text-custom-green-light'>colgajos</strong> para
+        cubrir zonas con pérdida de sustancia. Es crucial para prevenir{' '}
+        <strong className='text-custom-green-light'>rigideces</strong>,{' '}
+        <strong className='text-custom-green-light'>infecciones</strong> y
+        mejorar la funcionalidad de la mano lesionada.
+      </p>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Cómo saber si necesito una cobertura en la mano?
+        </summary>
+        <p className='text-base'>
+          El diagnóstico de una{' '}
+          <strong className='text-custom-green-light'>lesión</strong> que
+          requiere{' '}
+          <strong className='text-custom-green-light'>
+            cobertura de partes blandas{' '}
+          </strong>
+          se basa en la evaluación de la extensión del{' '}
+          <strong className='text-custom-green-light'>daño</strong>, la
+          exposición de estructuras como{' '}
+          <strong className='text-custom-green-light'>tendones</strong> o{' '}
+          <strong className='text-custom-green-light'>huesos</strong>, y la
+          viabilidad de los tejidos circundantes mediante examen físico.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Es necesaria una cirugía de cobertura de la mano?
+        </summary>
+        <p className='text-base'>
+          La <strong className='text-custom-green-light'>cirugía</strong> es
+          necesaria cuando hay{' '}
+          <strong className='text-custom-green-light'>
+            pérdida de sustancia
+          </strong>{' '}
+          con exposición de estructuras críticas como{' '}
+          <strong className='text-custom-green-light'>huesos</strong> o{' '}
+          <strong className='text-custom-green-light'>tendones</strong>. También
+          se indica en casos donde el tratamiento conservador podría provocar
+          complicaciones, como{' '}
+          <strong className='text-custom-green-light'>rigidez</strong> o{' '}
+          <strong className='text-custom-green-light'>infecciones</strong>.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Qué cirugía es la adecuada para la cobertura de la mano?
+        </summary>
+        <p className='text-base'>
+          Se utilizan técnicas como{' '}
+          <strong className='text-custom-green-light'>injertos de piel</strong>{' '}
+          o{' '}
+          <strong className='text-custom-green-light'>
+            colgajos pediculados
+          </strong>
+          , dependiendo de la localización y gravedad de la{' '}
+          <strong className='text-custom-green-light'>lesión</strong>. Estas
+          técnicas incluyen{' '}
+          <strong className='text-custom-green-light'>
+            colgajos neurovasculares
+          </strong>
+          ,{' '}
+          <strong className='text-custom-green-light'>
+            colgajos de flujo reverso
+          </strong>{' '}
+          y avances de{' '}
+          <strong className='text-custom-green-light'>colgajos locales</strong>.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Qué pronóstico y resultados esperamos tras una cobertura de mano?
+        </summary>
+        <p className='text-base'>
+          La <strong className='text-custom-green-light'>cirugía</strong>{' '}
+          permite una cobertura estable de la herida, mejora la cicatrización y
+          previene complicaciones. Además, asegura la preservación de la{' '}
+          <strong className='text-custom-green-light'>funcionalidad</strong> y
+          minimiza el riesgo de{' '}
+          <strong className='text-custom-green-light'>rigidez</strong> e
+          <strong className='text-custom-green-light'>infecciones</strong> en la
+          mano traumatizada.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold text-slate-900'>
+          ¿Cómo es la recuperación tras una cobertura de mano?
+        </summary>
+        <p className='text-base'>
+          La recuperación incluye{' '}
+          <strong className='text-custom-green-light'>
+            inmovilización temporal
+          </strong>{' '}
+          y <strong className='text-custom-green-light'>rehabilitación</strong>{' '}
+          para recuperar la{' '}
+          <strong className='text-custom-green-light'>movilidad</strong> y{' '}
+          <strong className='text-custom-green-light'>fuerza</strong> en la
+          mano. El proceso puede ser prolongado, y depende de la extensión de la{' '}
+          <strong className='text-custom-green-light'>lesión</strong> y del tipo
+          de cobertura utilizada.
+        </p>
+      </details>
     </section>
   )
 }

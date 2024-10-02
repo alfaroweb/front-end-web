@@ -1,23 +1,21 @@
 import Image from 'next/image'
-import WhiteTopWaves from '/public/home/waves/white-top-waves.avif'
-import WhiteBottomWaves from '/public/home/waves/white-bottom-waves-2.avif'
 import TestimonialCard from '../../components/TestimonialCard'
 import DotsBg from '@/app/components/DotsBg'
 
-function Testimonials() {
+function Testimonials({ WhiteTopWaves, WhiteBottomWaves2 }) {
   return (
-    <section className='text-gray-800 w-full relative h-max py-[100px] overflow-hidden'>
+    <section className='relative h-max w-full overflow-hidden py-[100px]'>
       <DotsBg />
       <Image
         src={WhiteTopWaves}
-        className='h-[75px] w-full absolute top-0 block drop-shadow-[0_10px_4px_rgba(133,134,134,0.1)]'
+        className='absolute top-0 block h-[75px] w-full drop-shadow-[0_10px_4px_rgba(133,134,134,0.1)]'
         alt=''
       />
-      <div className='mb-16 w-[90%] max-w-screen-xl mx-auto '>
-        <h2 className='p-4 font-black tracking-wide text-4xl/tight leading-none text-center text-gray-800'>
+      <div className='mx-auto mb-16 w-[90%] max-w-screen-lg'>
+        <h2 className='p-4 text-center text-4xl/tight font-black leading-none tracking-wide text-custom-green-dark'>
           Lo que nuestros pacientes dicen de nosotros
         </h2>
-        <p className='text-center text-gray-800'>
+        <p className='text-center'>
           Las historias de nuestros pacientes son el reflejo del compromiso y la
           dedicación con la que abordamos cada cirugía de la mano. A través de
           técnicas innovadoras y un enfoque personalizado, hemos ayudado a
@@ -29,12 +27,12 @@ function Testimonials() {
           excelencia.
         </p>
       </div>
-      <div className='w-[90%] mx-auto flex justify-center '>
+      <div className='mx-auto flex w-[90%] justify-center'>
         <TestimonialCard />
       </div>
       <Image
-        src={WhiteBottomWaves}
-        className='h-[200px] w-full absolute bottom-0 block drop-shadow-[0_-10px_4px_rgba(133,134,134,0.1)]'
+        src={WhiteBottomWaves2}
+        className='absolute bottom-0 block h-[200px] w-full drop-shadow-[0_-10px_4px_rgba(133,134,134,0.1)]'
         alt=''
       />
     </section>

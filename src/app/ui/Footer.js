@@ -3,13 +3,10 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <footer className='bg-gradient-to-r from-custom-green-light to-custom-green-dark text-center text-neutral-400 py-8 relative'>
+    <footer className='relative bg-gradient-to-r from-custom-green-light to-custom-green-dark py-8 text-center text-neutral-400'>
       <div className='flex justify-center'>
         {' '}
-        <Link
-          href='/'
-          className=''
-        >
+        <Link href='/' className=''>
           {/* <Image
             src={LogoInnoCleanSolar}
             className=' mx-auto h-auto w-[200px]'
@@ -27,16 +24,10 @@ function Footer() {
           </h5>
 
           <div className='mb-0 flex list-none flex-col'>
-            <Link
-              href='/nosotros'
-              className='text-slate-300 hover:text-white'
-            >
+            <Link href='/sobre-mi' className='text-slate-300 hover:text-white'>
               Sobre nosotros
             </Link>
-            <Link
-              href='/contacto'
-              className='text-slate-300 hover:text-white'
-            >
+            <Link href='/contacto' className='text-slate-300 hover:text-white'>
               Contacto
             </Link>
           </div>
@@ -47,7 +38,7 @@ function Footer() {
           <ul className='mb-0 list-none'>
             <li className=''>
               <a
-                href='https://www.linkedin.com/company/innoclean-solar-s-l/'
+                href='#'
                 className='text-slate-300 hover:text-white'
                 target='_blank'
                 rel='noreferrer'
@@ -62,18 +53,12 @@ function Footer() {
           <h5 className='mb-2.5 font-bold text-white'>Legal</h5>
           <ul className='mb-0 list-none'>
             <li>
-              <a
-                href='#!'
-                className='text-slate-300 hover:text-white'
-              >
+              <a href='#!' className='text-slate-300 hover:text-white'>
                 Política de privacidad
               </a>
             </li>
             <li>
-              <a
-                href='#!'
-                className='text-slate-300 hover:text-white'
-              >
+              <a href='#!' className='text-slate-300 hover:text-white'>
                 Términos y condiciones
               </a>
             </li>
@@ -83,7 +68,7 @@ function Footer() {
 
       <div className='mx-auto flex w-[90%] flex-col items-center justify-center border-t-[1px] border-slate-300 p-6 text-center'>
         <span className='text-slate-300'>
-          © 2024 InnoCleanSolar. Todos los derechos reservados.
+          © 2024 Cirugía de la mano. Todos los derechos reservados.
         </span>
       </div>
     </footer>

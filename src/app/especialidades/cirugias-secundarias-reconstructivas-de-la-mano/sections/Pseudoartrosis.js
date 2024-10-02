@@ -1,57 +1,92 @@
-function Pseudoartrosis() {
+import Image from 'next/image'
+
+function Pseudoartrosis({ Book }) {
   return (
-    <section className='bg-white py-[50px]'>
-      <div className='w-[90%] mx-auto max-w-screen-lg'>
-        <h2 className='text-3xl tracking-wide text-center font-bold mb-4'>
-          Pseudoartrosis
+    <section
+      className='mx-auto mb-16 w-[90%] max-w-screen-lg'
+      aria-labelledby='pseudoartrosis-escafoides'
+    >
+      <div className='mb-4 flex items-center gap-2'>
+        {' '}
+        <Image src={Book} height={24} />
+        <h2
+          id='pseudoartrosis-escafoides'
+          className='text-2xl font-bold uppercase tracking-wide'
+        >
+          Pseudoartrosis de Escafoides
         </h2>
-        <p className='mb-4'>
-          La pseudoartrosis ocurre cuando un hueso fracturado no logra sanar
-          adecuadamente y se forma una falsa articulación en el sitio de la
-          fractura. Esto puede causar dolor crónico, inestabilidad y disfunción
-          de la extremidad afectada.
-        </p>
-
-        <h3 className='text-xl font-semibold mb-2'>Causas y Síntomas</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>Fracturas mal alineadas o inestables.</li>
-          <li>Infecciones en el sitio de la fractura.</li>
-          <li>Deficiencia en el suministro de sangre al hueso fracturado.</li>
-          <li>
-            Dolor persistente, hinchazón y dificultad para mover la parte
-            afectada.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Tratamiento</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Revisión y Evaluación:</strong> Exámenes radiológicos para
-            confirmar la presencia de pseudoartrosis y determinar la extensión
-            del problema.
-          </li>
-          <li>
-            <strong>Cirugía Reconstructiva:</strong> Realización de una nueva
-            fijación ósea o injerto para promover la consolidación del hueso.
-          </li>
-          <li>
-            <strong>Rehabilitación:</strong> Terapia física para recuperar la
-            movilidad y fuerza después de la cirugía.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Beneficios</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            Restauración de la estabilidad y funcionalidad del hueso afectado.
-          </li>
-          <li>Reducción del dolor crónico y mejora de la calidad de vida.</li>
-          <li>
-            Recuperación de la capacidad para realizar actividades diarias con
-            normalidad.
-          </li>
-        </ul>
       </div>
+
+      <p className='mb-4'>
+        La pseudoartrosis de escafoides es la falta de consolidación de una
+        fractura del escafoides, un hueso del carpo, lo que provoca dolor y
+        pérdida de funcionalidad en la muñeca, llegando a un proceso
+        degenerativo y artrosis. Es una complicación frecuente cuando no se
+        diagnostica a tiempo o no se sigue el tratamiento adecuado.
+      </p>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Cómo se diagnostica una pseudoartrosis de escafoides?
+        </summary>
+        <p className=''>
+          El diagnóstico se realiza principalmente a través de radiografías y
+          tomografía computarizada (TC) para evaluar la anatomía del hueso y
+          resonancia magnética (RM) para valorar la vascularización del hueso.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Tengo que operarme de una pseudoartrosis de escafoides?
+        </summary>
+        <p className=''>
+          La intervención quirúrgica está indicada cuando se ha confirmado una
+          pseudoartrosis, pues si lo dejamos avanzar, habrá colapso de la
+          muñeca, deformidad del escafoides y degeneración articular.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Qué cirugía es la adecuada para una pseudoartrosis de escafoides?
+        </summary>
+        <p className=''>
+          Existen varias técnicas quirúrgicas según el tipo y la gravedad de la
+          pseudoartrosis. En nuestra clínica optamos por hacerlo de forma
+          artroscópica para minimizar las complicaciones de la cirugía. Es
+          preciso usar injerto de hueso obtenido del propio paciente. En casos
+          más severos es necesario un abordaje abierto y el uso de injertos
+          libres o vascularizados, dependiendo de si hay afectación de la
+          vascularización del hueso.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Qué pronóstico y resultados esperamos tras una cirugía de
+          pseudoartrosis de escafoides?
+        </summary>
+        <p className=''>
+          El objetivo es restaurar la anatomía y funcionalidad del escafoides
+          para prevenir la degeneración de la muñeca y el desarrollo de
+          artrosis. Cuando el hueso es viable, se consigue la consolidación en
+          la mayoría de los pacientes, con buenos resultados funcionales.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Cómo es la recuperación tras una cirugía de pseudoartrosis de
+          escafoides?
+        </summary>
+        <p className=''>
+          La recuperación incluye inmovilización con férulas durante 2 semanas y
+          posteriormente fisioterapia para restaurar la movilidad y fuerza en la
+          muñeca. La rehabilitación es clave para optimizar los resultados
+          quirúrgicos.
+        </p>
+      </details>
     </section>
   )
 }

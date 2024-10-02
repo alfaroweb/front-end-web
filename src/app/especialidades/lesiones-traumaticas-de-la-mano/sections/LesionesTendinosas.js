@@ -1,98 +1,105 @@
-function LesionesTendinosas() {
+import Image from 'next/image'
+
+function LesionesTendinosas({ Book }) {
   return (
-    <section className='bg-white'>
-      <div className='w-[90%] mx-auto max-w-screen-lg py-[50px]'>
-        <h2 className='text-3xl tracking-wide text-center font-bold mb-4'>
-          Lesiones Tendinosas
+    <section
+      className='mx-auto mb-16 w-[90%] max-w-screen-lg'
+      aria-labelledby='lesiones-tendinosas'
+    >
+      <div className='mb-4 flex items-center gap-2'>
+        {' '}
+        <Image src={Book} height={24} />
+        <h2
+          className='text-2xl font-bold uppercase tracking-wide'
+          id='lesiones-tendinosas'
+        >
+          LESIONES TENDINOSAS
         </h2>
-        <p className='mb-4'>
-          Las lesiones tendinosas en la mano se producen cuando los tendones que
-          conectan los músculos con los huesos se inflaman o dañan. En Albacete,
-          tratamos una variedad de lesiones tendinosas que pueden surgir de
-          actividades deportivas o repetitivas.
-        </p>
-
-        <h3 className='text-xl font-semibold mb-2'>
-          Tipos Comunes de Lesiones Tendinosas
-        </h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Tendinitis:</strong> Inflamación de un tendón debido al uso
-            excesivo o repetitivo. Común en deportes como el tenis o el
-            levantamiento de pesas.
-          </li>
-          <li>
-            <strong>Tendinosis:</strong> Degeneración crónica de un tendón
-            debido a estrés repetitivo.
-          </li>
-          <li>
-            <strong>Desgarros Tendinosos:</strong> Rotura parcial o total de un
-            tendón, que puede ocurrir por una lesión aguda o una tensión
-            excesiva.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Síntomas</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>Dolor en el área afectada, especialmente al mover la mano.</li>
-          <li>Hinchazón y sensibilidad en la zona del tendón.</li>
-          <li>Dificultad para mover los dedos o la mano debido al dolor.</li>
-          <li>Sensación de rigidez en el tendón.</li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Diagnóstico</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Examen Clínico:</strong> Evaluación de dolor, hinchazón y
-            rango de movimiento en nuestra clínica en Albacete.
-          </li>
-          <li>
-            <strong>Ecografía:</strong> Para visualizar el tendón y detectar
-            inflamación o desgarros.
-          </li>
-          <li>
-            <strong>Resonancia Magnética (RM):</strong> Para evaluar daños más
-            detallados en el tendón y los tejidos circundantes.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Tratamiento</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Reposo:</strong> Descanso del tendón afectado para permitir
-            la curación.
-          </li>
-          <li>
-            <strong>Aplicación de Hielo y Medicamentos:</strong> Para reducir la
-            inflamación y aliviar el dolor.
-          </li>
-          <li>
-            <strong>Terapia Física:</strong> Ejercicios de estiramiento y
-            fortalecimiento para recuperar la movilidad y fuerza del tendón.
-          </li>
-          <li>
-            <strong>Tratamiento Quirúrgico:</strong> En casos graves de
-            desgarros tendinosos, una cirugía puede ser necesaria para reparar
-            el tendón dañado.
-          </li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Prevención</h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            Realiza calentamiento y estiramientos adecuados antes de actividades
-            físicas.
-          </li>
-          <li>
-            Evita movimientos repetitivos excesivos y usa técnicas correctas
-            durante actividades.
-          </li>
-          <li>
-            Fortalece los músculos y tendones mediante ejercicios específicos
-            para reducir el riesgo de lesiones.
-          </li>
-        </ul>
       </div>
+
+      <p className='mb-4'>
+        Las lesiones de los tendones ocurren con frecuencia debido a su
+        localización superficial en la muñeca, mano y dedos, lo que los hace
+        vulnerables. Pueden producirse por heridas leves o traumas severos, y
+        pueden involucrar pérdida de tejido y fracturas. Es crucial conocer bien
+        la anatomía de los tendones para diagnosticar y tratar adecuadamente
+        estas lesiones, ya que pueden causar deformidades y pérdida funcional
+        significativa.
+      </p>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Cómo saber si me he seccionado un tendón?
+        </summary>
+        <p className=''>
+          Llegaremos al diagnóstico principalmente con la clínica y una
+          exploración adecuada. En algunos casos puede ser muy útil realizar una
+          ecografía en la consulta para localizar los cabos tendinosos, que
+          según en qué zona se haya producido la sección, pueden retraerse. Es
+          importante identificar la extensión de la lesión tendinosa y posibles
+          complicaciones asociadas, como fracturas o daño neurovascular.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Tengo que operarme de una lesión tendinosa?
+        </summary>
+        <p className=''>
+          Ante una herida incisocontusa cerca de zona tendinosa, es
+          imprescindible su exploración ante la posibilidad de encontrar
+          lesiones parciales que podrían pasar desapercibidas y precisan
+          suturarse. Las lesiones totales son más evidentes y prácticamente
+          todas ellas precisan reparación quirúrgica para evitar complicaciones
+          como deformidades permanentes y limitaciones funcionales.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Qué cirugía es la adecuada para una sección tendinosa?
+        </summary>
+        <p className=''>
+          Existen numerosas y diferentes técnicas de reparación que usaremos en
+          función de la localización y del tipo de la lesión. Están indicadas
+          suturas directas, reinserciones o técnicas específicas para corregir
+          la deformidad si ya está establecida. Se han demostrado suturas que
+          ofrecen mayor resistencia para poder comenzar una rehabilitación
+          temprana, pues esta será la clave de una buena recuperación.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Qué pronóstico y resultados esperamos en una lesión tendinosa?
+        </summary>
+        <p className=''>
+          El objetivo de la cirugía es alcanzar una restauración completa de la
+          función de la mano, aunque en algunas ocasiones es difícil según la
+          localización y el tipo de lesión. El principal caballo de batalla a
+          combatir son las adherencias que produce la cicatrización tendinosa,
+          impidiendo el deslizamiento del tendón y provocando rigidez en el
+          dedo. Una buena rehabilitación y terapia ocupacional, junto a una
+          colaboración del paciente, nos ayudará a conseguir el mejor resultado
+          funcional posible.
+        </p>
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Cómo es la recuperación tras una lesión tendinosa?
+        </summary>
+        <p className=''>
+          La recuperación incluye inmovilización inicial, generalmente con una
+          férula, seguida de rehabilitación temprana para prevenir rigideces y
+          adherencias. Los ejercicios controlados permiten recuperar la
+          movilidad sin poner en riesgo la sutura. La fisioterapia es clave para
+          lograr un buen resultado funcional, con un protocolo que puede durar
+          de 4 a 6 semanas o más, según la complejidad de la lesión y la cirugía
+          realizada. Los tendones flexores necesitan una recuperación mayor que
+          los tendones extensores.
+        </p>
+      </details>
     </section>
   )
 }

@@ -25,7 +25,7 @@ const TestimonialCard = () => {
   }
 
   return (
-    <div className='w-full max-w-md py-4  bg-white rounded-lg shadow-md overflow-hidden max-h-max relative '>
+    <div className='relative max-h-max w-full max-w-md overflow-hidden rounded-lg bg-white py-4 shadow-md'>
       {/* Testimonios */}
       <div
         className='flex transition-transform duration-500 ease-in-out'
@@ -34,18 +34,21 @@ const TestimonialCard = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className='min-w-full text-center flex flex-col justify-between items-center space-y-2'
+            className='flex min-w-full flex-col items-center justify-between space-y-2 text-center'
           >
             <img
               src='https://source.unsplash.com/random/100x100?4'
               alt=''
-              className='w-20 h-20 rounded-full bg-gray-500'
+              className='h-20 w-20 rounded-full bg-gray-500'
             />
-            <blockquote className='max-w-lg text-lg italic font-medium text-center w-[90%]'>
+
+            <blockquote className='w-[90%] max-w-lg text-center text-lg font-medium italic'>
               {testimonial.text}
             </blockquote>
-            <div className='text-center text-gray-600 w-[90%] mx-auto'>
+
+            <div className='mx-auto w-[90%] text-center text-gray-600'>
               <p>{testimonial.author}</p>
+
               <p>CEO of Company Co.</p>
             </div>
           </div>
@@ -53,12 +56,12 @@ const TestimonialCard = () => {
       </div>
 
       {/* Puntos de Navegación */}
-      <div className='flex justify-center mt-4'>
+      <div className='mt-4 flex justify-center'>
         {testimonials.map((_, index) => (
           <button
             key={index}
             onClick={() => handleTestimonialChange(index)}
-            className={`h-3 w-3 rounded-full mx-2 focus:outline-none z-10 ${
+            className={`z-10 mx-2 h-3 w-3 rounded-full focus:outline-none ${
               currentIndex === index ? 'bg-custom-green-light' : 'bg-gray-300'
             }`}
           ></button>

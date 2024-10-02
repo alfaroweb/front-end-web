@@ -6,8 +6,8 @@ import Secot from '/public/affiliations/secot.png'
 function Affiliations() {
   return (
     <section className='bg-white pb-[50px]'>
-      <div className='w-[90%] mx-auto max-w-screen-lg '>
-        <h2 className='text-3xl font-bold tracking-tighter md:text-4xl/tight text-center text-gray-800 '>
+      <div className='mx-auto w-[90%] max-w-screen-lg'>
+        <h2 className='text-center text-3xl font-bold tracking-tighter md:text-4xl/tight'>
           Afiliaciones profesionales
         </h2>
         <p className='mt-2'>
@@ -18,12 +18,12 @@ function Affiliations() {
           las siguientes:
         </p>
 
-        <div className='flex flex-wrap w-full'>
-          <div className='grid md:grid-cols-[150px,1fr] mx-auto mt-8 gap-8 rounded-lg border p-6 border-custom-green-light border-opacity-25 '>
-            <div className='place-content-center w-[150px] mx-auto'>
+        <div className='flex w-full flex-wrap'>
+          <div className='mx-auto mt-8 grid gap-8 rounded-lg border border-custom-green-light border-opacity-25 p-6 md:grid-cols-[150px,1fr]'>
+            <div className='mx-auto w-[150px] place-content-center'>
               <Image
                 src={Scmcot}
-                className='object-cover w-[150px] filter grayscale hover:filter-none'
+                className='w-[150px] object-cover grayscale filter hover:filter-none'
               />
             </div>
             <div className='place-content-center'>
@@ -43,11 +43,11 @@ function Affiliations() {
             </div>
           </div>
 
-          <div className='grid md:grid-cols-[150px,1fr] mx-auto mt-16 gap-8 rounded-lg border p-6 border-custom-green-light border-opacity-25'>
-            <div className='place-content-center w-[150px] mx-auto'>
+          <div className='mx-auto mt-16 grid gap-8 rounded-lg border border-custom-green-light border-opacity-25 p-6 md:grid-cols-[150px,1fr]'>
+            <div className='mx-auto w-[150px] place-content-center'>
               <Image
                 src={Secma}
-                className='object-cover w-full filter grayscale hover:filter-none '
+                className='w-full object-cover grayscale filter hover:filter-none'
               />
             </div>
             <div className='place-content-center'>
@@ -64,11 +64,11 @@ function Affiliations() {
             </div>
           </div>
 
-          <div className='grid md:grid-cols-[150px,1fr] mx-auto mt-16 gap-8 rounded-lg border p-6 border-custom-green-light border-opacity-25'>
-            <div className='place-content-center w-[200px] md:w-auto mx-auto'>
+          <div className='mx-auto mt-16 grid gap-8 rounded-lg border border-custom-green-light border-opacity-25 p-6 md:grid-cols-[150px,1fr]'>
+            <div className='mx-auto w-[200px] place-content-center md:w-auto'>
               <Image
                 src={Secot}
-                className='object-cover filter grayscale hover:filter-none'
+                className='object-cover grayscale filter hover:filter-none'
               />
             </div>
             <div className='place-content-center'>
@@ -86,43 +86,6 @@ function Affiliations() {
           </div>
         </div>
       </div>
-
-      {/* <div className='flex flex-col items-center md:flex-row md:justify-between mt-16'>
-          <div className='max-w-[200px] h-[400px] flex flex-col items-center bg-white p-4'>
-            <div className='w-[200px] h-[200px] flex items-center justify-center'>
-              <Image
-                src={Scmcot}
-                className='object-cover'
-              />
-            </div>
-
-            <p>
-              Miembro de la Sociedad Castellano-Manchega de Cirugía Ortopédica y
-              Traumatología (SCMCOT)
-            </p>
-          </div>
-          <div className='max-w-[200px] h-[400px] h-[400px]flex flex-col items-center'>
-            <div className='w-[200px] h-[200px] flex items-center justify-center'>
-              <Image
-                src={Secma}
-                className='object-cover'
-              />
-            </div>
-            <p>Sociedad Española de Cirugía de Mano (SECMA) </p>
-          </div>
-          <div className='max-w-[200px] h-[400px] flex flex-col items-center'>
-            <div className='w-[200px] h-[200px] flex items-center justify-center'>
-              <Image
-                src={Secot}
-                className='object-cover'
-              />
-            </div>
-            <p>
-              Miembro de la Sociedad Castellano-Manchega de Cirugía Ortopédica y
-              Traumatología (SCMCOT)
-            </p>
-          </div>
-        </div> */}
     </section>
   )
 }

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Hero from './sections/01_Hero'
 import About from './sections/02_About'
 import Education from './sections/03_Education'
@@ -5,17 +6,27 @@ import Specialities from './sections/04_Specialities'
 import PhilosophyAndAffiliations from './sections/05_PhilosophyAndAffiliations'
 import { ContactForm } from '@/app/components/ContactForm'
 import Affiliations from './sections/Affiliations'
+import WhiteTopWaves from '/public/home/waves/white-top-waves.webp'
+import WhiteBottomWaves from '/public/home/waves/white-bottom-waves.webp'
+import GrayTopWaves from '/public/home/waves/gray-top-waves.webp'
+import GrayBottomWaves from '/public/home/waves/gray-bottom-waves.webp'
 
 function page() {
   return (
-    <main className='w-full mx-auto'>
+    <main className='mx-auto w-full'>
       <Hero />
       <About />
-      <Education />
+      <Education
+        WhiteTopWaves={WhiteTopWaves}
+        WhiteBottomWaves={WhiteBottomWaves}
+      />
       <Affiliations />
-      <Specialities />
-      <PhilosophyAndAffiliations />
-      <section className='bg-white'>
+      <Specialities WhiteTopWaves={WhiteTopWaves} />
+      <PhilosophyAndAffiliations
+        GrayTopWaves={GrayTopWaves}
+        WhiteBottomWaves={WhiteBottomWaves}
+      />
+      <section className='relative bg-white'>
         <ContactForm />
       </section>
     </main>
@@ -23,27 +34,3 @@ function page() {
 }
 
 export default page
-
-function AwardIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
-      strokeWidth='2'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-    >
-      <path d='m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526' />
-      <circle
-        cx='12'
-        cy='8'
-        r='6'
-      />
-    </svg>
-  )
-}

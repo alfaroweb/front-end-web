@@ -11,7 +11,7 @@ export default function Header() {
   }
 
   return (
-    <header className='header sticky top-0 flex h-[80px] items-center bg-gradient-to-r from-custom-green-light to-custom-green-dark z-[9998]'>
+    <header className='header sticky top-0 z-[9998] flex h-[80px] items-center bg-gradient-to-r from-custom-green-light to-custom-green-dark'>
       <DesktopNav
         showMovilMenu={showMovilMenu}
         setShowMovilMenu={setShowMovilMenu}

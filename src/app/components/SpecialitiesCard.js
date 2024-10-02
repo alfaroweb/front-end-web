@@ -2,18 +2,15 @@ import Link from 'next/link'
 
 function SpecialitiesCard({ specialitie }) {
   return (
-    <Link
-      href={specialitie.url}
-      className=''
-    >
+    <Link href={specialitie.url} className=''>
       <article
-        className={`px-2 py-4 rounded-xl text-custom-black-light w-full flex flex-col items-center justify-between group-hover:text-white h-[110px] relative bg-white font-bold  group transition-colors duration-200 ease-in-out  overflow-hidden`}
+        className={`group relative flex h-[110px] w-full flex-col items-center justify-between overflow-hidden rounded-xl bg-white px-2 py-4 font-bold text-custom-black-light transition-colors duration-200 ease-in-out group-hover:text-white`}
       >
-        <h3 className='text-md text-center font-bold group-hover:text-white z-20'>
+        <h3 className='text-md z-20 text-center font-bold group-hover:text-white'>
           {specialitie.title}
         </h3>
 
-        <p className='text-custom-green-light group-hover:text-white z-20'>
+        <p className='z-20 text-custom-green-light group-hover:text-white'>
           Leer más
         </p>
 
@@ -28,7 +25,7 @@ function SpecialitiesCard({ specialitie }) {
           </li>
         ))}
       </ul> */}
-        <div className='absolute left-0 top-0 w-full h-full bg-gradient-to-r from-custom-green-light to-custom-green-dark -translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-10'>
+        <div className='absolute left-0 top-0 z-10 h-full w-full -translate-y-[100%] bg-gradient-to-r from-custom-green-light to-custom-green-dark transition-transform duration-300 ease-in-out group-hover:translate-y-0'>
           {' '}
         </div>
       </article>

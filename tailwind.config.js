@@ -9,9 +9,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-bg':
-          "linear-gradient( rgba(52,53,54,0.8),rgba(29,54,61,1)), url('/home/hero-bg.avif')",
+          "linear-gradient( rgba(52,53,54,0.8),rgba(29,54,61,1)), url('/home/hero-bg.webp')",
         'specialities-bg':
-          "linear-gradient( rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/home/specialities.avif')",
+          "linear-gradient( rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/home/specialities.webp')",
         'doctor-bg':
           "linear-gradient( rgba(52,53,54, 0.9), rgba(52,53,54,0.8)), url('/home/doctor-bg.png')",
         'lesiones-traumaticas':
@@ -20,11 +20,12 @@ module.exports = {
           "linear-gradient( rgba(53,159,211,0.8), rgba(53,159,211,0.7)), url('/specialities/enfermedades-degenerativas.jpg')",
         'lesiones-deportivas':
           "linear-gradient( rgba(53,159,211, 0.8), rgba(53,159,211,0.7)), url('/specialities/lesiones-deportivas.png')",
+        'abstract-vector': "url('/home/bg-custom.png')",
         shape: "url('/shape.svg')",
         philosophy:
-          "linear-gradient(rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/home/aboutme/patient.avif')",
+          "linear-gradient(rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/aboutme/patient.webp')",
         academic:
-          "linear-gradient(rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/home/aboutme/academic.avif')"
+          "linear-gradient(rgba(52,53,54,0.8),rgba(29,54,61,0.7)), url('/aboutme/academic.webp')"
       },
       colors: {
         'custom-blue': {

@@ -1,34 +1,29 @@
 import Image from 'next/image'
 import { specialities } from '../data/data'
-import WavesBottom from '/public/home/waves/white-bottom-waves.avif'
 import SpecialitiesCard from '../../components/SpecialitiesCard'
-import WavesTop from '/public/home/waves/white-top-waves.avif'
 
-function Specialties() {
+function Specialties({ WhiteTopWaves, WhiteBottomWaves }) {
   return (
-    <section className='mx-auto relative bg-specialities-bg bg-cover min-h-max'>
+    <section className='relative mx-auto min-h-max bg-specialities-bg bg-cover'>
       <Image
-        src={WavesTop}
-        className='h-[150px] w-full absolute top-0 drop-shadow-[0_10px_7px_rgba(1,1,1,0.3)] block'
+        src={WhiteTopWaves}
+        className='absolute top-0 block h-[150px] w-full drop-shadow-[0_10px_7px_rgba(1,1,1,0.3)]'
         alt=''
       />
-      <div className='flex min-h-max py-[175px] flex-col-reverse lg:flex-row mx-auto w-[90%] max-w-screen-xl gap-8'>
+      <div className='mx-auto flex min-h-max w-[90%] max-w-screen-xl flex-col-reverse gap-8 py-[175px] lg:flex-row'>
         <div className='lg:w-1/2'>
-          <div className='grid md:grid-cols-2 gap-2'>
+          <div className='grid gap-2 md:grid-cols-2'>
             {specialities.map((specialitie, index) => (
-              <SpecialitiesCard
-                key={index}
-                specialitie={specialitie}
-              />
+              <SpecialitiesCard key={index} specialitie={specialitie} />
             ))}
           </div>
         </div>
-        <div className='lg:w-1/2 lg:flex lg:items-center lg:flex-col lg:justify-center'>
+        <div className='text-white lg:flex lg:w-1/2 lg:flex-col lg:items-center lg:justify-center'>
           {' '}
-          <h2 className='text-3xl font-bold tracking-wide md:text-4xl/tight text-center p-4 text-white [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)]'>
+          <h2 className='p-4 text-center text-3xl font-bold tracking-wide [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)] md:text-4xl/tight'>
             Nuestras especialidades
           </h2>
-          <p className='text-base/relaxed text-center mx-auto text-white'>
+          <p className='mx-auto text-center text-base/relaxed'>
             En nuestra clínica en Albacete, nos especializamos en cirugía de la
             mano, ofreciendo tratamientos avanzados para lesiones traumáticas,
             enfermedades degenerativas, deformidades de los dedos, y más.
@@ -41,8 +36,8 @@ function Specialties() {
       </div>
 
       <Image
-        src={WavesBottom}
-        className='h-[150px] w-full absolute bottom-0 block  drop-shadow-[0_-10px_7px_rgba(1,1,1,0.3)]'
+        src={WhiteBottomWaves}
+        className='absolute bottom-0 block h-[150px] w-full drop-shadow-[0_-10px_7px_rgba(1,1,1,0.3)]'
         alt=''
       />
     </section>

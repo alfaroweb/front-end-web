@@ -1,56 +1,71 @@
-function FactoresDeCrecimiento() {
+import Image from 'next/image'
+
+function FactoresDeCrecimiento({ Book }) {
   return (
-    <section className='bg-white py-[50px]'>
-      <div className='w-[90%] mx-auto max-w-screen-lg'>
-        <h2 className='text-3xl tracking-wide text-center font-bold mb-4'>
-          Factores de Crecimiento
+    <section
+      className='mx-auto mb-16 w-[90%] max-w-screen-lg'
+      aria-labelledby='factores-de-crecimiento'
+    >
+      <div className='mb-4 flex items-center gap-2'>
+        {' '}
+        <Image src={Book} height={24} />
+        <h2
+          id='factores-de-crecimiento'
+          className='text-2xl font-bold uppercase tracking-wide'
+        >
+          Factores de crecimiento
         </h2>
-        <p className='mb-4'>
-          Los factores de crecimiento son proteínas naturales que juegan un
-          papel crucial en el proceso de curación y regeneración de los tejidos.
-          En la medicina deportiva y de rehabilitación de la mano, se utilizan
-          inyecciones de plasma rico en plaquetas (PRP), que contiene una alta
-          concentración de factores de crecimiento, para promover la curación de
-          tendinopatías, lesiones musculares y del dedo en resorte.
-        </p>
-
-        <h3 className='text-xl font-semibold mb-2'>
-          Beneficios del Tratamiento con Factores de Crecimiento
-        </h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>Promoción de la regeneración de tejidos dañados.</li>
-          <li>Reducción de la inflamación y el dolor crónico.</li>
-          <li>Aceleración de la recuperación tras lesiones deportivas.</li>
-          <li>Reducción de la necesidad de cirugía en algunos casos.</li>
-        </ul>
-
-        <h3 className='text-xl font-semibold mb-2'>Procedimiento</h3>
-        <p className='mb-4'>
-          El procedimiento de PRP implica la extracción de una pequeña cantidad
-          de sangre del paciente, que luego se centrifuga para concentrar las
-          plaquetas ricas en factores de crecimiento. Esta concentración se
-          inyecta en la zona afectada bajo guía ecográfica para asegurar la
-          precisión.
-        </p>
-
-        <h3 className='text-xl font-semibold mb-2'>
-          Recuperación y Cuidados Posteriores
-        </h3>
-        <ul className='list-disc ml-6 mb-4'>
-          <li>
-            <strong>Reposo Relativo:</strong> Evitar actividades intensas
-            durante las primeras semanas tras la inyección.
-          </li>
-          <li>
-            <strong>Terapia Física:</strong> Iniciar ejercicios de
-            rehabilitación según la recomendación del médico.
-          </li>
-          <li>
-            <strong>Seguimiento Médico:</strong> Controlar la evolución de la
-            recuperación y ajustar el tratamiento si es necesario.
-          </li>
-        </ul>
       </div>
+
+      <p className='mb-4'>
+        El plasma rico en plaquetas (PRP) es una técnica biológica utilizada
+        para promover la reparación de los tejidos y retrasar la necesidad de
+        cirugías invasivas. Consiste en la obtención de una muestra de sangre
+        del propio paciente, la cual es procesada para concentrar las plaquetas
+        y sus factores de crecimiento, que son clave en la reparación de
+        tejidos, la reducción de la inflamación y el alivio del dolor.
+      </p>
+
+      {/* Detalles colapsables para preguntas frecuentes */}
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿En qué consiste el tratamiento?
+        </summary>
+        <p className=''>
+          El proceso para realizar una infiltración de PRP implica los
+          siguientes pasos:
+        </p>
+        <ol className='list-decimal pl-5'>
+          <li>
+            <strong>Extracción de sangre:</strong> Se extrae una pequeña
+            cantidad de sangre del paciente bajo condiciones de asepsia.
+          </li>
+          <li>
+            <strong>Centrifugado:</strong> La muestra de sangre se somete a un
+            proceso de centrifugación para separar sus componentes y obtener el
+            plasma con una alta concentración de plaquetas.
+          </li>
+          <li>
+            <strong>Inyección del PRP:</strong> El plasma rico en plaquetas se
+            inyecta directamente en la zona afectada para acelerar el proceso de
+            reparación.
+          </li>
+        </ol>
+        Este procedimiento es seguro, ya que se utiliza la propia sangre del
+        paciente, lo que elimina el riesgo de rechazo o reacciones adversas.
+      </details>
+
+      <details className='mb-4 cursor-pointer'>
+        <summary className='mb-2 text-lg font-semibold'>
+          ¿Cómo es la recuperación?
+        </summary>
+        <p className=''>
+          El tratamiento con PRP suele ser mínimamente invasivo y no requiere
+          tiempo de recuperación prolongado. Sin embargo, es posible que el
+          paciente deba evitar actividades físicas intensas durante unos días
+          para permitir una adecuada recuperación.
+        </p>
+      </details>
     </section>
   )
 }

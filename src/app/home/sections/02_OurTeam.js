@@ -1,36 +1,42 @@
 import Image from 'next/image'
-import DoctorsGift from '/public/specialities/Doctors-bro.avif'
-import Waves from '/public/home/svg.avif'
+import DoctorsGift from '/public/home/Doctors-bro.webp'
+import Waves from '/public/home/svg.webp'
 
 function OurTeam() {
   return (
-    <section className='bg-white relative z-10'>
+    <section className='relative z-10 bg-white'>
       <Image
         src={Waves}
-        className='absolute -top-[150px] w-full h-[150px]'
+        className='absolute -top-[150px] h-[150px] w-full'
         alt=''
       />{' '}
-      <div className='max-w-screen-lg mx-auto lg:flex w-[90%] lg:items-center lg:gap-8'>
+      <div className='mx-auto w-[90%] max-w-screen-lg lg:flex lg:items-center lg:gap-8'>
         <div className='lg:w-1/2'>
           <Image
             src={DoctorsGift}
-            className='max-w-[300px] mx-auto lg:max-w-full'
+            className='mx-auto max-w-[300px] lg:max-w-full'
             alt=''
           />
         </div>
 
         <div className='lg:w-1/2'>
-          <h2 className='font-bold tracking-tighter text-3xl/tight text-center p-4'>
+          <h2 className='p-4 text-center text-3xl/tight font-bold tracking-tighter text-custom-green-dark'>
             Confía en nuestro equipo experto y tecnología avanzada para tu
             cuidado médico completo.
           </h2>
-          <p className='text-base/relaxed text-gray-500 text-center'>
-            Descubre nuestra clínica médica líder en Albacete, donde encontrarás
-            una amplia variedad de especialidades diseñadas para cubrir todas
-            tus necesidades de atención médica. Nuestro equipo altamente
-            capacitado y nuestra tecnología de punta se unen para ofrecerte un
-            cuidado médico integral y de calidad excepcional. Bienvenido a un
-            lugar donde tu salud es nuestra prioridad absoluta.
+          <p className='text-center text-base/relaxed'>
+            Descubre nuestra{' '}
+            <strong className='text-custom-green-light'>
+              clínica médica líder en Albacete
+            </strong>
+            , donde encontrarás una amplia variedad de especialidades diseñadas
+            para cubrir todas tus necesidades de atención médica. Nuestro equipo
+            altamente capacitado y nuestra tecnología de punta se unen para
+            ofrecerte un cuidado médico integral y de calidad excepcional.{' '}
+            <br />
+            <span className='text-lg font-bold text-custom-green-light'>
+              ¡Tu salud es nuestra prioridad absoluta!
+            </span>
           </p>
         </div>
       </div>

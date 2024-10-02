@@ -1,32 +1,26 @@
 import Image from 'next/image'
-import HeroPortrait from '/public/home/hero-bg-2.avif'
-
-import Link from 'next/link'
+import HeroPortrait from '/public/home/hero-bg-2.webp'
+import AppointmentButton from '@/app/components/AppointmentButton'
 
 function Hero() {
   return (
-    <section className='w-full bg-[#c0e6f8] bg-hero-bg bg-cover relative pt-[80px] lg:h-[650px]'>
-      <div className='max-w-screen-2xl h-full grid grid-rows-auto mx-auto px-5 w-[90%] lg:grid-cols-2 lg:grid-rows-1 py-[40px]'>
-        <div className='text-center flex flex-col items-center'>
-          <h1 className='text-white font-bold text-4xl md:text-5xl mb-4 [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)]'>
+    <section className='relative w-full bg-[#c0e6f8] bg-hero-bg bg-cover pt-[80px] lg:h-[650px]'>
+      <div className='grid-rows-auto mx-auto grid h-full w-[90%] max-w-screen-2xl px-5 py-[40px] lg:grid-cols-2 lg:grid-rows-1'>
+        <div className='flex flex-col items-center text-center text-white'>
+          <h1 className='mb-4 text-4xl font-bold [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)] md:text-5xl'>
             Expertos en <br /> Cirugía de la Mano <br /> en Albacete
           </h1>
-          <p className='text-white text-sm lg:text-base mb-8'>
+          <p className='mb-8 text-sm lg:text-base'>
             Recupera la funcionalidad de tus manos con nuestros especialistas.
             Ofrecemos atención avanzada y personalizada para tu bienestar.
           </p>
-          <Link
-            href='/'
-            className='p-3 px-4 bg-transparent text-white border-2 border-white font-semibold rounded-3xl mb-8 hidden md:block w-[180px] text-center'
-          >
-            Solicitar una cita
-          </Link>
+          <AppointmentButton styles='hidden' />
         </div>
 
-        <div className='place-content-end  mt-8 lg:mt-0 relative'>
+        <div className='relative mt-8 place-content-end lg:mt-0'>
           <Image
             src={HeroPortrait}
-            className='object-cover max-w-[750px] w-full'
+            className='w-full max-w-[750px] object-cover'
             alt=''
           />
         </div>

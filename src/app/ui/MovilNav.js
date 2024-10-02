@@ -32,9 +32,9 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
     <div
       className={`${
         showMovilMenu ? 'translate-x-0' : '-translate-x-[100%]'
-      }  fixed left-0 top-0 h-screen w-full overflow-y-auto  bg-gradient-to-b from-custom-green-light to-custom-green-dark transition-transform duration-300 ease-in-out lg:hidden`}
+      } fixed left-0 top-0 h-screen w-full overflow-y-auto bg-gradient-to-b from-custom-green-light to-custom-green-dark transition-transform duration-300 ease-in-out lg:hidden`}
     >
-      <nav className='relative mx-auto grid min-h-screen w-full grid-rows-[80px,1fr] '>
+      <nav className='relative mx-auto grid min-h-screen w-full grid-rows-[80px,1fr]'>
         <div className='mx-auto flex w-[90%] items-center justify-between'>
           <Link href='/'>
             {/* <Image
@@ -53,63 +53,10 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
             className='icon line-color cursor-pointer'
             onClick={handleShowMenu}
           />
-
-          {/* <svg
-            fill='#000000'
-            width='30px'
-            height='30px'
-            viewBox='0 0 24 24'
-            id='xrp'
-            dataname='Line Color'
-            xmlns='http://www.w3.org/2000/svg'
-            className='icon line-color cursor-pointer'
-            onClick={handleShowMenu}
-          >
-            <g
-              id='SVGRepo_bgCarrier'
-              strokeWidth='0'
-            />
-
-            <g
-              id='SVGRepo_tracerCarrier'
-              strokeLinecap='round'
-              strokeLinejoin='round'
-            />
-
-            <g id='SVGRepo_iconCarrier'>
-              <path
-                id='secondary'
-                d='M19,3,12.74,9.68a1,1,0,0,1-1.48,0L5,3'
-                style={{
-                  fill: 'none',
-                  stroke: '#2C6FBA',
-                  strokeLinecap: 'round',
-                  strokeLinejoin: 'round',
-                  strokeWidth: 2
-                }}
-              />
-
-              <path
-                id='primary'
-                d='M19,21l-6.26-6.68a1,1,0,0,0-1.48,0L5,21'
-                style={{
-                  fill: 'none',
-                  stroke: '#2AA760',
-                  strokeLinecap: 'round',
-                  strokeLinejoin: 'round',
-                  strokeWidth: 2
-                }}
-              />
-            </g>
-          </svg> */}
         </div>
 
-        <ul className='mx-auto flex h-full w-[80%] flex-col items-start ml-[15%] justify-center gap-20 py-16 text-xl font-bold text-white'>
-          <Link
-            href='/'
-            className=''
-            onClick={() => setShowMovilMenu(false)}
-          >
+        <ul className='mx-auto ml-[15%] flex h-full w-[80%] flex-col items-start justify-center gap-20 py-16 text-xl font-bold text-white'>
+          <Link href='/' className='' onClick={() => setShowMovilMenu(false)}>
             Inicio
           </Link>
           <Link
@@ -119,14 +66,11 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
           >
             Sobre mí
           </Link>
-          <div className='h-[28px] overflow-hidden hover:h-[284px] transition-[height] duration-300 ease-in'>
+          <div className='h-[28px] overflow-hidden transition-[height] duration-300 ease-in hover:h-[284px]'>
             Especialidades
-            <ul className='mt-2 space-y-2 ml-2'>
+            <ul className='ml-2 mt-2 space-y-2'>
               {specialities.map((specialitie, index) => (
-                <li
-                  className='text-base'
-                  key={index}
-                >
+                <li className='text-base' key={index}>
                   <Link
                     href={specialitie.url}
                     onClick={() => setShowMovilMenu(false)}
