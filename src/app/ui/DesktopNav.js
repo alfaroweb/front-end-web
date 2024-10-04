@@ -10,7 +10,7 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
       <Link href='/' className='flex items-center justify-center'>
         <Image
           src={Logo}
-          alt='Logo de InnoCleanSolar SL, empresa dedicada a la limpieza de paneles'
+          alt='Logo del Dr. Joaquín Alfaro Micó, Cirujano de la mano'
           className='h-[60px] w-auto object-fill'
         />
         <p className='font-black text-white'>Cirugía de la mano</p>
@@ -19,23 +19,25 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
       <div className='hidden h-full gap-8 font-bold text-white lg:flex lg:items-center'>
         <Link
           href='/'
-          className='link-desktopNav-borders flex h-full items-center rounded-lg'
+          className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
         >
           Inicio
         </Link>
         <Link
           href='/sobre-mi'
-          className='link-desktopNav-borders flex h-full items-center rounded-lg'
+          className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
         >
           Sobre mí
         </Link>
         <div className='link-desktopNav-borders group relative flex h-full items-center rounded-lg'>
-          <span className='cursor-pointer'>Especialidades</span>
+          <span className='custom-text-shadow cursor-pointer'>
+            Especialidades
+          </span>
           <div className='pointer-events-none invisible absolute left-1/2 top-full z-10 w-max -translate-x-1/2 rounded-b-lg bg-custom-green-dark opacity-0 transition-opacity duration-200 ease-in-out group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100'>
             <ul className='space-y-4 p-4'>
               {specialities.map((specialitie, index) => (
                 <li
-                  className='text-slate-300 transition-colors duration-75 ease-in-out hover:text-white'
+                  className='custom-text-shadow text-slate-200 transition-colors duration-75 ease-in-out hover:text-white'
                   key={index}
                 >
                   <Link
@@ -51,13 +53,13 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
         </div>
         <Link
           href='/galeria'
-          className='link-desktopNav-borders flex h-full items-center rounded-lg'
+          className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
         >
           Galeria
         </Link>
         <Link
           href='/contacto'
-          className='link-desktopNav-borders flex h-full items-center rounded-lg'
+          className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
         >
           Contacto
         </Link>

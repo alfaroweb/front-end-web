@@ -3,6 +3,7 @@ import { specialities } from '../home/data/data'
 import Image from 'next/image'
 import Link from 'next/link'
 import Bandage from '/public/icons/bandage.svg'
+import Logo from '/public/logo-mico.png'
 
 function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
   useEffect(() => {
@@ -36,15 +37,13 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
     >
       <nav className='relative mx-auto grid min-h-screen w-full grid-rows-[80px,1fr]'>
         <div className='mx-auto flex w-[90%] items-center justify-between'>
-          <Link href='/'>
-            {/* <Image
-              src='/InnoCleanSolar.png'
-              alt='Logo de InnoCleanSolar'
-              width={186}
-              height={37}
-              className='w-auto'
-            /> */}
-            ICONO
+          <Link href='/' className='flex items-center justify-center'>
+            <Image
+              src={Logo}
+              alt='Logo del Dr. Joaquín Alfaro Micó, Cirujano de la mano'
+              className='h-[60px] w-auto object-fill'
+            />
+            <p className='font-black text-white'>Cirugía de la mano</p>
           </Link>
           <Image
             src={Bandage}

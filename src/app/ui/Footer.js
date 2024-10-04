@@ -1,19 +1,18 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Logo from '/public/logo-mico.png'
 
 function Footer() {
   return (
     <footer className='relative bg-gradient-to-r from-custom-green-light to-custom-green-dark py-8 text-center text-neutral-400'>
-      <div className='flex justify-center'>
+      <div className='mb-4 flex justify-center'>
         {' '}
-        <Link href='/' className=''>
-          {/* <Image
-            src={LogoInnoCleanSolar}
-            className=' mx-auto h-auto w-[200px]'
-            alt='Logo de la empresa InnoCleanSolar dedicada a la limpieza de paneles solares'
-            loading='lazy'
-          /> */}
-          ICONO
+        <Link href='/' className='flex flex-col items-center justify-center'>
+          <Image
+            src={Logo}
+            alt='Logo del Dr. Joaquín Alfaro Micó, Cirujano de la mano'
+            className='h-[60px] w-auto object-fill'
+          />
         </Link>
       </div>
 

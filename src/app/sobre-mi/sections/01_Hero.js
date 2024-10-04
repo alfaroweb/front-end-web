@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import HeroPortrait from '/public/home/aboutme/mico-doctor.webp'
+import HeroPortrait from '/public/aboutme/mico-doctor.webp'
 import AppointmentButton from '@/app/components/AppointmentButton'
 
 function Hero() {

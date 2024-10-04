@@ -6,10 +6,10 @@ import Specialities from './sections/04_Specialities'
 import PhilosophyAndAffiliations from './sections/05_PhilosophyAndAffiliations'
 import { ContactForm } from '@/app/components/ContactForm'
 import Affiliations from './sections/Affiliations'
-import WhiteTopWaves from '/public/home/waves/white-top-waves.webp'
-import WhiteBottomWaves from '/public/home/waves/white-bottom-waves.webp'
-import GrayTopWaves from '/public/home/waves/gray-top-waves.webp'
-import GrayBottomWaves from '/public/home/waves/gray-bottom-waves.webp'
+import WhiteTopWaves from '/public/waves/white-top-waves.webp'
+import WhiteBottomWaves from '/public/waves/white-bottom-waves.webp'
+import GrayTopWaves from '/public/waves/gray-top-waves.webp'
+import GrayBottomWaves from '/public/waves/gray-bottom-waves.webp'
 
 function page() {
   return (

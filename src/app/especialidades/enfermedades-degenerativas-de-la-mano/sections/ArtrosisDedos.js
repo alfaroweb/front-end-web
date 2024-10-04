@@ -13,7 +13,7 @@ function ArtrosisDedos({ Book }) {
           id='artrosis-dedos'
           className='text-2xl font-bold uppercase tracking-wide'
         >
-          Artrosis en dedos de la muñeca
+          Artrosis en dedos
         </h2>
       </div>
 

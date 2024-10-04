@@ -4,9 +4,9 @@ import LastPosts from './home/sections/06_LastPosts'
 import Doctor from './home/sections/04_Doctor'
 import OurTeam from './home/sections/02_OurTeam'
 import Testimonials from './home/sections/05_Testimonials'
-import WhiteTopWaves from '/public/home/waves/white-top-waves.webp'
-import WhiteBottomWaves from '/public/home/waves/white-bottom-waves.webp'
-import WhiteBottomWaves2 from '/public/home/waves/white-bottom-waves-2.webp'
+import WhiteTopWaves from '/public/waves/white-top-waves.webp'
+import WhiteBottomWaves from '/public/waves/white-bottom-waves.webp'
+import WhiteBottomWaves2 from '/public/waves/white-bottom-waves-2.webp'
 
 export default function Home() {
   return (

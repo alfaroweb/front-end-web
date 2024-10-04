@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import ContactImage from '/public/contacto.avif'
-import BenefitsImage from '/public/medic-benefits.avif'
+import ContactImage from '/public/contacto.webp'
+import BenefitsImage from '/public/medic-benefits.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUserDoctor,
@@ -18,8 +18,15 @@ function page() {
       <div className='w-full bg-white'>
         <div className='mx-auto flex w-[90%] max-w-screen-xl flex-col gap-16 py-[100px] lg:flex-row lg:gap-8'>
           <div className='grid w-full place-content-evenly lg:w-2/3'>
-            <h1 className='text-3xl font-bold text-gray-800'>
-              ¡Agenda tu Cita en Albacete! <br /> Atención Médica Personalizada
+            <h1 className='text-4xl font-bold'>
+              ¡Agenda{' '}
+              <strong className='text-custom-green-light'>
+                tu Cita en Albacete!
+              </strong>{' '}
+              <br />{' '}
+              <strong className='text-custom-green-light'>
+                Atención Médica Personalizada
+              </strong>{' '}
               para Ti
             </h1>
 
@@ -32,10 +39,14 @@ function page() {
             </p>
 
             <p className='mx-auto mt-2 text-center text-lg/relaxed text-gray-600'>
-              <strong>Solicita tu cita hoy mismo</strong> y disfruta de una
-              atención rápida y eficiente. <br />
-              <strong>Nuestro consultorio en Albacete</strong> está listo para
-              recibirte con un trato cercano y profesional.
+              <strong className='text-custom-green-light'>
+                Solicita tu cita hoy mismo
+              </strong>{' '}
+              y disfruta de una atención rápida y eficiente. <br />
+              <strong className='text-custom-green-light'>
+                Nuestro consultorio en Albacete
+              </strong>{' '}
+              está listo para recibirte con un trato cercano y profesional.
             </p>
           </div>
           <div className='flex w-full justify-center lg:w-1/3 lg:justify-end'>
@@ -130,10 +141,12 @@ function page() {
           </div>
         </div>
         <div className='space-y-8 lg:w-2/3'>
-          <h2 className='text-3xl font-bold text-gray-700'>
-            Descubre los Beneficios de Elegir a los Cirujanos Más Expertos en
-            Albacete: <br />
-            ¡Tu Salud en las Mejores Manos!
+          <h2 className='text-3xl font-bold'>
+            Descubre los beneficios de elegir a los{' '}
+            <strong className='text-custom-green-light'>
+              Cirujanos de la Mano Más Experimentados en Albacete
+            </strong>
+            : <br /> ¡Tus Manos en las Mejores Manos!
           </h2>
 
           <ul className='list-inside list-disc space-y-4 text-gray-800'>
