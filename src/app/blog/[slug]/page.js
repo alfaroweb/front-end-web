@@ -10,7 +10,7 @@ async function getPost(slug) {
   if (!post) notFound()
   return post
 }
-async function generateStaticParams() {
+export async function generateStaticParams() {
   try {
     console.log('Fetching data...')
     const res = await fetch(
