@@ -51,6 +51,7 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
             height={50}
             className='icon line-color cursor-pointer'
             onClick={handleShowMenu}
+            alt=''
           />
         </div>
 

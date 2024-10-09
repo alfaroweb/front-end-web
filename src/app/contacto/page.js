@@ -172,6 +172,7 @@ function page() {
               <Image
                 src={ContactImage}
                 className='relative h-full w-full rounded-bl-[40%] rounded-br-[40%] rounded-tl-[40%] object-cover'
+                alt=''
               />
             </div>
           </div>
@@ -216,6 +217,7 @@ function page() {
             <Image
               src={BenefitsImage}
               className='relative h-full w-full rounded-bl-[40%] rounded-br-[40%] rounded-tl-[40%] object-cover'
+              alt=''
             />
           </div>
         </div>
@@ -290,9 +292,9 @@ function page() {
               width='100%'
               height='100%'
               style={{ border: 0, minHeight: '600px' }}
-              allowfullscreen=''
+              allowFullScreen=''
               loading='lazy'
-              referrerpolicy='no-referrer-when-downgrade'
+              referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
           </div>
         </div>

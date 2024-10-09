@@ -8,7 +8,7 @@ function SindromeTunelCarpiano({ Book }) {
     >
       <div className='mb-4 flex items-center gap-2'>
         {' '}
-        <Image src={Book} height={24} />
+        <Image src={Book} height={24} alt='' />
         <h2
           id='sindrome-tunel-carpiano'
           className='text-2xl font-bold uppercase text-custom-green-dark'

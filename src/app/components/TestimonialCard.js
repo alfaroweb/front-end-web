@@ -1,5 +1,6 @@
 // src/TestimonialCard.js
 'use client'
+import Image from 'next/image'
 import React, { useState } from 'react'
 
 const TestimonialCard = () => {
@@ -36,9 +37,8 @@ const TestimonialCard = () => {
             key={index}
             className='flex min-w-full flex-col items-center justify-between space-y-2 text-center'
           >
-            <img
-              src='https://source.unsplash.com/random/100x100?4'
-              alt=''
+            <div
+              alt='Avatar de un paciente'
               className='h-20 w-20 rounded-full bg-gray-500'
             />
 

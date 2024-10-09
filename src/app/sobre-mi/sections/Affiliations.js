@@ -24,6 +24,8 @@ function Affiliations() {
               <Image
                 src={Scmcot}
                 className='w-[150px] object-cover grayscale filter hover:filter-none'
+                alt='Logo de la Sociedad Castellano-Manchega de Cirugía Ortopédica y
+                  Traumatología (SCMCOT)'
               />
             </div>
             <div className='place-content-center'>
@@ -48,6 +50,7 @@ function Affiliations() {
               <Image
                 src={Secma}
                 className='w-full object-cover grayscale filter hover:filter-none'
+                alt='Logo de la Sociedad Española de Cirugía de Mano (SECMA)'
               />
             </div>
             <div className='place-content-center'>
@@ -69,6 +72,8 @@ function Affiliations() {
               <Image
                 src={Secot}
                 className='object-cover grayscale filter hover:filter-none'
+                alt='Logo de la Sociedad Española de Cirugía Ortopédica y Traumatología
+                  (SECOT)'
               />
             </div>
             <div className='place-content-center'>

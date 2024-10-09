@@ -15,7 +15,7 @@ function OurTeam() {
           <Image
             src={DoctorsGift}
             className='mx-auto max-w-[300px] lg:max-w-full'
-            alt=''
+            alt='Ilustración de 3 doctores representando nuestro equipo médico'
           />
         </div>
 

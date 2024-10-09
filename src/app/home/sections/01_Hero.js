@@ -28,7 +28,7 @@ function Hero() {
           <Image
             src={HeroPortrait}
             className='mx-auto w-full max-w-[600px] object-cover xl:max-w-[750px]'
-            alt=''
+            alt='Imagen de un doctor tratando a un paciente'
           />
         </div>
       </div>

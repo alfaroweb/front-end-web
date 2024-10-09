@@ -70,6 +70,7 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
         height={50}
         className='icon line-color cursor-pointer lg:hidden'
         onClick={handleShowMenu}
+        alt=''
       />
     </nav>
   )

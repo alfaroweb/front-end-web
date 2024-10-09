@@ -8,7 +8,7 @@ function EnfermedadDupuytren({ Book }) {
     >
       <div className='mb-4 flex items-center gap-2'>
         {' '}
-        <Image src={Book} height={24} />
+        <Image src={Book} height={24} alt='' />
         <h2
           id='enfermedad-dupuytren'
           className='text-2xl font-bold uppercase tracking-wide'

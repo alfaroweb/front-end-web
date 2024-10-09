@@ -3,7 +3,7 @@ import Image from 'next/image'
 function PhilosophyAndAffiliations({ GrayTopWaves, WhiteBottomWaves }) {
   return (
     <section className='relative flex min-h-[600px] w-full flex-col justify-between bg-philosophy bg-cover'>
-      <Image src={GrayTopWaves} className='block h-[100px] w-full' />
+      <Image src={GrayTopWaves} className='block h-[100px] w-full' alt='' />
       <div className='mx-auto w-[90%] max-w-screen-lg text-center text-white'>
         {' '}
         <h2 className='text-3xl font-bold tracking-tighter [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)] md:text-4xl/tight'>
@@ -21,7 +21,7 @@ function PhilosophyAndAffiliations({ GrayTopWaves, WhiteBottomWaves }) {
           personalizados que aborden sus necesidades y preferencias únicas.{' '}
         </p>
       </div>
-      <Image src={WhiteBottomWaves} className='block h-[100px] w-full' />
+      <Image src={WhiteBottomWaves} className='block h-[100px] w-full' alt='' />
     </section>
   )
 }
