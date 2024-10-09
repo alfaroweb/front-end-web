@@ -31,6 +31,77 @@ const lesiones = [
   }
 ]
 
+export const metadata = {
+  metadataBase: new URL('https://www.tudominio.es'), // Reemplaza con la URL de tu sitio web
+  alternates: {
+    canonical: '/especialidades/cirugia-secundaria-reconstructiva-mano-albacete'
+  },
+  title:
+    'Cirugía Secundaria Reconstructiva de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+  description:
+    'Especialista en cirugía secundaria reconstructiva de la mano, con procedimientos como pseudoartrosis de escafoides, osteotomías, injertos y transferencias tendinosas en Albacete.',
+  keywords: [
+    'cirugía secundaria reconstructiva mano',
+    'pseudoartrosis de escafoides',
+    'osteotomías mala consolidación',
+    'injertos tendinosos',
+    'transferencias tendinosas',
+    'cirugía mano Albacete',
+    'tratamiento pseudoartrosis escafoides',
+    'cirugía osteotomías',
+    'reconstrucción tendones mano',
+    'traumatólogo mano Albacete',
+    'cirujano reconstructivo mano',
+    'Albacete'
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': 'standard',
+      'max-image-preview': 'large',
+      'max-snippet': 160
+    }
+  },
+  og: {
+    title:
+      'Cirugía Secundaria Reconstructiva de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+    description:
+      'Tratamiento especializado en cirugía secundaria reconstructiva de la mano, incluyendo pseudoartrosis de escafoides, osteotomías, injertos y transferencias tendinosas en Albacete.',
+    url: 'https://www.tudominio.es/especialidades/cirugia-secundaria-reconstructiva-mano-albacete', // Reemplaza con la URL de la página
+    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Cirugía Secundaria Reconstructiva de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+    description:
+      'El Dr. Joaquín Alfaro Micó ofrece cirugía reconstructiva de la mano para tratar pseudoartrosis, osteotomías por mala consolidación, injertos y transferencias tendinosas.',
+    image: 'https://www.tudominio.es/tufoto.jpg'
+  },
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalProcedure',
+    name: 'Cirugía Secundaria Reconstructiva de la Mano',
+    description:
+      'Especializado en la cirugía reconstructiva de la mano, incluyendo pseudoartrosis de escafoides, osteotomías, injertos y transferencias tendinosas.',
+    image: 'https://www.tudominio.es/tufoto.jpg',
+    url: 'https://www.tudominio.es/especialidades/cirugia-secundaria-reconstructiva-mano-albacete',
+    medicalSpecialty: [
+      'Pseudoartrosis de escafoides',
+      'Osteotomías por mala consolidación',
+      'Injertos tendinosos',
+      'Transferencias tendinosas'
+    ],
+    medicalCode: 'M84.1' // Código ICD-10 relacionado con pseudoartrosis y procedimientos de reconstrucción ósea y tendinosa
+  }
+}
+
 function page() {
   return (
     <>

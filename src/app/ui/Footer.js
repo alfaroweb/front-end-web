@@ -52,14 +52,20 @@ function Footer() {
           <h5 className='mb-2.5 font-bold text-white'>Legal</h5>
           <ul className='mb-0 list-none'>
             <li>
-              <a href='#!' className='text-slate-300 hover:text-white'>
+              <Link
+                href='/politica-de-privacidad'
+                className='text-slate-300 hover:text-white'
+              >
                 Política de privacidad
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#!' className='text-slate-300 hover:text-white'>
+              <Link
+                href='/politica-de-cookies'
+                className='text-slate-300 hover:text-white'
+              >
                 Términos y condiciones
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

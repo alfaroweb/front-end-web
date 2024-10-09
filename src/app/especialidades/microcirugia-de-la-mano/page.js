@@ -23,6 +23,73 @@ const lesiones = [
   }
 ]
 
+export const metadata = {
+  metadataBase: new URL('http://localhost:3000/'), // Reemplaza con la URL de tu sitio web
+  alternates: {
+    canonical: '/especialidades/microcirugia-mano-albacete'
+  },
+  title: 'Microcirugía de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+  description:
+    'Especialista en microcirugía de la mano, con experiencia en la reparación de nervios, tratamiento de neuromas, tumores nerviosos y coberturas de la mano en Albacete.',
+  keywords: [
+    'microcirugía de la mano',
+    'reparación de nervios mano',
+    'neuromas mano',
+    'tumores nerviosos mano',
+    'coberturas de la mano',
+    'microcirugía mano Albacete',
+    'tratamiento tumores nerviosos mano',
+    'cirujano microcirugía mano Albacete',
+    'cirugía nervios mano Albacete',
+    'traumatólogo microcirugía mano',
+    'Albacete'
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': 'standard',
+      'max-image-preview': 'large',
+      'max-snippet': 160
+    }
+  },
+  og: {
+    title: 'Microcirugía de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+    description:
+      'El Dr. Joaquín Alfaro Micó es especialista en microcirugía de la mano, incluyendo reparación de nervios, tratamiento de neuromas y tumores nerviosos, y coberturas de la mano en Albacete.',
+    url: 'https://www.tudominio.es/especialidades/microcirugia-mano-albacete', // Reemplaza con la URL de la página
+    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Microcirugía de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+    description:
+      'Especialista en microcirugía de la mano, experto en reparación de nervios, neuromas, tumores nerviosos y coberturas de la mano en Albacete.',
+    image: 'https://www.tudominio.es/tufoto.jpg'
+  },
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalProcedure',
+    name: 'Microcirugía de la Mano',
+    description:
+      'Especializado en la reparación de nervios, tratamiento de neuromas, tumores nerviosos y coberturas de la mano.',
+    image: 'https://www.tudominio.es/tufoto.jpg',
+    url: 'https://www.tudominio.es/especialidades/microcirugia-mano-albacete',
+    medicalSpecialty: [
+      'Reparación de nervios',
+      'Neuromas',
+      'Tumores nerviosos',
+      'Coberturas de la mano'
+    ],
+    medicalCode: 'S54.0' // Código ICD-10 relacionado con lesiones y cirugía de nervios en la mano
+  }
+}
+
 function page() {
   return (
     <>

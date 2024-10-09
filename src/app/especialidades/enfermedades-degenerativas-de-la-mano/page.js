@@ -24,6 +24,75 @@ const lesiones = [
   }
 ]
 
+export const metadata = {
+  metadataBase: new URL('https://www.tudominio.es'), // Reemplaza con la URL de tu sitio web
+  alternates: {
+    canonical: '/especialidades/enfermedades-degenerativas-mano-albacete'
+  },
+  title:
+    'Tratamiento de Enfermedades Degenerativas de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+  description:
+    'Especialista en el tratamiento de enfermedades degenerativas de la mano como la artrosis en dedos, artrosis de muñeca y rizartrosis. Consulta en Albacete.',
+  keywords: [
+    'enfermedades degenerativas de la mano',
+    'tratamiento de artrosis en dedos',
+    'artrosis de muñeca Albacete',
+    'rizartrosis Albacete',
+    'cirugía de mano Albacete',
+    'traumatólogo de mano Albacete',
+    'tratamiento artrosis de la mano',
+    'enfermedades degenerativas mano',
+    'especialista artrosis en la mano',
+    'Albacete',
+    'salud de la mano'
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': 'standard',
+      'max-image-preview': 'large',
+      'max-snippet': 160
+    }
+  },
+  og: {
+    title:
+      'Tratamiento de Enfermedades Degenerativas de la Mano | Dr. Joaquín Alfaro Micó',
+    description:
+      'El Dr. Joaquín Alfaro Micó está especializado en el tratamiento de artrosis en los dedos, artrosis de muñeca y rizartrosis en Albacete.',
+    url: 'https://www.tudominio.es/especialidades/enfermedades-degenerativas-mano-albacete', // Reemplaza con la URL de la página
+    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Tratamiento de Enfermedades Degenerativas de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+    description:
+      'Especialista en el tratamiento de artrosis en los dedos, artrosis de muñeca y rizartrosis en Albacete.',
+    image: 'https://www.tudominio.es/tufoto.jpg'
+  },
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalCondition',
+    name: 'Enfermedades Degenerativas de la Mano',
+    description:
+      'Tratamiento de la artrosis en los dedos, muñeca y rizartrosis.',
+    image: 'https://www.tudominio.es/tufoto.jpg',
+    url: 'https://www.tudominio.es/especialidades/enfermedades-degenerativas-mano-albacete',
+    medicalSpecialty: [
+      'Artrosis en dedos',
+      'Artrosis de muñeca',
+      'Rizartrosis'
+    ],
+    medicalCode: 'M15' // Código ICD-10 para enfermedades degenerativas de la mano como la artrosis
+  }
+}
+
 function EnfermedadesDegenerativas() {
   return (
     <>

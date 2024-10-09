@@ -24,6 +24,78 @@ const lesiones = [
   }
 ]
 
+export const metadata = {
+  metadataBase: new URL('http://localhost:3000/'), // Reemplaza con la URL de tu sitio web
+  alternates: {
+    canonical:
+      '/especialidades/lesiones-congenitas-patologia-tumoral-mano-albacete'
+  },
+  title:
+    'Lesiones Congénitas y Patología Tumoral de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+  description:
+    'Especialista en el tratamiento de lesiones congénitas y patología tumoral de la mano como gangliones, tumores óseos y malformaciones congénitas. Atención en Albacete.',
+  keywords: [
+    'lesiones congénitas mano',
+    'patología tumoral mano',
+    'gangliones mano',
+    'tumores óseos mano',
+    'tumores de partes blandas mano',
+    'malformaciones congénitas mano',
+    'tratamiento gangliones Albacete',
+    'cirugía de mano Albacete',
+    'traumatólogo mano Albacete',
+    'malformaciones congénitas Albacete',
+    'cirugía tumoral mano',
+    'Albacete'
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': 'standard',
+      'max-image-preview': 'large',
+      'max-snippet': 160
+    }
+  },
+  og: {
+    title:
+      'Lesiones Congénitas y Patología Tumoral de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+    description:
+      'Tratamiento especializado de lesiones congénitas y patología tumoral de la mano, como gangliones, tumores óseos o de partes blandas y malformaciones congénitas en Albacete.',
+    url: 'https://www.tudominio.es/especialidades/lesiones-congenitas-patologia-tumoral-mano-albacete', // Reemplaza con la URL de la página
+    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Lesiones Congénitas y Patología Tumoral de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
+    description:
+      'El Dr. Joaquín Alfaro Micó ofrece tratamiento especializado para gangliones, tumores óseos, de partes blandas y malformaciones congénitas en la mano.',
+    image: 'https://www.tudominio.es/tufoto.jpg'
+  },
+  schema: {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalCondition',
+    name: 'Lesiones Congénitas y Patología Tumoral de la Mano',
+    description:
+      'Tratamiento especializado para gangliones, tumores óseos y malformaciones congénitas en la mano.',
+    image: 'https://www.tudominio.es/tufoto.jpg',
+    url: 'https://www.tudominio.es/especialidades/lesiones-congenitas-patologia-tumoral-mano-albacete',
+    medicalSpecialty: [
+      'Gangliones',
+      'Tumores óseos',
+      'Tumores de partes blandas',
+      'Malformaciones congénitas en la mano'
+    ],
+    medicalCode: 'Q74.0' // Código ICD-10 relacionado con malformaciones congénitas y otras patologías relacionadas
+  }
+}
+
 function page() {
   return (
     <>

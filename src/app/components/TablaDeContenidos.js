@@ -6,6 +6,8 @@ function TablaDeContenidos({ categories }) {
   const [windowWidth, setWindowWidth] = useState(0)
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth)
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth)
     }
@@ -22,7 +24,7 @@ function TablaDeContenidos({ categories }) {
       <div className='rounded-md p-4'>
         <details
           className='cursor-pointer text-custom-green-light'
-          open={windowWidth >= 1024}
+          open={windowWidth >= 768}
         >
           <summary className='font-bold text-custom-green-light hover:underline'>
             ÍNDICE DE CONTENIDOS

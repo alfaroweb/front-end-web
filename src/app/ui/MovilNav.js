@@ -81,11 +81,11 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
             </ul>
           </div>
           <Link
-            href='/galeria'
+            href='/blog'
             className=''
             onClick={() => setShowMovilMenu(false)}
           >
-            Galeria
+            Blog
           </Link>
           <Link
             href='/contacto'

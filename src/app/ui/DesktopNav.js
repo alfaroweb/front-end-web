@@ -52,10 +52,10 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
           </div>
         </div>
         <Link
-          href='/galeria'
+          href='/blog'
           className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
         >
-          Galeria
+          Blog
         </Link>
         <Link
           href='/contacto'
