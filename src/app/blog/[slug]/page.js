@@ -1,47 +1,87 @@
 import Image from 'next/image'
 import getPostCoverImage from './utils/getAttributes'
 import { BlocksRenderer } from '@strapi/blocks-react-renderer'
+import { getStrapiURL } from '@/app/utils/api-helpers'
+import { CloudCog } from 'lucide-react'
 
-async function getPost(slug) {
-  let res = await fetch(
-    `http://localhost:1337/api/articles?filters[slug][$eq]=${slug}&populate=*`
-  )
-  let post = await res.json()
-  if (!post) notFound()
-  return post
+export async function getPost(slug) {
+  try {
+    // Construir la URL con la función getStrapiURL
+    const requestURL = getStrapiURL(
+      `/api/articles?filters[slug][$eq]=${slug}&populate=*`
+    )
+
+    const res = await fetch(requestURL, {
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`
+      }
+    })
+
+    // Verificar si la respuesta es exitosa
+    if (!res.ok) {
+      console.error('Error fetching post:', res.statusText)
+      return null // Retorna null si la respuesta no es exitosa
+    }
+
+    const { data } = await res.json()
+
+    // Verificar si el post fue encontrado
+    if (!data || data.length === 0) {
+      console.error('Post not found')
+      return null // Retorna null si no hay datos
+    }
+
+    return data // Retornar el primer (y único) artículo que coincide con el slug
+  } catch (error) {
+    console.error('Fetch error:', error.message)
+    return null // Retorna null en caso de un error durante la solicitud
+  }
 }
+
 export async function generateStaticParams() {
   try {
     console.log('Fetching data...')
-    const res = await fetch(
-      'http://localhost:1337/api/articles?sort=createdAt:DESC&populate=cover',
-      {
-        headers: {
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`
-        }
-      }
+
+    // Usar getStrapiURL para obtener la URL de los artículos
+    const requestURL = getStrapiURL(
+      '/api/articles?sort=createdAt:DESC&populate=cover'
     )
 
+    const res = await fetch(requestURL, {
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`
+      }
+    })
+
     console.log('Response status:', res.status)
+
     if (!res.ok) {
-      console.log('Response not OK:', res.statusText)
+      console.error('Response not OK:', res.statusText)
       throw new Error('Error al hacer el fetch')
     }
 
     const { data } = await res.json()
 
+    // Verificar si hay datos antes de mapear
+    if (!data || data.length === 0) {
+      console.error('No posts found')
+      return []
+    }
+
+    // Retornar los slugs
     return data.map((post) => ({
-      slug: post.slug
+      slug: post.slug // Asegúrate de acceder a los atributos correctamente
     }))
   } catch (error) {
     console.error('Fetch error:', error.message)
-    return null
+    return [] // Retornar un array vacío en caso de error
   }
 }
 
 export default async function Page({ params }) {
-  // Desestructuramos el primer elemento de data directamente en una sola línea
-  const { data: [post] = [] } = await getPost(params.slug)
+  const [post] = await getPost(params.slug)
+
+  console.log('ESTA ES LA DATA', post)
 
   if (!post) {
     console.error('No se encontró ningún artículo para este slug.')
