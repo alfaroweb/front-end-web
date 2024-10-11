@@ -31,6 +31,6 @@ export async function fetchLatestPosts() {
     return data
   } catch (error) {
     console.error('Fetch error:', error.message)
-    return { data: [] }
+    return []
   }
 }

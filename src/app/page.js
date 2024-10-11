@@ -9,12 +9,12 @@ import WhiteBottomWaves from '/public/waves/white-bottom-waves.webp'
 import WhiteBottomWaves2 from '/public/waves/white-bottom-waves-2.webp'
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000/'),
+  metadataBase: new URL('https://www.cirugiadelamanoalbacete.es/'),
   alternates: {
     canonical: '/'
   },
   title:
-    'Dr. Joaquín Alfaro Micó | Cirujano de Mano y Traumatólogo en Albacete | Tratamiento de Lesiones y Recuperación Funciona',
+    'Dr. Joaquín Alfaro Micó | Cirujano de Mano y Traumatólogo en Albacete | Tratamiento de Lesiones y Recuperación Funcional',
   description:
     'Experto en cirugía de mano y traumatólogo en Albacete. Tratamiento especializado de fracturas, artrosis, túnel carpiano y más. Recuperación de la funcionalidad de tu mano. Solicita tu cita.',
   keywords: [
@@ -59,15 +59,15 @@ export const metadata = {
     '@context': 'https://schema.org',
     '@type': 'MedicalOrganization',
     name: 'Dr. Joaquín Alfaro Micó',
-    image: 'https://tudominio.es/tufoto.jpg',
-    url: 'https://tudominio.es',
-    telephone: '+34 [Tu número de teléfono]',
+    image: '',
+    url: 'https://www.cirugiadelamanoalbacete.es/',
+    telephone: '',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Calle [Tu calle]',
+      streetAddress: 'Pl. del Madroño, 11',
       addressLocality: 'Albacete',
       addressRegion: 'Castilla-La Mancha',
-      postalCode: '[Tu código postal]',
+      postalCode: '02008',
       countryName: 'España'
     },
     speciality: 'Cirugía de la mano',

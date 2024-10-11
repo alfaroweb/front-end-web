@@ -25,7 +25,7 @@ const lesiones = [
 ]
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000/'), // Reemplaza con la URL de tu sitio web
+  metadataBase: new URL('https://www.cirugiadelamanoalbacete.es/'), // Reemplaza con la URL de tu sitio web
   alternates: {
     canonical: '/especialidades/lesiones-deportivas-sobreuso-mano-albacete'
   },
@@ -66,17 +66,9 @@ export const metadata = {
       'Lesiones Deportivas y por Sobreuso de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
     description:
       'El Dr. Joaquín Alfaro Micó ofrece tratamiento especializado para tendinopatías, dedo en resorte y el uso de factores de crecimiento en Albacete.',
-    url: 'https://www.tudominio.es/especialidades/lesiones-deportivas-sobreuso-mano-albacete', // Reemplaza con la URL de la página
-    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/lesiones-deportivas-sobreuso-mano-albacete',
+    image: '',
     type: 'website'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Lesiones Deportivas y por Sobreuso de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
-    description:
-      'Especialista en el tratamiento de lesiones deportivas de la mano como tendinopatías, dedo en resorte y factores de crecimiento en Albacete.',
-    image: 'https://www.tudominio.es/tufoto.jpg'
   },
   schema: {
     '@context': 'https://schema.org',
@@ -84,14 +76,14 @@ export const metadata = {
     name: 'Lesiones Deportivas y por Sobreuso de la Mano',
     description:
       'Tratamiento de tendinopatías, dedo en resorte y regeneración celular con factores de crecimiento.',
-    image: 'https://www.tudominio.es/tufoto.jpg',
-    url: 'https://www.tudominio.es/especialidades/lesiones-deportivas-sobreuso-mano-albacete',
+    image: '',
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/lesiones-deportivas-sobreuso-mano-albacete',
     medicalSpecialty: [
       'Tendinopatías',
       'Dedo en resorte',
       'Factores de crecimiento'
     ],
-    medicalCode: 'M75.2' // Código ICD-10 relacionado con tendinopatías y lesiones por sobreuso
+    medicalCode: 'M75.2'
   }
 }
 

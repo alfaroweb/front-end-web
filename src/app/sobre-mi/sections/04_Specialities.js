@@ -24,9 +24,17 @@ function Specialities({ WhiteTopWaves }) {
   return (
     <section className='relative overflow-hidden'>
       <div className='absolute left-0 top-20 z-20 h-full w-full'>
-        <Image src={Bg} className='h-full object-cover opacity-[0.07]' alt='' />
+        <Image
+          src={Bg}
+          className='h-full object-cover opacity-[0.07]'
+          alt='Background de puntos'
+        />
       </div>
-      <Image src={WhiteTopWaves} className='h-[100px] w-full' alt='' />
+      <Image
+        src={WhiteTopWaves}
+        className='h-[100px] w-full'
+        alt='Separador de sección superior en forma de ola'
+      />
       <div className='relative z-30 mx-auto w-[90%] max-w-screen-xl py-[50px]'>
         <h2 className='text-3xl font-bold tracking-tighter md:text-4xl/tight'>
           Áreas de especialización

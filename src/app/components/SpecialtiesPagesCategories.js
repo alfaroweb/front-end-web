@@ -33,7 +33,11 @@ function SpecialtiesPagesCategories() {
   return (
     <section className='relative py-[50px]'>
       <div className='absolute left-0 top-0 z-10 h-full w-full overflow-hidden'>
-        <Image src={Bg} className='h-full object-cover opacity-[0.07]' alt='' />
+        <Image
+          src={Bg}
+          className='h-full object-cover opacity-[0.07]'
+          alt='Imagen de fondo personalizada'
+        />
       </div>
       <h2 className='z-20 mx-auto w-[90%] max-w-screen-lg text-center text-3xl font-black tracking-wide text-custom-green-light md:text-4xl/tight'>
         Tratamientos de Patologías en Albacete: <br />

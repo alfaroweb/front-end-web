@@ -8,7 +8,7 @@ function Specialties({ WhiteTopWaves, WhiteBottomWaves }) {
       <Image
         src={WhiteTopWaves}
         className='absolute top-0 block h-[150px] w-full drop-shadow-[0_10px_7px_rgba(1,1,1,0.3)]'
-        alt=''
+        alt='Separador superior de la sección en forma de ola'
       />
       <div className='mx-auto flex min-h-max w-[90%] max-w-screen-xl flex-col-reverse gap-8 py-[175px] lg:flex-row'>
         <div className='lg:w-1/2'>
@@ -24,13 +24,13 @@ function Specialties({ WhiteTopWaves, WhiteBottomWaves }) {
             Nuestras especialidades
           </h2>
           <p className='mx-auto text-center text-base/relaxed'>
-            En nuestra clínica en Albacete, nos especializamos en cirugía de la
-            mano, ofreciendo tratamientos avanzados para lesiones traumáticas,
-            enfermedades degenerativas, deformidades de los dedos, y más.
-            Nuestro equipo de cirujanos expertos utiliza las técnicas más
-            innovadoras para garantizar una recuperación rápida y eficaz.
-            Descubre cómo podemos ayudarte a recuperar la funcionalidad y
-            aliviar el dolor de tus manos.
+            En nuestra clínica en Albacete, nos especializamos en cirugía y
+            traumatología de la mano, ofreciendo tratamientos avanzados para
+            lesiones traumáticas, enfermedades degenerativas, deformidades de
+            los dedos, y más. Nuestro equipo de cirujanos y traumatólogos en
+            Albacete, utiliza las técnicas más innovadoras para garantizar una
+            recuperación rápida y eficaz. Descubre cómo podemos ayudarte a
+            recuperar la funcionalidad y aliviar el dolor de tus manos.
           </p>
         </div>
       </div>

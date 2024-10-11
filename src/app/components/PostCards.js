@@ -13,10 +13,10 @@ function PostCards({ article }) {
           width={500}
           height={334}
           className='rounded-xl'
-          alt=''
+          alt='Imagen principal del articulo'
         />
       </header>
-      <div className='mt-4 space-y-4 px-4'>
+      <div className='mt-4 space-y-4'>
         <p className='text-sm font-semibold text-custom-green-light'>
           {formatDate(article.publishedAt)}
         </p>
@@ -34,7 +34,7 @@ function PostCards({ article }) {
           <Image
             src={ChevronRight}
             className='h-[15px] w-[15px]'
-            alt='ALT DE EJEMPLO'
+            alt='Imagen de una flecha que acompaña al botón "Leer más" '
           />
         </Link>
       </div>

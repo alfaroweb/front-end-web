@@ -1,7 +1,8 @@
 // src/TestimonialCard.js
 'use client'
-import Image from 'next/image'
 import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
 const TestimonialCard = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -12,11 +13,11 @@ const TestimonialCard = () => {
       author: 'Juan Pérez'
     },
     {
-      text: 'Gran experiencia, volvería sin dudarlo.',
+      text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eveniet. Dicta harum debitis, officiis sequi inventore mollitia animi quo ipsum doloribus et, a laudantium reiciendis tempore at culpa unde aliquam.',
       author: 'Ana García'
     },
     {
-      text: '¡Productos de calidad y atención excelente!',
+      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, consequuntur veritatis. Omnis voluptatem nesciunt quidem assumenda esse nemo officia incidunt ipsam, numquam commodi similique, eligendi sint quas. Odio, quo veritatis.',
       author: 'Carlos López'
     }
   ]
@@ -35,21 +36,28 @@ const TestimonialCard = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className='flex min-w-full flex-col items-center justify-between space-y-2 text-center'
+            className='flex min-w-full flex-col items-center justify-center space-y-2 text-center'
           >
-            <div
-              alt='Avatar de un paciente'
-              className='h-20 w-20 rounded-full bg-gray-500'
-            />
-
-            <blockquote className='w-[90%] max-w-lg text-center text-lg font-medium italic'>
-              {testimonial.text}
+            <blockquote className='w-[90%] max-w-lg text-center font-medium italic'>
+              <FontAwesomeIcon
+                icon={faQuoteLeft}
+                width={20}
+                height={20}
+                color='#3B8590'
+                className=''
+              />{' '}
+              {testimonial.text}{' '}
+              <FontAwesomeIcon
+                icon={faQuoteRight}
+                width={20}
+                height={20}
+                color='#3B8590'
+                className=''
+              />
             </blockquote>
 
             <div className='mx-auto w-[90%] text-center text-gray-600'>
               <p>{testimonial.author}</p>
-
-              <p>CEO of Company Co.</p>
             </div>
           </div>
         ))}

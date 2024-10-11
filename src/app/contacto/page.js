@@ -10,10 +10,9 @@ import {
   faNotesMedical
 } from '@fortawesome/free-solid-svg-icons'
 import { ContactForm } from '@/app/components/ContactForm'
-import DotsBg from '@/app/components/DotsBg'
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000/'), // Reemplaza con la URL de tu sitio web
+  metadataBase: new URL('https://www.cirugiadelamanoalbacete.es/'),
   alternates: {
     canonical: '/'
   },
@@ -48,30 +47,30 @@ export const metadata = {
     title: 'Contacto | Dr. Joaquín Alfaro Micó | Solicita tu cita ahora',
     description:
       'Completa nuestro formulario de contacto para solicitar tu cita o realizar cualquier consulta sobre cirugía de mano.',
-    url: 'https://www.tudominio.es', // Reemplaza con la URL de la página
-    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    url: 'https://www.cirugiadelamanoalbacete.es/',
+    image: '',
     type: 'website'
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Dr. Joaquín Alfaro Micó | Cirujano de Mano en Albacete',
-    description:
-      'Especialista en cirugía de mano. Tratamiento personalizado y recuperación rápida.',
-    image: 'https://www.tudominio.es/tufoto.jpg'
-  },
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   title: 'Dr. Joaquín Alfaro Micó | Cirujano de Mano en Albacete',
+  //   description:
+  //     'Especialista en cirugía de mano. Tratamiento personalizado y recuperación rápida.',
+  //   image: 'https://www.tudominio.es/tufoto.jpg'
+  // },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'MedicalOrganization',
     name: 'Dr. Joaquín Alfaro Micó',
-    image: 'https://www.tudominio.es/tufoto.jpg',
-    url: 'https://www.tudominio.es',
-    telephone: '+34 612345678', // Reemplaza con tu número de teléfono
+    image: '',
+    url: 'https://www.cirugiadelamanoalbacete.es/',
+    telephone: '',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Calle Mayor, 12', // Reemplaza con tu dirección
+      streetAddress: 'Pl. del Madroño, 11',
       addressLocality: 'Albacete',
       addressRegion: 'Castilla-La Mancha',
-      postalCode: '02001',
+      postalCode: '02008',
       countryName: 'España'
     },
     speciality: 'Cirugía de la mano',
@@ -86,7 +85,6 @@ export const metadata = {
     openingHours: 'Mo-Fr 10:00-14:00',
     sameAs: [
       'https://www.quironsalud.com/albacete/es/cuadro-medico/joaquin-alfaro-mico'
-      // Agregar perfiles en otras plataformas si los hay
     ]
   }
 }
@@ -225,9 +223,10 @@ function page() {
           <h2 className='text-3xl font-bold'>
             Descubre los beneficios de elegir a los{' '}
             <strong className='text-custom-green-light'>
-              Cirujanos de la Mano Más Experimentados en Albacete
+              Cirujanos y Traumatólogos de la Mano Más Experimentados en
+              Albacete:
             </strong>
-            : <br /> ¡Tus Manos en las Mejores Manos!
+            <br /> ¡Dale una nueva vida a tus manos!
           </h2>
 
           <ul className='list-inside list-disc space-y-4 text-gray-800'>

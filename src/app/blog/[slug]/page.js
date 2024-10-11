@@ -3,6 +3,7 @@ import getPostCoverImage from './utils/getAttributes'
 import { BlocksRenderer } from '@strapi/blocks-react-renderer'
 import { getStrapiURL } from '@/app/utils/api-helpers'
 import { CloudCog } from 'lucide-react'
+import NotFound from '@/app/not-found'
 
 export async function getPost(slug) {
   try {
@@ -31,7 +32,7 @@ export async function getPost(slug) {
       return null // Retorna null si no hay datos
     }
 
-    return data // Retornar el primer (y único) artículo que coincide con el slug
+    return data
   } catch (error) {
     console.error('Fetch error:', error.message)
     return null // Retorna null en caso de un error durante la solicitud
@@ -81,11 +82,9 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
   const [post] = await getPost(params.slug)
 
-  console.log('ESTA ES LA DATA', post)
-
   if (!post) {
     console.error('No se encontró ningún artículo para este slug.')
-    return <article>No se encontró el artículo.</article> // Manejo del caso donde no hay datos
+    return <NotFound />
   }
 
   return (

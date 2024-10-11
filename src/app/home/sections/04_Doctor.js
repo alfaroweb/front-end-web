@@ -23,7 +23,7 @@ function Doctor() {
       <Image
         src={Shape}
         className='mx-auto w-full max-w-[500px] drop-shadow-[0_6px_10px_rgba(29,54,61,1)]'
-        alt='Imagen del Dr. Alfaro, cirujano de manos y traumatólogo'
+        alt='Imagen del Dr. Alfaro, cirujano y traumatólogo de la mano'
       />
 
       <Link

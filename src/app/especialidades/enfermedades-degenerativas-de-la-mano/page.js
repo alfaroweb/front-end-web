@@ -25,7 +25,7 @@ const lesiones = [
 ]
 
 export const metadata = {
-  metadataBase: new URL('https://www.tudominio.es'), // Reemplaza con la URL de tu sitio web
+  metadataBase: new URL('https://www.cirugiadelamanoalbacete.es/'),
   alternates: {
     canonical: '/especialidades/enfermedades-degenerativas-mano-albacete'
   },
@@ -64,17 +64,9 @@ export const metadata = {
       'Tratamiento de Enfermedades Degenerativas de la Mano | Dr. Joaquín Alfaro Micó',
     description:
       'El Dr. Joaquín Alfaro Micó está especializado en el tratamiento de artrosis en los dedos, artrosis de muñeca y rizartrosis en Albacete.',
-    url: 'https://www.tudominio.es/especialidades/enfermedades-degenerativas-mano-albacete', // Reemplaza con la URL de la página
-    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/enfermedades-degenerativas-mano-albacete',
+    image: '',
     type: 'website'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Tratamiento de Enfermedades Degenerativas de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
-    description:
-      'Especialista en el tratamiento de artrosis en los dedos, artrosis de muñeca y rizartrosis en Albacete.',
-    image: 'https://www.tudominio.es/tufoto.jpg'
   },
   schema: {
     '@context': 'https://schema.org',
@@ -82,14 +74,14 @@ export const metadata = {
     name: 'Enfermedades Degenerativas de la Mano',
     description:
       'Tratamiento de la artrosis en los dedos, muñeca y rizartrosis.',
-    image: 'https://www.tudominio.es/tufoto.jpg',
-    url: 'https://www.tudominio.es/especialidades/enfermedades-degenerativas-mano-albacete',
+    image: '',
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/enfermedades-degenerativas-mano-albacete',
     medicalSpecialty: [
       'Artrosis en dedos',
       'Artrosis de muñeca',
       'Rizartrosis'
     ],
-    medicalCode: 'M15' // Código ICD-10 para enfermedades degenerativas de la mano como la artrosis
+    medicalCode: 'M15'
   }
 }
 

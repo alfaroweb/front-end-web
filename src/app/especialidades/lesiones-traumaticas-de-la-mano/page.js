@@ -47,7 +47,7 @@ const lesiones = [
 ]
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000/'), // Reemplaza con la URL de tu sitio web
+  metadataBase: new URL('https://www.cirugiadelamanoalbacete.es/'), // Reemplaza con la URL de tu sitio web
   alternates: {
     canonical: '/especialidades/lesiones-traumaticas-mano-albacete'
   },
@@ -87,26 +87,26 @@ export const metadata = {
       'Lesiones Traumáticas de la Mano en Albacete | Dr. Joaquín Alfaro Micó',
     description:
       'El Dr. Joaquín Alfaro Micó ofrece un tratamiento especializado para fracturas de mano, lesiones ligamentosas, tendinosas y del fibrocartílago triangular en Albacete.',
-    url: 'https://www.tudominio.es/especialidades/lesiones-traumaticas-mano-albacete', // Reemplaza con la URL de la página
-    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/lesiones-traumaticas-mano-albacete', // Reemplaza con la URL de la página
+    image: '',
     type: 'website'
   },
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Lesiones Traumáticas de la Mano en Albacete | Dr. Joaquín Alfaro Micó',
-    description:
-      'Especialista en tratamiento de fracturas, lesiones tendinosas, ligamentosas y del fibrocartílago triangular en Albacete.',
-    image: 'https://www.tudominio.es/tufoto.jpg'
-  },
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   title:
+  //     'Lesiones Traumáticas de la Mano en Albacete | Dr. Joaquín Alfaro Micó',
+  //   description:
+  //     'Especialista en tratamiento de fracturas, lesiones tendinosas, ligamentosas y del fibrocartílago triangular en Albacete.',
+  //   image: ''
+  // },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'MedicalCondition',
     name: 'Lesiones Traumáticas de la Mano',
     description:
       'Tratamiento de fracturas de la mano, lesiones tendinosas, ligamentosas y del fibrocartílago triangular.',
-    image: 'https://www.tudominio.es/tufoto.jpg',
-    url: 'https://www.tudominio.es/especialidades/lesiones-traumaticas-mano-albacete',
+    image: '',
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/lesiones-traumaticas-mano-albacete',
     medicalSpecialty: [
       'Fracturas de mano',
       'Lesiones tendinosas',

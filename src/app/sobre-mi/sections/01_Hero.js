@@ -10,7 +10,7 @@ function Hero() {
           <h2 className='text-3xl font-bold tracking-tighter text-white [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)] md:text-4xl/tight'>
             Dr. Joaquín Alfaro
           </h2>
-          <p className='mb-4 text-white'>Traumatólogo</p>
+          <p className='mb-4 text-white'>Traumatólogo y cirujano de la mano</p>
           <p className='mb-4 w-[90%] text-slate-300 md:text-xl/relaxed lg:text-base/relaxed'>
             Con una trayectoria sólida y un enfoque especializado, ofrecemos
             soluciones seguras y precisas para restaurar la funcionalidad y
@@ -23,7 +23,7 @@ function Hero() {
 
         <Image
           src={HeroPortrait}
-          alt='Dr. Joaquin Alfaro'
+          alt='Imagen del Dr. Joaquin Alfaro cirujano y traumatólogo de la mano'
           className='h-full max-h-[408px] object-cover drop-shadow-[0_10px_10px_rgba(29,54,61,1)] md:col-start-1 md:row-end-2'
         />
       </div>

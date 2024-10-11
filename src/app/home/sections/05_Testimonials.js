@@ -9,7 +9,7 @@ function Testimonials({ WhiteTopWaves, WhiteBottomWaves2 }) {
       <Image
         src={WhiteTopWaves}
         className='absolute top-0 block h-[75px] w-full drop-shadow-[0_10px_4px_rgba(133,134,134,0.1)]'
-        alt=''
+        alt='Separador superior de la sección en forma de ola'
       />
       <div className='mx-auto mb-16 w-[90%] max-w-screen-lg'>
         <h2 className='p-4 text-center text-4xl/tight font-black leading-none tracking-wide text-custom-green-dark'>
@@ -33,7 +33,7 @@ function Testimonials({ WhiteTopWaves, WhiteBottomWaves2 }) {
       <Image
         src={WhiteBottomWaves2}
         className='absolute bottom-0 block h-[200px] w-full drop-shadow-[0_-10px_4px_rgba(133,134,134,0.1)]'
-        alt=''
+        alt='Separador inferior de la sección en forma de ola'
       />
     </section>
   )

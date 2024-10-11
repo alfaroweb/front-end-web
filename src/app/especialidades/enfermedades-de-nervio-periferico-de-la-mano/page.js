@@ -19,7 +19,7 @@ const lesiones = [
 ]
 
 export const metadata = {
-  metadataBase: new URL('https://www.tudominio.es'), // Reemplaza con la URL de tu sitio web
+  metadataBase: new URL('https://www.cirugiadelamanoalbacete.es/'),
   alternates: {
     canonical: '/especialidades/enfermedades-nervio-periferico-mano-albacete'
   },
@@ -59,17 +59,9 @@ export const metadata = {
       'Enfermedades de Nervio Periférico de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
     description:
       'El Dr. Joaquín Alfaro Micó ofrece tratamiento especializado para el síndrome del túnel carpiano y la compresión del nervio cubital en Albacete.',
-    url: 'https://www.tudominio.es/especialidades/enfermedades-nervio-periferico-mano-albacete', // Reemplaza con la URL de la página
-    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/enfermedades-nervio-periferico-mano-albacete',
+    image: '',
     type: 'website'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Enfermedades de Nervio Periférico de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
-    description:
-      'Tratamiento especializado para el síndrome del túnel carpiano y compresión del nervio cubital por el Dr. Joaquín Alfaro Micó en Albacete.',
-    image: 'https://www.tudominio.es/tufoto.jpg'
   },
   schema: {
     '@context': 'https://schema.org',
@@ -77,13 +69,13 @@ export const metadata = {
     name: 'Enfermedades de Nervio Periférico de la Mano',
     description:
       'Tratamiento de síndrome del túnel carpiano y compresión del nervio cubital.',
-    image: 'https://www.tudominio.es/tufoto.jpg',
-    url: 'https://www.tudominio.es/especialidades/enfermedades-nervio-periferico-mano-albacete',
+    image: '',
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/enfermedades-nervio-periferico-mano-albacete',
     medicalSpecialty: [
       'Síndrome del túnel carpiano',
       'Compresión del nervio cubital'
     ],
-    medicalCode: 'G56' // Código ICD-10 para lesiones de nervios periféricos como el túnel carpiano y compresión cubital
+    medicalCode: 'G56'
   }
 }
 

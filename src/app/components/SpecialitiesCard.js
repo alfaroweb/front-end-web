@@ -13,18 +13,6 @@ function SpecialitiesCard({ specialitie }) {
         <p className='z-20 text-custom-green-light group-hover:text-white'>
           Leer más
         </p>
-
-        {/* 
-      <ul className='mb-4 h-2/4'>
-        {specialitie.list.map((specialitie, index) => (
-          <li
-            key={index}
-            className='text-center mb-2'
-          >
-            {specialitie}
-          </li>
-        ))}
-      </ul> */}
         <div className='absolute left-0 top-0 z-10 h-full w-full -translate-y-[100%] bg-gradient-to-r from-custom-green-light to-custom-green-dark transition-transform duration-300 ease-in-out group-hover:translate-y-0'>
           {' '}
         </div>

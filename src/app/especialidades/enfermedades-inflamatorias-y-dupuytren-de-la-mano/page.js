@@ -25,7 +25,7 @@ const lesiones = [
 ]
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000/'), // Reemplaza con la URL de tu sitio web
+  metadataBase: new URL('https://www.cirugiadelamanoalbacete.es/'),
   alternates: {
     canonical:
       '/especialidades/enfermedades-inflamatorias-dupuytren-mano-albacete'
@@ -66,17 +66,9 @@ export const metadata = {
       'Enfermedades Inflamatorias y Dupuytren de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
     description:
       'El Dr. Joaquín Alfaro Micó ofrece tratamiento especializado para enfermedades inflamatorias de la mano, incluyendo mano reumática, artroscopia de muñeca y enfermedad de Dupuytren en Albacete.',
-    url: 'https://www.tudominio.es/especialidades/enfermedades-inflamatorias-dupuytren-mano-albacete', // Reemplaza con la URL de la página
-    image: 'https://www.tudominio.es/tufoto.jpg', // Reemplaza con la URL de tu imagen
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/enfermedades-inflamatorias-dupuytren-mano-albacete',
+    image: '',
     type: 'website'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title:
-      'Enfermedades Inflamatorias y Dupuytren de la Mano | Dr. Joaquín Alfaro Micó en Albacete',
-    description:
-      'Especialista en el tratamiento de mano reumática, artroscopia de muñeca y la enfermedad de Dupuytren en Albacete.',
-    image: 'https://www.tudominio.es/tufoto.jpg'
   },
   schema: {
     '@context': 'https://schema.org',
@@ -84,8 +76,8 @@ export const metadata = {
     name: 'Enfermedades Inflamatorias y Dupuytren de la Mano',
     description:
       'Tratamiento de mano reumática, artroscopia de muñeca y enfermedad de Dupuytren.',
-    image: 'https://www.tudominio.es/tufoto.jpg',
-    url: 'https://www.tudominio.es/especialidades/enfermedades-inflamatorias-dupuytren-mano-albacete',
+    image: '',
+    url: 'https://www.cirugiadelamanoalbacete.es/especialidades/enfermedades-inflamatorias-dupuytren-mano-albacete',
     medicalSpecialty: [
       'Mano reumática',
       'Artroscopia de muñeca',

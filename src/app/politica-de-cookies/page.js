@@ -1,5 +1,5 @@
 export const metadata = {
-  metadataBase: new URL('https://www.innocleansolar.es'),
+  metadataBase: new URL('https://www.cirugiadelamanoalbacete.es/'),
   alternates: {
     canonical: '/politica-de-cookies'
   },
