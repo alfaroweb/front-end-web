@@ -43,7 +43,9 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
               alt='Logo del Dr. Joaquín Alfaro Micó, Cirujano de la mano'
               className='h-[60px] w-auto object-fill'
             />
-            <p className='font-black text-white'>Cirugía de la mano</p>
+            <p className='hidden font-black text-white md:block'>
+              Cirugía de la mano
+            </p>
           </Link>
           <Image
             src={Bandage}
@@ -66,7 +68,7 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
           >
             Sobre mí
           </Link>
-          <div className='h-[28px] overflow-hidden transition-[height] duration-300 ease-in hover:h-[284px]'>
+          <div className='h-[28px] overflow-hidden transition-[height] duration-300 ease-in hover:h-[350px] md:hover:h-[284px]'>
             Especialidades
             <ul className='ml-2 mt-2 space-y-2'>
               {specialities.map((specialitie, index) => (

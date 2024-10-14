@@ -13,7 +13,9 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
           alt='Logo del Dr. Joaquín Alfaro Micó, Cirujano de la mano'
           className='h-[60px] w-auto object-fill'
         />
-        <p className='font-black text-white'>Cirugía de la mano</p>
+        <p className='hidden font-black text-white md:block'>
+          Cirugía de la mano
+        </p>
       </Link>
 
       <div className='hidden h-full gap-8 font-bold text-white lg:flex lg:items-center'>
