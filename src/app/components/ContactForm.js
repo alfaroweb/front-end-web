@@ -78,7 +78,11 @@ export function ContactForm() {
             brevedad para confirmar tu cita y responder a cualquier pregunta.
           </p>
         </div>
-        <form className='gap-6' onSubmit={(e) => handleSubmit(e)}>
+        <form
+          className='gap-6'
+          onSubmit={(e) => handleSubmit(e)}
+          id='contact-form'
+        >
           <div className='space-y-4'>
             <div className='grid gap-2'>
               <label
