@@ -35,7 +35,7 @@ function page() {
       <h1 class='mb-4 text-center text-2xl font-bold'>POLÍTICA DE COOKIES</h1>
       <p class='mb-4'>
         Bienvenida/o a la POLÍTICA DE COOKIES de la página web de la entidad
-        "COMPLETAR", provista de NIF "COMPLETAR", donde te explicaremos en un
+        'completar', provista de NIF "COMPLETAR", donde te explicaremos en un
         lenguaje claro y sencillo todas las cuestiones necesarias para que
         puedas tener el control sobre ellas en base a tus decisiones personales.
       </p>
