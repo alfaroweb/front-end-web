@@ -56,7 +56,7 @@ function page() {
         <h3 class='mb-2 text-xl font-bold'>¿Quiénes somos?</h3>
         <ul class='mb-4 list-inside list-disc'>
           <li>
-            <strong>Nuestra denominación:</strong> "COMPLETAR"
+            <strong>Nuestra denominación:</strong> 'Completar'
           </li>
           <li>
             <strong>Nuestro CIF / NIF:"COMPLETAR</strong>
