@@ -58,17 +58,23 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
         </div>
 
         <ul className='mx-auto ml-[15%] flex h-full w-[80%] flex-col items-start justify-center gap-20 py-16 text-xl font-bold text-white'>
-          <Link href='/' className='' onClick={() => setShowMovilMenu(false)}>
-            Inicio
-          </Link>
-          <Link
-            href='/sobre-mi'
-            className=''
-            onClick={() => setShowMovilMenu(false)}
-          >
-            Sobre mí
-          </Link>
-          <div className='h-[28px] overflow-hidden transition-[height] duration-300 ease-in hover:h-[350px] md:hover:h-[284px]'>
+          <li>
+            {' '}
+            <Link href='/' className='' onClick={() => setShowMovilMenu(false)}>
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link
+              href='/sobre-mi'
+              className=''
+              onClick={() => setShowMovilMenu(false)}
+            >
+              Sobre mí
+            </Link>
+          </li>
+
+          <li className='h-[28px] overflow-hidden transition-[height] duration-300 ease-in hover:h-[350px] md:hover:h-[284px]'>
             Especialidades
             <ul className='ml-2 mt-2 space-y-2'>
               {specialities.map((specialitie, index) => (
@@ -82,21 +88,25 @@ function MovilNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
                 </li>
               ))}
             </ul>
-          </div>
-          <Link
-            href='/blog'
-            className=''
-            onClick={() => setShowMovilMenu(false)}
-          >
-            Blog
-          </Link>
-          <Link
-            href='/contacto'
-            className=''
-            onClick={() => setShowMovilMenu(false)}
-          >
-            Contacto
-          </Link>
+          </li>
+          <li>
+            <Link
+              href='/blog'
+              className=''
+              onClick={() => setShowMovilMenu(false)}
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              href='/contacto'
+              className=''
+              onClick={() => setShowMovilMenu(false)}
+            >
+              Contacto
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

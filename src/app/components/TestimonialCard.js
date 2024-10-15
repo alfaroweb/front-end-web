@@ -69,6 +69,7 @@ const TestimonialCard = () => {
           <button
             key={index}
             onClick={() => handleTestimonialChange(index)}
+            aria-label='Botón para seleccionar testimonio'
             className={`z-10 mx-2 h-3 w-3 rounded-full focus:outline-none ${
               currentIndex === index ? 'bg-custom-green-light' : 'bg-gray-300'
             }`}

@@ -18,9 +18,9 @@ function Footer() {
 
       <div className='mx-auto grid grid-cols-1 md:grid-cols-4'>
         <div className='mb-6'>
-          <h5 className='mb-2.5 font-bold text-white hover:text-white'>
+          <h2 className='mb-2.5 font-bold text-white hover:text-white'>
             Compañía
-          </h5>
+          </h2>
 
           <div className='mb-0 flex list-none flex-col'>
             <Link href='/sobre-mi' className='text-slate-300 hover:text-white'>
@@ -33,7 +33,7 @@ function Footer() {
         </div>
 
         <div className='mb-6'>
-          <h5 className='mb-2.5 font-bold text-white'>Legal</h5>
+          <h2 className='mb-2.5 font-bold text-white'>Legal</h2>
           <ul className='mb-0 list-none'>
             <li>
               <Link
@@ -55,7 +55,7 @@ function Footer() {
         </div>
 
         <div className='mb-6'>
-          <h5 className='mb-2.5 font-bold text-white'>Contacto Directo</h5>
+          <h2 className='mb-2.5 font-bold text-white'>Contacto Directo</h2>
           <ul className='mb-0 list-none'>
             <li className='text-slate-300 hover:text-white'>
               consultas@cirugiadelamanoalbacete.es
@@ -65,15 +65,14 @@ function Footer() {
         </div>
 
         <div className='mb-6'>
-          <h5 className='mb-2.5 font-bold text-white'>
+          <h2 className='mb-2.5 font-bold text-white'>
             Hospital Quirónsalud Albacete
-          </h5>
+          </h2>
           <ul className='mb-0 list-none'>
             <li className='text-slate-300 hover:text-white'>
               Pl. del Madroño, 11, 02008 Albacete
             </li>
             <li className='text-slate-300 hover:text-white'>967 24 71 00</li>
-            <li className='text-slate-300 hover:text-white'>Albacete</li>
           </ul>
         </div>
       </div>
