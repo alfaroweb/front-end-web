@@ -26,7 +26,12 @@ export default function RootLayout({ children }) {
           async={true}
         />
       </body>
-      <GoogleTagManager gtmId='GTM-TZPMSMV5' />
+      <Script
+        src='https://www.googletagmanager.com/gtm.js?id=GTM-TZPMSMV5'
+        strategy='afterInteractive'
+        onLoad={() => console.log('GTM script loaded successfully')}
+        onError={(e) => console.error('Error loading GTM script', e)}
+      />
     </html>
   )
 }
