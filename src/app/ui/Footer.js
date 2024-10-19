@@ -16,7 +16,7 @@ function Footer() {
         </Link>
       </div>
 
-      <div className='mx-auto grid grid-cols-1 md:grid-cols-4'>
+      <div className='mx-auto grid grid-cols-1 xl:grid-cols-4'>
         <div className='mb-6'>
           <h2 className='mb-2.5 font-bold text-white hover:text-white'>
             Compañía

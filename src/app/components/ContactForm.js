@@ -181,7 +181,7 @@ export function ContactForm() {
           <div className='mt-4 flex justify-center'>
             <input
               type='submit'
-              className='mb-8 hidden w-[180px] rounded-3xl border-2 border-custom-green-light bg-transparent p-3 px-4 text-center font-semibold text-custom-green-light transition-colors duration-200 ease-in-out hover:bg-custom-green-light hover:text-white md:block'
+              className='mb-8 w-[180px] rounded-3xl border-2 border-custom-green-light bg-transparent p-3 px-4 text-center font-semibold text-custom-green-light transition-colors duration-200 ease-in-out hover:bg-custom-green-light hover:text-white md:block'
               value='Enviar solicitud'
             />
           </div>
