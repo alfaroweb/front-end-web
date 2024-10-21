@@ -29,7 +29,7 @@ function Hero() {
           <AppointmentButton styles='hidden' />
         </div>
 
-        <div className='relative place-content-end lg:mt-0'>
+        <div className='relative flex flex-col items-center justify-end lg:mt-0'>
           <Image
             src={HeroPortrait}
             className='mx-auto w-full max-w-[600px] object-cover xl:max-w-[750px]'
