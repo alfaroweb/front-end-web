@@ -11,15 +11,36 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'images.pexels.com'
-      },
-      {
-        protocol: 'https',
         hostname: 'res.cloudinary.com'
-      },
+      }
+    ]
+  },
+  async headers() {
+    return [
       {
-        protocol: 'https',
-        hostname: 'source.unsplash.com'
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "default-src 'self';"
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY'
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff'
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'no-referrer'
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'geolocation=(self), microphone=()'
+          }
+        ]
       }
     ]
   }
