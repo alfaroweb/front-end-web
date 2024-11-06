@@ -11,7 +11,7 @@ function LesionesFibrocartilagoTriangular({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           className='text-2xl font-bold uppercase tracking-wide'
-          id='lesiones-fibrocartilago-triangular'
+          id='lesiones-fibrocartilago-triangular scroll-mt-[85px]'
         >
           Lesiones fibrocartílago triangular
         </h2>
