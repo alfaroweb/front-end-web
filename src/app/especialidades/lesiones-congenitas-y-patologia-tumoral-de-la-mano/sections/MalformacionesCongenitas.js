@@ -11,7 +11,7 @@ function MalformacionesCongenitas({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='malformaciones'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Malformaciones Congénitas en la Mano
         </h2>

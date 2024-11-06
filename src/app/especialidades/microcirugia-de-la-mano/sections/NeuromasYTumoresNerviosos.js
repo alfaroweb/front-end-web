@@ -11,7 +11,7 @@ function NeuromasYTumoresNerviosos({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='neuromas-tumores'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Neuromas y Tumores Nerviosos
         </h2>

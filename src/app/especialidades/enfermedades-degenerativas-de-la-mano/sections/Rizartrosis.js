@@ -11,7 +11,7 @@ function Rizartrosis({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='rizartrosis'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Rizartrosis
         </h2>

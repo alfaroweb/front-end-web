@@ -11,7 +11,7 @@ function Pseudoartrosis({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='pseudoartrosis-escafoides'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Pseudoartrosis de Escafoides
         </h2>

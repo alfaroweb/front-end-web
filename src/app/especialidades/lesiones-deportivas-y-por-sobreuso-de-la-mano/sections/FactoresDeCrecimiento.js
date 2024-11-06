@@ -11,7 +11,7 @@ function FactoresDeCrecimiento({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='factores-de-crecimiento'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Factores de crecimiento
         </h2>

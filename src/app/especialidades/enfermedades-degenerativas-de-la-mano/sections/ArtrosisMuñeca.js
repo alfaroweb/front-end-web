@@ -11,7 +11,7 @@ function ArtrosisMuñeca({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='artrosis-muneca'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Artrosis de muñeca
         </h2>

@@ -10,7 +10,7 @@ function Fracturas({ Book }) {
         {' '}
         <Image src={Book} height={24} alt='' />
         <h2
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
           id='fracturas'
         >
           Fracturas
@@ -29,7 +29,7 @@ function Fracturas({ Book }) {
       <section className='mb-8' aria-labelledby='fracturas-metacarpianos'>
         <h3
           id='fracturas-metacarpianos'
-          className='mb-2 text-xl font-semibold text-custom-green-light'
+          className='mb-2 scroll-mt-[85px] text-xl font-semibold text-custom-green-light'
         >
           Fracturas metacarpianos
         </h3>
@@ -115,7 +115,7 @@ function Fracturas({ Book }) {
       <section className='mb-8' aria-labelledby='fracturas-falanges'>
         <h3
           id='fracturas-falanges'
-          className='mb-2 text-xl font-semibold text-custom-green-light'
+          className='mb-2 scroll-mt-[85px] text-xl font-semibold text-custom-green-light'
         >
           Fracturas de falanges (Dedos de la mano)
         </h3>
@@ -201,7 +201,7 @@ function Fracturas({ Book }) {
       <section className='mb-8' aria-labelledby='fracturas-radio-distal'>
         <h3
           id='fracturas-radio-distal'
-          className='mb-2 text-xl font-semibold text-custom-green-light'
+          className='mb-2 scroll-mt-[85px] text-xl font-semibold text-custom-green-light'
         >
           Fracturas de Radio Distal (Muñeca)
         </h3>
@@ -286,7 +286,7 @@ function Fracturas({ Book }) {
       <section className='mb-8' aria-labelledby='fracturas-escafoides'>
         <h3
           id='fracturas-escafoides'
-          className='mb-2 text-xl font-semibold text-custom-green-light'
+          className='mb-2 scroll-mt-[85px] text-xl font-semibold text-custom-green-light'
         >
           Fracturas de Escafoides
         </h3>

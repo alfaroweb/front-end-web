@@ -10,7 +10,7 @@ function CirugiaDeSecuelas({ Book }) {
         {' '}
         <Image src={Book} height={24} alt='' />
         <h2
-          className='mb-4 text-2xl font-bold tracking-wide'
+          className='mb-4 scroll-mt-[85px] text-2xl font-bold tracking-wide'
           id='cirugia-de-secuelas'
         >
           Cirugías de Secuelas

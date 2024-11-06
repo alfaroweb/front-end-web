@@ -11,7 +11,7 @@ function SindromeTunelCarpiano({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='sindrome-tunel-carpiano'
-          className='text-2xl font-bold uppercase text-custom-green-dark'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase text-custom-green-dark'
         >
           Síndrome del túnel carpiano
         </h2>

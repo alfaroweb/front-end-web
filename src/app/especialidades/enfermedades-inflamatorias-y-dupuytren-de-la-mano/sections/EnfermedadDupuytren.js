@@ -11,7 +11,7 @@ function EnfermedadDupuytren({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='enfermedad-dupuytren'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Enfermedad de Dupuytren
         </h2>

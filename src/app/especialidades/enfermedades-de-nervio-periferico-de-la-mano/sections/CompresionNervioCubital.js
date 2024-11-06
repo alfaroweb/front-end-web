@@ -11,7 +11,7 @@ function CompresionNervioCubital({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='compresion-nervio-cubital'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Compresión del nervio cubital
         </h2>

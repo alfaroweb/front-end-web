@@ -11,7 +11,7 @@ function ArtrosisDedos({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='artrosis-dedos'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Artrosis en dedos
         </h2>

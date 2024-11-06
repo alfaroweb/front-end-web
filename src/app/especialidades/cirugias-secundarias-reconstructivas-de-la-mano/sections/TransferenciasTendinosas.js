@@ -11,7 +11,7 @@ function TransferenciasTendinosas({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='transferencias-tendinosas'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Transferencias Tendinosas
         </h2>

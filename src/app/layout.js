@@ -9,9 +9,9 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='es'>
+    <html lang='es' className='scroll-smooth'>
       <body
-        className={`${montserrat.className} relative grid min-h-screen grid-rows-[80px,1fr,auto] bg-[#e7e8e9] text-custom-black-light`}
+        className={`${montserrat.className} relative grid min-h-screen grid-rows-[80px,1fr,auto] scroll-smooth bg-[#e7e8e9] text-custom-black-light`}
       >
         <Header />
         {children}

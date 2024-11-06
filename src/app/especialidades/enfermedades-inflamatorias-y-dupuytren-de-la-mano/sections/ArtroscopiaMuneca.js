@@ -11,7 +11,7 @@ function ArtroscopiaMuneca({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='artroscopia-muneca'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Artroscopia de muñeca
         </h2>

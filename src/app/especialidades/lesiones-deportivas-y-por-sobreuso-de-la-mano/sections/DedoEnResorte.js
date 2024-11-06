@@ -11,7 +11,7 @@ function DedoEnResorte({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='dedo-en-resorte'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Dedo en resorte
         </h2>

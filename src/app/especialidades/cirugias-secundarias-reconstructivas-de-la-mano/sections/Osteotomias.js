@@ -11,7 +11,7 @@ function Osteotomias({ Book }) {
         <Image src={Book} height={24} alt='' />
         <h2
           id='osteotomias-mala-consolidacion'
-          className='text-2xl font-bold uppercase tracking-wide'
+          className='scroll-mt-[85px] text-2xl font-bold uppercase tracking-wide'
         >
           Osteotomías por Mala Consolidación
         </h2>
