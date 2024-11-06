@@ -2,6 +2,8 @@
 User-agent: *
 Allow: /
 
+# Host
+Host: https://www.cirugiadelamanoalbacete.es/
 
 # Sitemaps
 Sitemap: https://www.cirugiadelamanoalbacete.es/sitemap.xml
