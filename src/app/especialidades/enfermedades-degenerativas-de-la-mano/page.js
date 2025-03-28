@@ -88,7 +88,7 @@ export const metadata = {
 function EnfermedadesDegenerativas() {
   return (
     <>
-      <div className='mx-auto w-full bg-gradient-to-r from-custom-green-light to-custom-green-dark py-6 text-center'>
+      <div className='mx-auto w-full bg-custom-green-dark py-6 text-center'>
         <div className='mx-auto flex w-[90%] max-w-screen-lg flex-col items-center gap-2'>
           <h1 className='custom-text-shadow text-4xl font-bold text-slate-50'>
             Especialistas en el Tratamiento de Enfermedades Degenerativas de la

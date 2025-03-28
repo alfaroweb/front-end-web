@@ -7,8 +7,8 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 function Hero() {
   return (
-    <section className='relative w-full bg-[#c0e6f8] bg-hero-bg bg-cover xl:h-[700px] xl:pt-[60px]'>
-      <div className='grid-rows-auto mx-auto grid h-full w-[90%] max-w-screen-2xl px-5 py-[40px] xl:grid-cols-2 xl:grid-rows-1'>
+    <section className='relative w-full bg-custom-green-dark xl:h-[700px] xl:pt-[60px]'>
+      <div className='grid-rows-auto mx-auto grid h-full w-[90%] max-w-screen-xl px-5 py-[60px]'>
         <div className='flex flex-col items-center text-center text-white'>
           <h1 className='custom-text-shadow mb-6 text-3xl font-bold md:text-5xl xl:text-4xl 2xl:text-5xl'>
             <span className='block italic'>Expertos en</span>{' '}
@@ -28,14 +28,14 @@ function Hero() {
           </p>
           <AppointmentButton styles='hidden' />
         </div>
-
+        {/* 
         <div className='relative flex flex-col items-center justify-end lg:mt-0'>
           <Image
             src={HeroPortrait}
             className='mx-auto w-full max-w-[600px] object-cover xl:max-w-[750px]'
             alt='Imagen de un doctor tratando a un paciente'
           />
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -4,7 +4,7 @@ import SpecialitiesCard from '../../components/SpecialitiesCard'
 
 function Specialties({ WhiteTopWaves, WhiteBottomWaves }) {
   return (
-    <section className='relative mx-auto min-h-max bg-specialities-bg bg-cover'>
+    <section className='relative mx-auto min-h-max bg-custom-green-dark'>
       <Image
         src={WhiteTopWaves}
         className='absolute top-0 block h-[150px] w-full drop-shadow-[0_10px_7px_rgba(1,1,1,0.3)]'

@@ -30,11 +30,11 @@ function Testimonials({ WhiteTopWaves, WhiteBottomWaves2 }) {
       <div className='mx-auto flex w-[90%] justify-center'>
         <TestimonialCard />
       </div>
-      <Image
+      {/* <Image
         src={WhiteBottomWaves2}
         className='absolute bottom-0 block h-[200px] w-full drop-shadow-[0_-10px_4px_rgba(133,134,134,0.1)]'
         alt='Separador inferior de la sección en forma de ola'
-      />
+      /> */}
     </section>
   )
 }

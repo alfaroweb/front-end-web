@@ -96,7 +96,7 @@ export default function Home() {
         WhiteTopWaves={WhiteTopWaves}
         WhiteBottomWaves2={WhiteBottomWaves2}
       />
-      <LastNews />
+      {/* <LastNews /> */}
     </main>
   )
 }

@@ -42,7 +42,7 @@ function Specialities({ WhiteTopWaves }) {
         <div className='mt-4 grid gap-6 md:grid-cols-2'>
           {specialities.map((specialitie) => (
             <div
-              className='rounded-lg border border-black border-opacity-25 bg-gradient-to-tl from-custom-green-light to-custom-green-dark p-6 text-white transition-all duration-300 hover:scale-[1.03] hover:border-black'
+              className='rounded-lg border border-black border-opacity-25 bg-custom-green-dark p-6 text-white transition-all duration-300 hover:scale-[1.03] hover:border-black'
               key={specialitie.title}
             >
               <h3 className='text-xl font-semibold'>{specialitie.title}</h3>

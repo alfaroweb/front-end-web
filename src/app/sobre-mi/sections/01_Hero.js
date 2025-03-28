@@ -4,7 +4,7 @@ import AppointmentButton from '@/app/components/AppointmentButton'
 
 function Hero() {
   return (
-    <section className='relative bg-gradient-to-r from-custom-green-light to-custom-green-dark'>
+    <section className='relative bg-custom-green-dark'>
       <div className='mx-auto max-w-screen-xl items-end overflow-hidden pl-8 pt-8 md:col-span-1 md:grid md:w-[95%] md:grid-cols-2 md:pl-0'>
         <div className='pb-16 text-left md:col-start-2 md:row-end-2 md:mt-8'>
           <h2 className='text-3xl font-bold tracking-tighter text-white [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.7)] md:text-4xl/tight'>

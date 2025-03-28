@@ -37,7 +37,7 @@ module.exports = {
         },
         'custom-green': {
           light: '#3B8590',
-          dark: '#1D363D'
+          dark: '#374F59'
         }
       },
       fontFamily: {

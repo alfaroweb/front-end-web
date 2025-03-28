@@ -4,14 +4,14 @@ import Logo from '/public/logo-mico.png'
 
 function Footer() {
   return (
-    <footer className='relative bg-gradient-to-r from-custom-green-light to-custom-green-dark py-8 text-center text-neutral-400'>
+    <footer className='relative bg-custom-green-dark py-8 text-center text-neutral-400'>
       <div className='mb-4 flex justify-center'>
         {' '}
         <Link href='/' className='flex flex-col items-center justify-center'>
           <Image
             src={Logo}
             alt='Logo del Dr. Joaquín Alfaro Micó, Cirujano de la mano'
-            className='h-[60px] w-auto object-fill'
+            className='h-[80px] w-auto object-fill'
           />
         </Link>
       </div>

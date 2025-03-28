@@ -11,35 +11,32 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
         <Image
           src={Logo}
           alt='Logo del Dr. Joaquín Alfaro Micó, Cirujano de la mano'
-          className='h-[60px] w-auto object-fill'
+          className='h-[80px] w-auto object-fill'
         />
-        <p className='hidden font-black text-white md:block'>
-          Cirugía de la mano
-        </p>
       </Link>
 
-      <div className='hidden h-full gap-8 font-bold text-white lg:flex lg:items-center'>
+      <div className='hidden h-full gap-8 text-lg font-bold text-white lg:flex lg:items-center'>
         <Link
           href='/'
-          className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
+          className='link-desktopNav-borders flex h-full items-center rounded-lg hover:text-[#E6C47D]'
         >
           Inicio
         </Link>
         <Link
           href='/sobre-mi'
-          className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
+          className='link-desktopNav-borders flex h-full items-center rounded-lg hover:text-[#E6C47D]'
         >
           Sobre mí
         </Link>
         <div className='link-desktopNav-borders group relative flex h-full items-center rounded-lg'>
-          <span className='custom-text-shadow cursor-pointer'>
+          <span className='cursor-pointer hover:text-[#E6C47D]'>
             Especialidades
           </span>
-          <div className='pointer-events-none invisible absolute left-1/2 top-full z-10 w-max -translate-x-1/2 rounded-b-lg bg-custom-green-dark opacity-0 transition-opacity duration-200 ease-in-out group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100'>
+          <div className='pointer-events-none invisible absolute left-1/2 top-full z-10 w-max -translate-x-1/2 rounded-b-lg bg-white opacity-0 transition-opacity duration-200 ease-in-out group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100'>
             <ul className='space-y-4 p-4'>
               {specialities.map((specialitie, index) => (
                 <li
-                  className='custom-text-shadow text-slate-200 transition-colors duration-75 ease-in-out hover:text-white'
+                  className='text-gray-500 transition-colors duration-75 ease-in-out hover:text-custom-green-dark'
                   key={index}
                 >
                   <Link
@@ -53,15 +50,15 @@ function DesktopNav({ showMovilMenu, setShowMovilMenu, handleShowMenu }) {
             </ul>
           </div>
         </div>
-        <Link
+        {/* <Link
           href='/blog'
-          className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
+          className='link-desktopNav-borders flex h-full items-center rounded-lg'
         >
           Blog
-        </Link>
+        </Link> */}
         <Link
           href='/contacto'
-          className='link-desktopNav-borders custom-text-shadow flex h-full items-center rounded-lg'
+          className='link-desktopNav-borders flex h-full items-center rounded-lg hover:text-[#E6C47D]'
         >
           Contacto
         </Link>

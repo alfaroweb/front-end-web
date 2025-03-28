@@ -28,7 +28,7 @@ function Doctor() {
 
       <Link
         href='/sobre-mi'
-        className='w-[180px] rounded-3xl border-2 bg-[#336767] bg-gradient-to-r from-custom-green-light to-custom-green-dark p-3 text-center font-semibold text-white'
+        className='border-1 w-[180px] rounded-3xl border-2 border-transparent bg-custom-green-dark p-3 text-center font-semibold text-white transition-all duration-300 hover:scale-105 hover:border-[#E6C47D] hover:text-[#E6C47D]'
       >
         Sobre mí
       </Link>
