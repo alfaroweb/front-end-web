@@ -16,12 +16,13 @@ function Hero() {
             <span className='block italic'> de la Mano en Albacete</span>{' '}
           </h1>
           <p className='mb-4 text-sm lg:text-base'>
-            ¿Sufres de dolor, rigidez o pérdida de fuerza en tus manos? Nuestros
-            cirujanos especializados en mano te ofrecen soluciones
-            personalizadas para una amplia variedad de afecciones. Con técnicas
-            quirúrgicas mínimamente invasivas y una atención postoperatoria
-            integral, recuperarás la funcionalidad y la calidad de vida que
-            deseas. <br />
+            Si sientes dolor en la mano, no lo ignores. Acudir a un cirujano
+            especializado te ayudará a identificar el problema a tiempo y evitar
+            complicaciones futuras. Nosotros te ofrecemos una atención
+            personalizada: escuchamos tus síntomas y diseñamos un plan de
+            tratamiento adaptado a tus necesidades. Recuerda, cuidar tus manos
+            hoy puede prevenir problemas mayores mañana. Tu bienestar es lo
+            primero, y estamos aquí para ayudarte <br />
           </p>
           <p className='mb-4 font-bold lg:text-lg'>
             ¡Solicita una consulta hoy mismo y descubre cómo podemos ayudarte!

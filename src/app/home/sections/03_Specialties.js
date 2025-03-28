@@ -24,13 +24,11 @@ function Specialties({ WhiteTopWaves, WhiteBottomWaves }) {
             Nuestras especialidades
           </h2>
           <p className='mx-auto text-center text-base/relaxed'>
-            En nuestra clínica en Albacete, nos especializamos en cirugía y
-            traumatología de la mano, ofreciendo tratamientos avanzados para
-            lesiones traumáticas, enfermedades degenerativas, deformidades de
-            los dedos, y más. Nuestro equipo de cirujanos y traumatólogos en
-            Albacete, utiliza las técnicas más innovadoras para garantizar una
-            recuperación rápida y eficaz. Descubre cómo podemos ayudarte a
-            recuperar la funcionalidad y aliviar el dolor de tus manos.
+            Nos especializamos en cirugía y traumatología de la mano, ofreciendo
+            tratamientos avanzados para lesiones traumáticas, nerviosas,
+            enfermedades degenerativas, deformidades de los dedos, y más.
+            Descubre cómo podemos ayudarte a recuperar la funcionalidad y
+            aliviar el dolor de tus manos.
           </p>
         </div>
       </div>

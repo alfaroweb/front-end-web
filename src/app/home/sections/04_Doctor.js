@@ -8,7 +8,7 @@ function Doctor() {
     <section className='relative mx-auto flex w-full flex-col items-center bg-white py-[50px]'>
       <DotsBg />
       <div className='mx-auto w-[90%] max-w-screen-md text-center'>
-        <h2 className='text-3xl font-black tracking-wide text-custom-green-dark md:text-4xl/tight'>
+        <h2 className='text-3xl font-black tracking-wide text-custom-green-light md:text-4xl/tight'>
           Dr. Joaquín Alfaro Micó
         </h2>
         <p className='mx-auto mt-2'>

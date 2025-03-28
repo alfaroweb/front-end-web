@@ -21,18 +21,15 @@ function OurTeam() {
 
         <div className=''>
           <h2 className='p-4 text-center text-3xl/tight font-bold tracking-tighter text-custom-green-dark'>
-            Confía en nuestro equipo experto y tecnología avanzada para tu
-            cuidado médico completo.
+            Equipo con experiencia en cirugía de mano
           </h2>
           <p className='text-center text-base/relaxed'>
-            Descubre nuestra{' '}
-            <strong className='text-custom-green-light'>
-              clínica médica líder en Albacete
-            </strong>
-            , donde encontrarás una amplia variedad de especialidades diseñadas
-            para cubrir todas tus necesidades de atención médica. Nuestro equipo
-            altamente capacitado y nuestra tecnología de punta se unen para
-            ofrecerte un cuidado médico integral y de calidad excepcional.{' '}
+            Nuestro equipo está conformado por especialistas altamente
+            cualificados, con años de experiencia dedicados a la cirugía de
+            mano. Combinamos conocimientos avanzados y tecnología de última
+            generación para garantizar diagnósticos precisos y tratamientos
+            efectivos. Confíe en nuestro compromiso y trayectoria para cuidar la
+            salud y funcionalidad de sus manos.
             <br />
             <span className='text-lg font-bold text-custom-green-light'>
               ¡Tu salud es nuestra prioridad absoluta!
